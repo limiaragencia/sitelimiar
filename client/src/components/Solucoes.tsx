@@ -65,7 +65,7 @@ export function Solucoes() {
   ];
 
   return (
-    <section id="solucoes" className="py-24 bg-white dark:bg-dark-bg">
+    <section id="solucoes" className="py-24 bg-white dark:bg-dark-radial">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-20">
@@ -96,7 +96,7 @@ export function Solucoes() {
             return (
               <div
                 key={index}
-                className={`${solution.className || ''} bg-gradient-to-br from-gray-50 to-white dark:from-dark-card dark:to-gray-800 rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 border border-gray-200 dark:border-dark-border group`}
+                className={`${solution.className || ''} bg-gradient-to-br from-gray-50 to-white dark:from-dark-card dark:to-dark-bg-secondary rounded-3xl p-8 hover:shadow-2xl dark:hover:shadow-limiar-orange/20 transition-all duration-500 border border-gray-200 dark:border-dark-border group`}
               >
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-16 h-16 bg-gradient-to-br from-limiar-orange to-limiar-gold rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -118,7 +118,7 @@ export function Solucoes() {
                 {solution.useCases && (
                   <div className="grid grid-cols-2 gap-4 mb-6">
                     {solution.useCases.map((useCase, idx) => (
-                      <div key={idx} className="bg-white dark:bg-dark-bg rounded-lg p-4 border border-gray-200 dark:border-dark-border">
+                      <div key={idx} className="bg-white dark:bg-dark-bg-secondary rounded-lg p-4 border border-gray-200 dark:border-dark-border">
                         <h4 className="font-semibold text-limiar-orange mb-2">{useCase.name}</h4>
                         <ul className="text-sm text-gray-600 dark:text-gray-300 space-y-1">
                           {useCase.metrics.map((metric, metricIdx) => (

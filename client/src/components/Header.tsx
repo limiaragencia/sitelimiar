@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Sun, Moon, Brain } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
 import { useTheme } from "./ThemeProvider";
+import logoWhite from "@assets/logo centralizada branca_1753484043527.png";
+import logoOrange from "@assets/logo limiar_1753484043528.png";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,17 +22,16 @@ export function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-dark-bg/80 backdrop-blur-md border-b border-gray-200 dark:border-dark-border transition-all duration-300">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-dark-gradient backdrop-blur-md border-b border-gray-200 dark:border-dark-border transition-all duration-300">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-limiar-orange to-limiar-gold rounded-lg flex items-center justify-center">
-              <Brain className="text-white text-lg" />
-            </div>
-            <span className="text-2xl font-poppins font-bold bg-gradient-to-r from-limiar-orange to-limiar-gold bg-clip-text text-transparent">
-              limiar
-            </span>
+            <img 
+              src={theme === "dark" ? logoWhite : logoOrange} 
+              alt="Limiar Logo" 
+              className="h-8 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
@@ -59,7 +60,7 @@ export function Header() {
               onClick={toggleTheme}
               variant="ghost"
               size="icon"
-              className="p-2 rounded-lg bg-gray-100 dark:bg-dark-card hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+              className="p-2 rounded-lg bg-gray-100 dark:bg-dark-card hover:bg-gray-200 dark:hover:bg-dark-border transition-colors"
             >
               {theme === "dark" ? (
                 <Sun className="h-5 w-5 text-yellow-500" />
