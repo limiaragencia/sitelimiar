@@ -32,7 +32,6 @@ export function Hero() {
           <rect width="100%" height="100%" fill="url(#circuit)" />
         </svg>
       </div>
-
       <div className="relative z-10 container mx-auto px-6">
         <div className="max-w-4xl">
           {/* Main Headline */}
@@ -56,7 +55,7 @@ export function Hero() {
           {/* Highlight Quote */}
           <div className="bg-white/98 dark:bg-dark-card/90 backdrop-blur-xl rounded-2xl p-8 mb-12 border border-gray-300 dark:border-limiar-orange/40 animate-fade-in-up shadow-2xl dark:shadow-limiar-orange/30 relative overflow-hidden max-w-3xl">
             <div className="absolute inset-0 bg-gradient-to-r from-limiar-orange/5 to-limiar-gold/5 dark:from-limiar-orange/10 dark:to-limiar-gold/10"></div>
-            <blockquote className="relative text-lg md:text-xl font-poppins font-medium text-gray-900 dark:text-white italic leading-relaxed text-left">
+            <blockquote className="relative md:text-xl font-poppins font-medium text-gray-900 dark:text-white italic text-[18px] text-justify pt-[-5px] pb-[-5px] pl-[-2px] pr-[-2px] ml-[-19px] mr-[-19px] mt-[-14px] mb-[-14px]">
               "Onde outros veem código, nós vemos poesia. Habitamos a intersecção precisa entre dados e imaginação,
               criando experiências que não apenas transformam negócios — elas <span className="text-limiar-orange font-semibold">despertam futuros.</span>"
             </blockquote>
@@ -96,7 +95,6 @@ export function Hero() {
           </div>
         </div>
       </div>
-
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <ChevronDown className="text-2xl text-limiar-orange" />
