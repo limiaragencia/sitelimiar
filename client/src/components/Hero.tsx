@@ -37,11 +37,11 @@ export function Hero() {
         <div className="max-w-4xl">
           {/* Main Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-poppins font-bold mb-6 leading-tight animate-fade-in-up text-left">
-            <span className="block text-gray-900 dark:text-white mb-2 drop-shadow-lg">Existe um lugar entre</span>
-            <span className="block text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-limiar-orange via-limiar-gold to-limiar-orange bg-clip-text text-transparent mb-4 drop-shadow-lg">
+            <span className="block text-gray-900 dark:text-white mb-2">Existe um lugar entre</span>
+            <span className="block text-4xl md:text-5xl lg:text-6xl font-bold text-limiar-orange mb-4">
               o que foi e o que está por vir.
             </span>
-            <span className="block text-xl md:text-2xl lg:text-3xl font-light text-gray-700 dark:text-gray-300 drop-shadow-lg">
+            <span className="block text-xl md:text-2xl lg:text-3xl font-light text-gray-700 dark:text-gray-300">
               Bem-vindo(a) ao <span className="font-semibold text-limiar-orange">Limiar.</span>
             </span>
           </h1>
