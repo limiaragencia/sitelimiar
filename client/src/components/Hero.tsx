@@ -46,7 +46,7 @@ export function Hero() {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl text-gray-800 dark:text-gray-200 max-w-2xl leading-relaxed animate-fade-in-up drop-shadow-md font-normal mt-[15px] mb-[15px] pl-[7px] pr-[7px] pt-[3px] pb-[3px] ml-[7px] mr-[7px] text-justify">
+          <p className="text-lg md:text-xl text-gray-800 dark:text-gray-200 max-w-2xl leading-relaxed animate-fade-in-up drop-shadow-md font-normal mt-[15px] mb-[15px] pt-[3px] pb-[3px] ml-[7px] mr-[7px] text-justify pl-[0px] pr-[0px]">
             Unimos criatividade e ferramentas estratégicas de Inteligência Artificial para transformar negócios.
             Como agência criativa especializada em IA, desenvolvemos soluções inteligentes e personalizadas que
             projetam sua marca para o futuro e geram experiências extraordinárias.
