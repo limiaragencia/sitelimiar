@@ -13,9 +13,9 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:bg-dark-radial"></div>
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-10 dark:opacity-20">
         {/* Modern circuit pattern background */}
-        <svg className="w-full h-full" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+        <svg className="w-full h-full animate-fade-in-up" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <pattern id="circuit" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
               <path
@@ -23,9 +23,10 @@ export function Hero() {
                 stroke="currentColor"
                 strokeWidth="1"
                 fill="none"
+                className="text-limiar-orange"
               />
-              <circle cx="20" cy="20" r="3" fill="currentColor" />
-              <circle cx="80" cy="80" r="3" fill="currentColor" />
+              <circle cx="20" cy="20" r="3" fill="currentColor" className="text-limiar-gold" />
+              <circle cx="80" cy="80" r="3" fill="currentColor" className="text-limiar-orange" />
             </pattern>
           </defs>
           <rect width="100%" height="100%" fill="url(#circuit)" />
@@ -53,43 +54,44 @@ export function Hero() {
           </p>
 
           {/* Highlight Quote */}
-          <div className="bg-white/80 dark:bg-dark-card/60 backdrop-blur-md rounded-2xl p-8 mb-12 border border-gray-200 dark:border-dark-border animate-fade-in-up shadow-2xl dark:shadow-limiar-orange/10">
-            <blockquote className="text-2xl md:text-3xl font-poppins font-medium text-gray-900 dark:text-white italic">
+          <div className="bg-white/90 dark:bg-dark-card/70 backdrop-blur-xl rounded-3xl p-10 mb-16 border border-gray-200 dark:border-limiar-orange/30 animate-fade-in-up shadow-2xl dark:shadow-limiar-orange/20 relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-r from-limiar-orange/5 to-limiar-gold/5 dark:from-limiar-orange/10 dark:to-limiar-gold/10"></div>
+            <blockquote className="relative text-2xl md:text-3xl lg:text-4xl font-poppins font-medium text-gray-900 dark:text-white italic leading-relaxed">
               "Onde outros veem código, nós vemos poesia. Habitamos a intersecção precisa entre dados e imaginação,
-              criando experiências que não apenas transformam negócios — elas despertam futuros."
+              criando experiências que não apenas transformam negócios — elas <span className="text-limiar-orange font-bold">despertam futuros.</span>"
             </blockquote>
           </div>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12 animate-fade-in-up">
+          <div className="flex flex-col sm:flex-row gap-8 justify-center items-center mb-16 animate-fade-in-up">
             <Button
               onClick={() => scrollToSection("diferenca")}
-              className="px-8 py-4 bg-gradient-to-r from-limiar-orange to-limiar-gold text-white font-poppins font-semibold rounded-full text-lg hover:shadow-xl hover:scale-105 transition-all duration-300 animate-pulse-glow"
+              className="px-12 py-6 bg-gradient-to-r from-limiar-orange to-limiar-gold text-white font-poppins font-bold rounded-full text-xl hover:shadow-2xl hover:scale-110 transition-all duration-500 animate-pulse-glow shadow-lg"
             >
               Atravesse o Limiar
             </Button>
             <Button
               onClick={() => scrollToSection("solucoes")}
               variant="outline"
-              className="px-8 py-4 border-2 border-limiar-orange text-limiar-orange font-poppins font-semibold rounded-full text-lg hover:bg-limiar-orange hover:text-white transition-all duration-300"
+              className="px-12 py-6 border-3 border-limiar-orange text-limiar-orange font-poppins font-bold rounded-full text-xl hover:bg-limiar-orange hover:text-white hover:scale-110 transition-all duration-500 shadow-lg hover:shadow-2xl"
             >
               Construa o Impossível
             </Button>
           </div>
 
           {/* Stats */}
-          <div className="flex flex-col sm:flex-row gap-8 justify-center items-center text-center animate-fade-in-up">
-            <div className="flex items-center gap-2">
-              <span className="w-3 h-3 bg-limiar-orange rounded-full animate-pulse"></span>
-              <span className="text-lg font-medium">50+ marcas transformadas</span>
+          <div className="flex flex-col sm:flex-row gap-12 justify-center items-center text-center animate-fade-in-up">
+            <div className="flex items-center gap-3 group">
+              <span className="w-4 h-4 bg-limiar-orange rounded-full animate-pulse group-hover:scale-125 transition-transform duration-300"></span>
+              <span className="text-xl font-semibold text-gray-700 dark:text-gray-200 group-hover:text-limiar-orange transition-colors duration-300">50+ marcas transformadas</span>
             </div>
-            <div className="flex items-center gap-2">
-              <span className="w-3 h-3 bg-limiar-gold rounded-full animate-pulse"></span>
-              <span className="text-lg font-medium">Ecossistema de IA</span>
+            <div className="flex items-center gap-3 group">
+              <span className="w-4 h-4 bg-limiar-gold rounded-full animate-pulse group-hover:scale-125 transition-transform duration-300"></span>
+              <span className="text-xl font-semibold text-gray-700 dark:text-gray-200 group-hover:text-limiar-gold transition-colors duration-300">Ecossistema de IA</span>
             </div>
-            <div className="flex items-center gap-2">
-              <span className="w-3 h-3 bg-gradient-to-r from-limiar-orange to-limiar-gold rounded-full animate-pulse"></span>
-              <span className="text-lg font-medium">O futuro não espera</span>
+            <div className="flex items-center gap-3 group">
+              <span className="w-4 h-4 bg-gradient-to-r from-limiar-orange to-limiar-gold rounded-full animate-pulse group-hover:scale-125 transition-transform duration-300"></span>
+              <span className="text-xl font-semibold text-gray-700 dark:text-gray-200 group-hover:bg-gradient-to-r group-hover:from-limiar-orange group-hover:to-limiar-gold group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">O futuro não espera</span>
             </div>
           </div>
         </div>
