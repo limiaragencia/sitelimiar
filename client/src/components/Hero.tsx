@@ -37,7 +37,7 @@ export function Hero() {
           {/* Main Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-poppins font-bold mb-6 leading-tight animate-fade-in-up text-left">
             <span className="block text-gray-900 dark:text-white mb-2">Existe um lugar entre</span>
-            <span className="block text-4xl md:text-5xl lg:text-6xl font-bold text-limiar-orange mb-4">
+            <span className="block md:text-5xl lg:text-6xl font-bold text-limiar-orange mb-4 text-[90px]">
               o que foi e o que está por vir.
             </span>
             <span className="block text-xl md:text-2xl lg:text-3xl font-light text-gray-700 dark:text-gray-300">
