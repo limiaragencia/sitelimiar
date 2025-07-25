@@ -13,41 +13,41 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden pt-20">
       {/* Background Video */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:bg-dark-radial">
         <video 
           autoPlay 
           muted 
           loop 
           playsInline
-          className="w-full h-full object-cover opacity-30 dark:opacity-50"
+          className="w-full h-full object-cover opacity-15 dark:opacity-25"
         >
           <source src={backgroundVideo} type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/70 to-white/50 dark:from-dark-bg/90 dark:via-dark-bg/70 dark:to-dark-bg/50"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-white/98 via-white/90 to-white/85 dark:from-dark-bg/98 dark:via-dark-bg/90 dark:to-dark-bg/85"></div>
       </div>
 
       <div className="relative z-10 container mx-auto px-6">
         <div className="max-w-4xl">
           {/* Main Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-poppins font-bold mb-6 leading-tight animate-fade-in-up text-left">
-            <span className="block text-gray-900 dark:text-white mb-2">Existe um lugar entre</span>
-            <span className="block bg-gradient-to-r from-limiar-orange via-limiar-gold to-limiar-orange bg-clip-text text-transparent mb-4">
+            <span className="block text-gray-900 dark:text-white mb-2 drop-shadow-lg">Existe um lugar entre</span>
+            <span className="block text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-limiar-orange via-limiar-gold to-limiar-orange bg-clip-text text-transparent mb-4 drop-shadow-lg">
               o que foi e o que está por vir.
             </span>
-            <span className="block text-xl md:text-2xl lg:text-3xl font-light text-gray-700 dark:text-gray-300">
+            <span className="block text-xl md:text-2xl lg:text-3xl font-light text-gray-700 dark:text-gray-300 drop-shadow-lg">
               Bem-vindo(a) ao <span className="font-semibold text-limiar-orange">Limiar.</span>
             </span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mb-8 leading-relaxed animate-fade-in-up text-left">
+          <p className="text-lg md:text-xl text-gray-800 dark:text-gray-200 max-w-2xl mb-8 leading-relaxed animate-fade-in-up text-left drop-shadow-md font-medium">
             Unimos criatividade e ferramentas estratégicas de Inteligência Artificial para transformar negócios.
             Como agência criativa especializada em IA, desenvolvemos soluções inteligentes e personalizadas que
             projetam sua marca para o futuro e geram experiências extraordinárias.
           </p>
 
           {/* Highlight Quote */}
-          <div className="bg-white/95 dark:bg-dark-card/80 backdrop-blur-xl rounded-2xl p-8 mb-12 border border-gray-200 dark:border-limiar-orange/30 animate-fade-in-up shadow-xl dark:shadow-limiar-orange/20 relative overflow-hidden max-w-3xl">
+          <div className="bg-white/98 dark:bg-dark-card/90 backdrop-blur-xl rounded-2xl p-8 mb-12 border border-gray-300 dark:border-limiar-orange/40 animate-fade-in-up shadow-2xl dark:shadow-limiar-orange/30 relative overflow-hidden max-w-3xl">
             <div className="absolute inset-0 bg-gradient-to-r from-limiar-orange/5 to-limiar-gold/5 dark:from-limiar-orange/10 dark:to-limiar-gold/10"></div>
             <blockquote className="relative text-lg md:text-xl font-poppins font-medium text-gray-900 dark:text-white italic leading-relaxed text-left">
               "Onde outros veem código, nós vemos poesia. Habitamos a intersecção precisa entre dados e imaginação,
