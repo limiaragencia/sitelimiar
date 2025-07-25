@@ -54,7 +54,7 @@ export function NossaDiferenca() {
   ];
 
   return (
-    <section id="diferenca" className="py-24 bg-gray-50 dark:bg-gray-900">
+    <section id="diferenca" className="py-24 bg-gray-50 dark:bg-dark-gradient">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-20">
@@ -110,7 +110,7 @@ export function NossaDiferenca() {
 
           <div className="grid grid-cols-1 md:grid-cols-2">
             {/* Abordagem Convencional */}
-            <div className="p-8 bg-gray-50 dark:bg-gray-800">
+            <div className="p-8 bg-gray-50 dark:bg-dark-bg-secondary">
               <h4 className="text-2xl font-poppins font-bold text-gray-600 dark:text-gray-400 mb-6 text-center">
                 Abordagem Convencional
               </h4>

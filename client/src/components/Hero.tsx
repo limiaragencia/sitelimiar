@@ -12,7 +12,7 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-dark-bg dark:via-gray-900 dark:to-dark-bg"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:bg-dark-radial"></div>
       <div className="absolute inset-0 opacity-10">
         {/* Modern circuit pattern background */}
         <svg className="w-full h-full" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
@@ -53,7 +53,7 @@ export function Hero() {
           </p>
 
           {/* Highlight Quote */}
-          <div className="bg-white/80 dark:bg-dark-card/80 backdrop-blur-md rounded-2xl p-8 mb-12 border border-gray-200 dark:border-dark-border animate-fade-in-up">
+          <div className="bg-white/80 dark:bg-dark-card/60 backdrop-blur-md rounded-2xl p-8 mb-12 border border-gray-200 dark:border-dark-border animate-fade-in-up shadow-2xl dark:shadow-limiar-orange/10">
             <blockquote className="text-2xl md:text-3xl font-poppins font-medium text-gray-900 dark:text-white italic">
               "Onde outros veem código, nós vemos poesia. Habitamos a intersecção precisa entre dados e imaginação,
               criando experiências que não apenas transformam negócios — elas despertam futuros."

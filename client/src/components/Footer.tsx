@@ -1,4 +1,5 @@
-import { Brain, Linkedin, Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import { Linkedin, Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import logoWhite from "@assets/logo centralizada branca_1753484043527.png";
 
 export function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -9,18 +10,17 @@ export function Footer() {
   };
 
   return (
-    <footer id="contato" className="bg-gray-900 dark:bg-black text-white py-16">
+    <footer id="contato" className="bg-gray-900 dark:bg-dark-gradient text-white py-16">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Description */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-limiar-orange to-limiar-gold rounded-lg flex items-center justify-center">
-                <Brain className="text-white text-xl" />
-              </div>
-              <span className="text-3xl font-poppins font-bold bg-gradient-to-r from-limiar-orange to-limiar-gold bg-clip-text text-transparent">
-                limiar
-              </span>
+              <img 
+                src={logoWhite} 
+                alt="Limiar Logo" 
+                className="h-10 w-auto"
+              />
             </div>
             <p className="text-gray-300 leading-relaxed mb-6 max-w-md">
               Agência criativa especializada em IA. Transformamos negócios com soluções inteligentes e personalizadas
