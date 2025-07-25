@@ -36,22 +36,15 @@ export function Hero() {
       <div className="relative z-10 container mx-auto px-6">
         <div className="max-w-4xl">
           {/* Main Headline */}
-          <div className="mb-8 animate-fade-in-up text-left">
-            <h1 className="font-poppins leading-tight">
-              <span className="block text-2xl md:text-3xl lg:text-4xl font-light text-gray-600 dark:text-gray-400 mb-3 tracking-wide">
-                Existe um lugar entre
-              </span>
-              <span className="block text-4xl md:text-6xl lg:text-7xl font-bold text-limiar-orange mb-6 leading-none">
-                o que foi e o que está por vir.
-              </span>
-            </h1>
-            <p className="text-xl md:text-2xl lg:text-3xl font-light text-gray-700 dark:text-gray-300 mb-2">
-              Bem-vindo(a) ao
-            </p>
-            <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-limiar-orange">
-              Limiar.
-            </div>
-          </div>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-poppins font-bold mb-6 leading-tight animate-fade-in-up text-left">
+            <span className="block text-gray-900 dark:text-white mb-2">Existe um lugar entre</span>
+            <span className="block text-4xl md:text-5xl lg:text-6xl font-bold text-limiar-orange mb-4">
+              o que foi e o que está por vir.
+            </span>
+            <span className="block text-xl md:text-2xl lg:text-3xl font-light text-gray-700 dark:text-gray-300">
+              Bem-vindo(a) ao <span className="font-semibold text-limiar-orange">Limiar.</span>
+            </span>
+          </h1>
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-gray-800 dark:text-gray-200 max-w-2xl mb-8 leading-relaxed animate-fade-in-up text-left drop-shadow-md font-medium">
