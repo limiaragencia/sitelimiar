@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
-import backgroundVideo from "@assets/0_Digital_Maps_Connectivity_3840x2160_1753485443138.mp4";
 
 export function Hero() {
   const scrollToSection = (sectionId: string) => {
@@ -12,18 +11,26 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden pt-20">
-      {/* Background Video */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:bg-dark-radial">
-        <video 
-          autoPlay 
-          muted 
-          loop 
-          playsInline
-          className="w-full h-full object-cover opacity-15 dark:opacity-25"
-        >
-          <source src={backgroundVideo} type="video/mp4" />
-        </video>
-        <div className="absolute inset-0 bg-gradient-to-r from-white/98 via-white/90 to-white/85 dark:from-dark-bg/98 dark:via-dark-bg/90 dark:to-dark-bg/85"></div>
+      {/* Background Elements */}
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:bg-dark-radial"></div>
+      <div className="absolute inset-0 opacity-10 dark:opacity-20">
+        {/* Modern circuit pattern background */}
+        <svg className="w-full h-full animate-fade-in-up" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="circuit" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+              <path
+                d="M20,20 L80,20 M20,80 L80,80 M20,20 L20,80 M80,20 L80,80"
+                stroke="currentColor"
+                strokeWidth="1"
+                fill="none"
+                className="text-limiar-orange"
+              />
+              <circle cx="20" cy="20" r="3" fill="currentColor" className="text-limiar-gold" />
+              <circle cx="80" cy="80" r="3" fill="currentColor" className="text-limiar-orange" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#circuit)" />
+        </svg>
       </div>
 
       <div className="relative z-10 container mx-auto px-6">
