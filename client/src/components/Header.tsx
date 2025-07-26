@@ -21,10 +21,8 @@ export function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-black/50 via-blue-900/40 to-transparent backdrop-blur-md border-b border-gray-200/30 dark:border-orange-500/20 transition-all duration-300 relative">
-      <div className="absolute inset-0 bg-gradient-to-br from-white/60 via-orange-50/40 to-yellow-50/50 dark:from-dark-background/70 dark:via-dark-background/80 dark:to-orange-900/30"></div>
-      <div className="relative z-10">
-        <nav className="container mx-auto px-6 py-4">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-br from-white via-orange-50/30 to-yellow-50/40 dark:from-dark-background dark:via-dark-background/90 dark:to-orange-900/20 backdrop-blur-md border-b border-gray-200/30 dark:border-orange-500/20 transition-all duration-300">
+      <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
@@ -119,8 +117,7 @@ export function Header() {
             </div>
           </div>
         )}
-        </nav>
-      </div>
+      </nav>
     </header>
   );
 }
