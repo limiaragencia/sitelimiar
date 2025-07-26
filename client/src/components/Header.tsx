@@ -39,7 +39,7 @@ export function Header() {
               onClick={() => scrollToSection("diferenca")}
               className="text-gray-700 dark:text-gray-200 hover:text-limiar-orange transition-colors font-medium text-base tracking-wide"
             >
-              Nossa Diferença
+              Diferenciais Limiar
             </button>
             <button
               onClick={() => scrollToSection("solucoes")}
@@ -88,7 +88,7 @@ export function Header() {
                 onClick={() => scrollToSection("diferenca")}
                 className="text-gray-700 dark:text-gray-200 hover:text-limiar-orange transition-colors text-left font-medium text-base tracking-wide"
               >
-                Nossa Diferença
+                Diferenciais Limiar
               </button>
               <button
                 onClick={() => scrollToSection("solucoes")}
