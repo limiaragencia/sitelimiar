@@ -214,14 +214,14 @@ export function NossaDiferenca() {
             </div>
             
             {/* Glass text box */}
-            <div className="bg-black/20 backdrop-blur-md rounded-2xl p-6 border border-white/10">
+            <div className="bg-black/20 backdrop-blur-md rounded-2xl p-6 border border-white/10 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
               {/* Conversational title */}
-              <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3 group-hover:text-limiar-orange transition-colors duration-300">
+              <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3 group-hover:text-limiar-orange transition-colors duration-300" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
                 "Nossos clientes adoram tanto..."
               </h4>
               
               {/* Conversational description */}
-              <p className="text-gray-300 font-poppins font-thin leading-relaxed text-sm">
+              <p className="text-gray-300 font-poppins font-thin leading-relaxed text-sm" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
                 que <span className="text-limiar-orange font-semibold">95% renovam a parceria</span> após o primeiro projeto. 
                 Não é só satisfação — é <span className="text-limiar-orange">conexão genuína</span>.
               </p>
@@ -254,14 +254,14 @@ export function NossaDiferenca() {
             </div>
             
             {/* Glass text box */}
-            <div className="bg-black/20 backdrop-blur-md rounded-2xl p-6 border border-white/10">
+            <div className="bg-black/20 backdrop-blur-md rounded-2xl p-6 border border-white/10 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
               {/* Conversational title */}
-              <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3 group-hover:text-limiar-orange transition-colors duration-300">
+              <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3 group-hover:text-limiar-orange transition-colors duration-300" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
                 "Cada real investido vira..."
               </h4>
               
               {/* Conversational description */}
-              <p className="text-gray-300 font-poppins font-thin leading-relaxed text-sm">
+              <p className="text-gray-300 font-poppins font-thin leading-relaxed text-sm" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
                 <span className="text-limiar-orange font-semibold">3 reais de retorno</span> em média. 
                 Porque IA bem feita não é gasto — é <span className="text-limiar-orange">multiplicador de resultados</span>.
               </p>
@@ -294,14 +294,14 @@ export function NossaDiferenca() {
             </div>
             
             {/* Glass text box */}
-            <div className="bg-black/20 backdrop-blur-md rounded-2xl p-6 border border-white/10">
+            <div className="bg-black/20 backdrop-blur-md rounded-2xl p-6 border border-white/10 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
               {/* Conversational title */}
-              <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3 group-hover:text-limiar-orange transition-colors duration-300">
+              <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3 group-hover:text-limiar-orange transition-colors duration-300" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
                 "Urgência? Nós entendemos..."
               </h4>
               
               {/* Conversational description */}
-              <p className="text-gray-300 font-poppins font-thin leading-relaxed text-sm">
+              <p className="text-gray-300 font-poppins font-thin leading-relaxed text-sm" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
                 <span className="text-limiar-orange font-semibold">24 horas</span> para análise inicial e proposta estratégica. 
                 Porque <span className="text-limiar-orange">oportunidades não esperam</span>.
               </p>
