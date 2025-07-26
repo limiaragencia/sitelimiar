@@ -1,40 +1,6 @@
-import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Users, Eye, ServerCog, TrendingUp, Check, X } from "lucide-react";
 import backgroundImage from "@assets/194242_1753496244462.jpg";
-
-// CountUp Number Component
-interface CountUpNumberProps {
-  target: number;
-  suffix?: string;
-}
-
-const CountUpNumber: React.FC<CountUpNumberProps> = ({ target, suffix = '' }) => {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    const duration = 2000; // 2 seconds
-    const steps = 60;
-    const stepValue = target / steps;
-    const stepDuration = duration / steps;
-
-    let currentStep = 0;
-    const timer = setInterval(() => {
-      currentStep++;
-      const newValue = Math.min(currentStep * stepValue, target);
-      setCount(Math.round(newValue));
-
-      if (currentStep >= steps) {
-        clearInterval(timer);
-        setCount(target);
-      }
-    }, stepDuration);
-
-    return () => clearInterval(timer);
-  }, [target]);
-
-  return <span>{count}{suffix}</span>;
-};
 
 export function NossaDiferenca() {
   const pillars = [
@@ -201,54 +167,81 @@ export function NossaDiferenca() {
           })}
         </div>
 
-        {/* Animated Stats Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+        {/* Enhanced Stats Section */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
           {/* Stat 1 - 95% Satisfaction */}
-          <div className="group bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-black/30 hover:border-limiar-orange/50 hover:shadow-[0_0_30px_rgba(255,127,0,0.3)] transition-all duration-300">
-            <div className="text-center">
-              <div className="text-5xl font-black font-poppins text-limiar-orange mb-4">
-                <CountUpNumber target={95} suffix="%" />
+          <div className="group text-center relative">
+            {/* Massive glass number with animations */}
+            <div className="relative mb-8">
+              <div className="text-9xl font-black font-poppins text-limiar-orange group-hover:scale-125 transition-all duration-700 shadow-[4px_4px_20px_rgba(0,0,0,0.6)] animate-pulse" style={{ textShadow: '1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000' }}>
+                95%
               </div>
-              <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3">
-                "Nossos clientes adoram tanto..."
-              </h4>
-              <p className="text-gray-300 font-poppins font-thin leading-relaxed text-sm">
-                que <span className="text-limiar-orange font-semibold">95% renovam a parceria</span> após o primeiro projeto. 
-                Não é só satisfação — é <span className="text-limiar-orange">conexão genuína</span>.
-              </p>
+              {/* Floating light particles */}
+              <div className="absolute top-0 left-1/4 w-3 h-3 bg-limiar-orange/50 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-opacity duration-1000" style={{ animationDelay: '0s' }}></div>
+              <div className="absolute top-1/3 right-1/4 w-2 h-2 bg-limiar-gold/60 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-opacity duration-1000" style={{ animationDelay: '0.5s' }}></div>
+              <div className="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-limiar-orange/40 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-opacity duration-1000" style={{ animationDelay: '1s' }}></div>
             </div>
+            
+            {/* Conversational title */}
+            <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3 group-hover:text-limiar-orange transition-colors duration-300">
+              "Nossos clientes adoram tanto..."
+            </h4>
+            
+            {/* Conversational description */}
+            <p className="text-gray-300 font-poppins font-thin leading-relaxed text-sm">
+              que <span className="text-limiar-orange font-semibold">95% renovam a parceria</span> após o primeiro projeto. 
+              Não é só satisfação — é <span className="text-limiar-orange">conexão genuína</span>.
+            </p>
           </div>
 
           {/* Stat 2 - 3x ROI */}
-          <div className="group bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-black/30 hover:border-limiar-orange/50 hover:shadow-[0_0_30px_rgba(255,127,0,0.3)] transition-all duration-300">
-            <div className="text-center">
-              <div className="text-5xl font-black font-poppins text-limiar-orange mb-4">
-                <CountUpNumber target={3} suffix="x" />
+          <div className="group text-center relative">
+            {/* Massive glass number with animations */}
+            <div className="relative mb-8">
+              <div className="text-9xl font-black font-poppins text-limiar-orange group-hover:scale-125 transition-all duration-700 shadow-[4px_4px_20px_rgba(0,0,0,0.6)] animate-pulse" style={{ textShadow: '1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000' }}>
+                3x
               </div>
-              <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3">
-                "Cada real investido vira..."
-              </h4>
-              <p className="text-gray-300 font-poppins font-thin leading-relaxed text-sm">
-                <span className="text-limiar-orange font-semibold">3 reais de retorno</span> em média. 
-                Porque IA bem feita não é gasto — é <span className="text-limiar-orange">multiplicador de resultados</span>.
-              </p>
+              {/* Floating light particles */}
+              <div className="absolute top-1/4 right-1/3 w-2.5 h-2.5 bg-limiar-gold/50 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-opacity duration-1000" style={{ animationDelay: '0.2s' }}></div>
+              <div className="absolute bottom-1/3 left-1/4 w-2 h-2 bg-limiar-orange/60 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-opacity duration-1000" style={{ animationDelay: '0.7s' }}></div>
+              <div className="absolute top-1/2 right-1/4 w-1.5 h-1.5 bg-limiar-gold/40 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-opacity duration-1000" style={{ animationDelay: '1.2s' }}></div>
             </div>
+            
+            {/* Conversational title */}
+            <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3 group-hover:text-limiar-orange transition-colors duration-300">
+              "Cada real investido vira..."
+            </h4>
+            
+            {/* Conversational description */}
+            <p className="text-gray-300 font-poppins font-thin leading-relaxed text-sm">
+              <span className="text-limiar-orange font-semibold">3 reais de retorno</span> em média. 
+              Porque IA bem feita não é gasto — é <span className="text-limiar-orange">multiplicador de resultados</span>.
+            </p>
           </div>
 
           {/* Stat 3 - 24h Response */}
-          <div className="group bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-black/30 hover:border-limiar-orange/50 hover:shadow-[0_0_30px_rgba(255,127,0,0.3)] transition-all duration-300">
-            <div className="text-center">
-              <div className="text-5xl font-black font-poppins text-limiar-orange mb-4">
-                <CountUpNumber target={24} suffix="h" />
+          <div className="group text-center relative">
+            {/* Massive glass number with animations */}
+            <div className="relative mb-8">
+              <div className="text-9xl font-black font-poppins text-limiar-orange group-hover:scale-125 transition-all duration-700 shadow-[4px_4px_20px_rgba(0,0,0,0.6)] animate-pulse" style={{ textShadow: '1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000' }}>
+                24h
               </div>
-              <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3">
-                "Urgência? Nós entendemos..."
-              </h4>
-              <p className="text-gray-300 font-poppins font-thin leading-relaxed text-sm">
-                <span className="text-limiar-orange font-semibold">24 horas</span> para análise inicial e proposta estratégica. 
-                Porque <span className="text-limiar-orange">oportunidades não esperam</span>.
-              </p>
+              {/* Floating light particles */}
+              <div className="absolute top-1/3 left-1/4 w-3 h-3 bg-limiar-orange/50 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-opacity duration-1000" style={{ animationDelay: '0.3s' }}></div>
+              <div className="absolute bottom-1/4 right-1/3 w-2 h-2 bg-limiar-gold/60 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-opacity duration-1000" style={{ animationDelay: '0.8s' }}></div>
+              <div className="absolute top-1/4 right-1/2 w-1.5 h-1.5 bg-limiar-orange/40 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-opacity duration-1000" style={{ animationDelay: '1.3s' }}></div>
             </div>
+            
+            {/* Conversational title */}
+            <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3 group-hover:text-limiar-orange transition-colors duration-300">
+              "Urgência? Nós entendemos..."
+            </h4>
+            
+            {/* Conversational description */}
+            <p className="text-gray-300 font-poppins font-thin leading-relaxed text-sm">
+              <span className="text-limiar-orange font-semibold">24 horas</span> para análise inicial e proposta estratégica. 
+              Porque <span className="text-limiar-orange">oportunidades não esperam</span>.
+            </p>
           </div>
         </div>
 
