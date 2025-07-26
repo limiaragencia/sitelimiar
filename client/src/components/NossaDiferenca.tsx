@@ -193,7 +193,7 @@ export function NossaDiferenca() {
           <div className="group text-center relative">
             {/* Massive glass number with animations */}
             <div className="relative mb-8">
-              <div className="text-9xl font-black font-poppins text-limiar-orange">
+              <div className="text-9xl font-black font-poppins text-limiar-orange" style={{ textShadow: '3px 3px 8px rgba(0,0,0,0.8), 1px 1px 4px rgba(0,0,0,0.6)' }}>
                 {startCount ? (
                   <CountUp
                     start={0}
@@ -229,7 +229,7 @@ export function NossaDiferenca() {
           <div className="group text-center relative">
             {/* Massive glass number with animations */}
             <div className="relative mb-8">
-              <div className="text-9xl font-black font-poppins text-limiar-orange">
+              <div className="text-9xl font-black font-poppins text-limiar-orange" style={{ textShadow: '3px 3px 8px rgba(0,0,0,0.8), 1px 1px 4px rgba(0,0,0,0.6)' }}>
                 {startCount ? (
                   <CountUp
                     start={0}
@@ -266,7 +266,7 @@ export function NossaDiferenca() {
           <div className="group text-center relative">
             {/* Massive glass number with animations */}
             <div className="relative mb-8">
-              <div className="text-9xl font-black font-poppins text-limiar-orange">
+              <div className="text-9xl font-black font-poppins text-limiar-orange" style={{ textShadow: '3px 3px 8px rgba(0,0,0,0.8), 1px 1px 4px rgba(0,0,0,0.6)' }}>
                 {startCount ? (
                   <CountUp
                     start={0}
