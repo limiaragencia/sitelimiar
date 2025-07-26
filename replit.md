@@ -22,6 +22,16 @@ This is a full-stack TypeScript application for Limiar, a Brazilian AI agency. T
 - **Enhanced Statistics**: New metrics section with interactive hover effects and brand colors
 - **Section Title**: "OS 4 PILARES DA LIMIAR | COMO HABITAMOS O FUTURO" with unified styling and orange accent
 - **Texture Overlay**: Diagonal crosshatch texture pattern (30% opacity) over background for enhanced visual depth
+- **Interactive Shadow Effects**: Advanced hover shadows with brand color accents, scaling transforms, and shimmer overlays on pillar cards
+
+### Interactive Hover Shadow Effects (January 2025)
+- **Hero Section Buttons**: Enhanced with brand-colored shadows (rgba(255,127,0,0.4)), shimmer effects, and smooth scaling
+- **Hero Stats Elements**: Subtle shadow containers with backdrop blur and brand-colored shadow accents  
+- **Nossa Diferença Cards**: Multi-layered shadows with brand color highlights and gradient overlays on hover
+- **Soluções Cards**: Comprehensive shadow system with light/dark mode variants and transform-gpu optimization
+- **WhatsApp Button**: Dynamic shadows that change based on click state (green/orange) with shimmer animation
+- **Footer Social Links**: Elevated shadow effects with scaling and brand color glow
+- **Header Theme Toggle**: Professional shadow enhancement with subtle scaling interaction
 
 ## User Preferences
 

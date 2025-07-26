@@ -108,7 +108,7 @@ export function NossaDiferenca() {
             return (
               <div
                 key={index}
-                className="group bg-white/95 backdrop-blur-sm rounded-2xl p-8 hover:shadow-2xl hover:scale-[1.02] transition-all duration-500 border border-white/20 animate-fade-in-up hover:bg-white"
+                className="group bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-[0_25px_60px_rgba(0,0,0,0.3),0_0_50px_rgba(255,127,0,0.2)] hover:scale-[1.02] transition-all duration-500 border border-white/20 animate-fade-in-up hover:bg-white transform-gpu relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/10 before:via-transparent before:to-limiar-orange/5 before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-500"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <div className="flex items-center gap-4 mb-6">
