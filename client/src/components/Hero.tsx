@@ -236,7 +236,6 @@ export function Hero() {
         className="absolute inset-0 w-full h-full bg-black dark:bg-gray-900"
         style={{ zIndex: 0 }}
       />
-      
       {/* Texture/Ranhura Overlay */}
       <div 
         className="absolute inset-0 opacity-20"
@@ -249,7 +248,6 @@ export function Hero() {
           zIndex: 10
         }}
       ></div>
-      
       <div className="relative z-20 container mx-auto px-6 font-thin">
         <div className="max-w-4xl">
           {/* Main Headline */}
@@ -292,7 +290,7 @@ export function Hero() {
           {/* Stats - Distribuídos horizontalmente */}
           <div className="w-full max-w-5xl animate-fade-in-up">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 justify-items-center">
-              <div className="flex items-center gap-4 group animate-[slideInLeft_0.8s_ease-out_0.2s_both] justify-center md:justify-start p-4 rounded-lg transition-all duration-300 hover:shadow-[0_10px_30px_rgba(255,127,0,0.2)] hover:bg-white/5 backdrop-blur-sm">
+              <div className="flex items-center gap-4 group animate-[slideInLeft_0.8s_ease-out_0.2s_both] justify-center md:justify-start p-4 rounded-lg transition-all duration-300 hover:shadow-[0_10px_30px_rgba(255,127,0,0.2)] hover:bg-white/5 backdrop-blur-sm mt-[0px] mb-[0px] pt-[14px] pb-[14px] pl-[0px] pr-[0px] ml-[-15px] mr-[-15px]">
                 <div className="relative">
                   <TrendingUp className="w-8 h-8 text-limiar-orange animate-pulse group-hover:scale-125 group-hover:text-limiar-gold transition-all duration-300" />
                   <div className="absolute inset-0 bg-limiar-orange/20 rounded-full blur-md animate-pulse group-hover:bg-limiar-gold/30 transition-colors duration-300"></div>
