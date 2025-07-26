@@ -313,7 +313,7 @@ export function NossaDiferenca() {
         <div className="bg-black/20 backdrop-blur-md rounded-2xl overflow-hidden shadow-2xl border border-white/20 animate-fade-in-up">
           <div className="bg-gradient-to-r from-limiar-orange to-limiar-gold p-8">
             <h3 className="text-3xl font-poppins font-bold text-white text-center" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
-              O que outros fazem X <span className="text-limiar-orange relative inline-block group cursor-pointer overflow-hidden">
+              O que outros fazem X <span className="text-limiar-orange relative inline group cursor-pointer overflow-hidden">
                 o que a Limiar faz
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out"></div>
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-limiar-orange/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out" style={{ animationDelay: '0.1s' }}></div>
