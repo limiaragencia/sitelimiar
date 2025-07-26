@@ -13,6 +13,17 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center overflow-hidden pt-40">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:bg-dark-radial"></div>
+      
+      {/* Animated Background Particles */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-gradient-to-r from-limiar-orange/20 to-limiar-gold/20 rounded-full blur-xl animate-float"></div>
+        <div className="absolute top-3/4 right-1/4 w-24 h-24 bg-gradient-to-r from-limiar-gold/15 to-limiar-orange/15 rounded-full blur-lg animate-[float_4s_ease-in-out_infinite_1s]"></div>
+        <div className="absolute top-1/2 left-1/3 w-16 h-16 bg-gradient-to-r from-limiar-orange/25 to-limiar-gold/25 rounded-full blur-md animate-[float_3.5s_ease-in-out_infinite_0.5s]"></div>
+        <div className="absolute bottom-1/4 right-1/3 w-20 h-20 bg-gradient-to-r from-limiar-gold/20 to-limiar-orange/20 rounded-full blur-lg animate-[float_4.5s_ease-in-out_infinite_2s]"></div>
+        <div className="absolute top-1/6 right-1/6 w-12 h-12 bg-gradient-to-r from-limiar-orange/30 to-limiar-gold/30 rounded-full blur-sm animate-[float_3s_ease-in-out_infinite_1.5s]"></div>
+        <div className="absolute bottom-1/3 left-1/6 w-28 h-28 bg-gradient-to-r from-limiar-gold/10 to-limiar-orange/10 rounded-full blur-xl animate-[float_5s_ease-in-out_infinite_3s]"></div>
+      </div>
+      
       <div className="absolute inset-0 opacity-10 dark:opacity-20">
         {/* Modern circuit pattern background */}
         <svg className="w-full h-full animate-fade-in-up" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
