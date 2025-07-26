@@ -275,28 +275,32 @@ export function Hero() {
             </Button>
           </div>
 
-          {/* Stats */}
-          <div className="flex flex-col sm:flex-row gap-8 items-start animate-fade-in-up text-[25px]">
-            <div className="flex items-center gap-3 group animate-[slideInLeft_0.8s_ease-out_0.2s_both]">
-              <div className="relative">
-                <TrendingUp className="w-5 h-5 text-limiar-orange animate-pulse group-hover:scale-125 group-hover:text-limiar-gold transition-all duration-300" />
-                <div className="absolute inset-0 bg-limiar-orange/20 rounded-full blur-md animate-pulse group-hover:bg-limiar-gold/30 transition-colors duration-300"></div>
+          {/* Stats - Distribuídos horizontalmente */}
+          <div className="w-full max-w-5xl animate-fade-in-up">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 justify-items-center">
+              <div className="flex items-center gap-4 group animate-[slideInLeft_0.8s_ease-out_0.2s_both] justify-center md:justify-start">
+                <div className="relative">
+                  <TrendingUp className="w-8 h-8 text-limiar-orange animate-pulse group-hover:scale-125 group-hover:text-limiar-gold transition-all duration-300" />
+                  <div className="absolute inset-0 bg-limiar-orange/20 rounded-full blur-md animate-pulse group-hover:bg-limiar-gold/30 transition-colors duration-300"></div>
+                </div>
+                <span className="font-medium text-white drop-shadow-lg group-hover:bg-gradient-to-r group-hover:from-limiar-orange group-hover:to-limiar-gold group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 text-[22px] text-center md:text-left">50+ marcas transformadas</span>
               </div>
-              <span className="font-medium text-white drop-shadow-lg group-hover:bg-gradient-to-r group-hover:from-limiar-orange group-hover:to-limiar-gold group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 text-[22px] mt-[5px] mb-[5px] pt-[35px] pb-[35px]">50+ marcas transformadas</span>
-            </div>
-            <div className="flex items-center gap-3 group animate-[slideInLeft_0.8s_ease-out_0.4s_both]">
-              <div className="relative">
-                <Brain className="w-5 h-5 text-limiar-orange animate-pulse group-hover:scale-125 group-hover:text-limiar-gold transition-all duration-300" />
-                <div className="absolute inset-0 bg-limiar-orange/20 rounded-full blur-md animate-pulse group-hover:bg-limiar-gold/30 transition-colors duration-300"></div>
+              
+              <div className="flex items-center gap-4 group animate-[slideInLeft_0.8s_ease-out_0.4s_both] justify-center">
+                <div className="relative">
+                  <Brain className="w-8 h-8 text-limiar-orange animate-pulse group-hover:scale-125 group-hover:text-limiar-gold transition-all duration-300" />
+                  <div className="absolute inset-0 bg-limiar-orange/20 rounded-full blur-md animate-pulse group-hover:bg-limiar-gold/30 transition-colors duration-300"></div>
+                </div>
+                <span className="font-medium text-white drop-shadow-lg group-hover:bg-gradient-to-r group-hover:from-limiar-orange group-hover:to-limiar-gold group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 text-[25px] text-center">Ecossistema de IA</span>
               </div>
-              <span className="font-medium text-white drop-shadow-lg group-hover:bg-gradient-to-r group-hover:from-limiar-orange group-hover:to-limiar-gold group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 text-[25px] mt-[5px] mb-[5px] pt-[35px] pb-[35px]">Ecossistema de IA</span>
-            </div>
-            <div className="flex items-center gap-3 group animate-[slideInLeft_0.8s_ease-out_0.6s_both]">
-              <div className="relative">
-                <Zap className="w-5 h-5 text-limiar-orange animate-pulse group-hover:scale-125 group-hover:text-limiar-gold transition-all duration-300" />
-                <div className="absolute inset-0 bg-limiar-orange/20 rounded-full blur-md animate-pulse group-hover:bg-limiar-gold/30 transition-colors duration-300"></div>
+              
+              <div className="flex items-center gap-4 group animate-[slideInLeft_0.8s_ease-out_0.6s_both] justify-center md:justify-end">
+                <div className="relative">
+                  <Zap className="w-8 h-8 text-limiar-orange animate-pulse group-hover:scale-125 group-hover:text-limiar-gold transition-all duration-300" />
+                  <div className="absolute inset-0 bg-limiar-orange/20 rounded-full blur-md animate-pulse group-hover:bg-limiar-gold/30 transition-colors duration-300"></div>
+                </div>
+                <span className="font-medium text-white drop-shadow-lg group-hover:bg-gradient-to-r group-hover:from-limiar-orange group-hover:to-limiar-gold group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 text-[25px] text-center md:text-right">O futuro não espera</span>
               </div>
-              <span className="font-medium text-white drop-shadow-lg group-hover:bg-gradient-to-r group-hover:from-limiar-orange group-hover:to-limiar-gold group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 text-[25px] mt-[5px] mb-[5px] pt-[35px] pb-[35px] ml-[0px] mr-[0px] pl-[0px] pr-[0px]">O futuro não espera</span>
             </div>
           </div>
         </div>
