@@ -1,8 +1,30 @@
 import { Button } from "@/components/ui/button";
 import { Users, Eye, ServerCog, TrendingUp, Check, X } from "lucide-react";
 import backgroundImage from "@assets/194242_1753496244462.jpg";
+import CountUp from 'react-countup';
+import { useEffect, useState } from 'react';
 
 export function NossaDiferenca() {
+  const [startCount, setStartCount] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setStartCount(true);
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    const section = document.getElementById('stats-section');
+    if (section) {
+      observer.observe(section);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   const pillars = [
     {
       icon: Users,
@@ -166,13 +188,24 @@ export function NossaDiferenca() {
         </div>
 
         {/* Enhanced Stats Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
+        <div id="stats-section" className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
           {/* Stat 1 - 95% Satisfaction */}
           <div className="group text-center relative">
             {/* Massive glass number with animations */}
             <div className="relative mb-8">
               <div className="text-9xl font-black font-poppins text-limiar-orange">
-                95%
+                {startCount ? (
+                  <CountUp
+                    start={0}
+                    end={95}
+                    duration={2.5}
+                    suffix="%"
+                    useEasing={true}
+                    easingFn={(t, b, c, d) => c * (1 - Math.pow(2, -10 * t / d)) * 1024 / 1023 + b}
+                  />
+                ) : (
+                  "0%"
+                )}
               </div>
               {/* Floating light particles */}
               <div className="absolute top-0 left-1/4 w-3 h-3 bg-limiar-orange/50 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-opacity duration-1000" style={{ animationDelay: '0s' }}></div>
@@ -197,7 +230,19 @@ export function NossaDiferenca() {
             {/* Massive glass number with animations */}
             <div className="relative mb-8">
               <div className="text-9xl font-black font-poppins text-limiar-orange">
-                3x
+                {startCount ? (
+                  <CountUp
+                    start={0}
+                    end={3}
+                    duration={2.8}
+                    suffix="x"
+                    useEasing={true}
+                    easingFn={(t, b, c, d) => c * (1 - Math.pow(2, -10 * t / d)) * 1024 / 1023 + b}
+                    delay={0.3}
+                  />
+                ) : (
+                  "0x"
+                )}
               </div>
               {/* Floating light particles */}
               <div className="absolute top-1/4 right-1/3 w-2.5 h-2.5 bg-limiar-gold/50 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-opacity duration-1000" style={{ animationDelay: '0.2s' }}></div>
@@ -222,7 +267,19 @@ export function NossaDiferenca() {
             {/* Massive glass number with animations */}
             <div className="relative mb-8">
               <div className="text-9xl font-black font-poppins text-limiar-orange">
-                24h
+                {startCount ? (
+                  <CountUp
+                    start={0}
+                    end={24}
+                    duration={3.1}
+                    suffix="h"
+                    useEasing={true}
+                    easingFn={(t, b, c, d) => c * (1 - Math.pow(2, -10 * t / d)) * 1024 / 1023 + b}
+                    delay={0.6}
+                  />
+                ) : (
+                  "0h"
+                )}
               </div>
               {/* Floating light particles */}
               <div className="absolute top-1/3 left-1/4 w-3 h-3 bg-limiar-orange/50 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-opacity duration-1000" style={{ animationDelay: '0.3s' }}></div>
