@@ -283,7 +283,7 @@ export function Hero() {
                   <TrendingUp className="w-8 h-8 text-limiar-orange animate-pulse group-hover:scale-125 group-hover:text-limiar-gold transition-all duration-300" />
                   <div className="absolute inset-0 bg-limiar-orange/20 rounded-full blur-md animate-pulse group-hover:bg-limiar-gold/30 transition-colors duration-300"></div>
                 </div>
-                <span className="font-medium text-white drop-shadow-lg group-hover:bg-gradient-to-r group-hover:from-limiar-orange group-hover:to-limiar-gold group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 text-center md:text-left text-[18px]">50+ marcas transformadas</span>
+                <span className="text-white drop-shadow-lg group-hover:bg-gradient-to-r group-hover:from-limiar-orange group-hover:to-limiar-gold group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 text-center md:text-left text-[18px] font-bold">50+ marcas transformadas</span>
               </div>
               
               <div className="flex items-center gap-4 group animate-[slideInLeft_0.8s_ease-out_0.4s_both] justify-center">
