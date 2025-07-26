@@ -213,16 +213,19 @@ export function NossaDiferenca() {
               <div className="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-limiar-orange/40 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-opacity duration-1000" style={{ animationDelay: '1s' }}></div>
             </div>
             
-            {/* Conversational title */}
-            <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3 group-hover:text-limiar-orange transition-colors duration-300">
-              "Nossos clientes adoram tanto..."
-            </h4>
-            
-            {/* Conversational description */}
-            <p className="text-gray-300 font-poppins font-thin leading-relaxed text-sm">
-              que <span className="text-limiar-orange font-semibold">95% renovam a parceria</span> após o primeiro projeto. 
-              Não é só satisfação — é <span className="text-limiar-orange">conexão genuína</span>.
-            </p>
+            {/* Glass text box */}
+            <div className="bg-black/90 backdrop-blur-md rounded-2xl p-6 border border-white/10">
+              {/* Conversational title */}
+              <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3 group-hover:text-limiar-orange transition-colors duration-300">
+                "Nossos clientes adoram tanto..."
+              </h4>
+              
+              {/* Conversational description */}
+              <p className="text-gray-300 font-poppins font-thin leading-relaxed text-sm">
+                que <span className="text-limiar-orange font-semibold">95% renovam a parceria</span> após o primeiro projeto. 
+                Não é só satisfação — é <span className="text-limiar-orange">conexão genuína</span>.
+              </p>
+            </div>
           </div>
 
           {/* Stat 2 - 3x ROI */}
@@ -250,16 +253,19 @@ export function NossaDiferenca() {
               <div className="absolute top-1/2 right-1/4 w-1.5 h-1.5 bg-limiar-gold/40 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-opacity duration-1000" style={{ animationDelay: '1.2s' }}></div>
             </div>
             
-            {/* Conversational title */}
-            <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3 group-hover:text-limiar-orange transition-colors duration-300">
-              "Cada real investido vira..."
-            </h4>
-            
-            {/* Conversational description */}
-            <p className="text-gray-300 font-poppins font-thin leading-relaxed text-sm">
-              <span className="text-limiar-orange font-semibold">3 reais de retorno</span> em média. 
-              Porque IA bem feita não é gasto — é <span className="text-limiar-orange">multiplicador de resultados</span>.
-            </p>
+            {/* Glass text box */}
+            <div className="bg-black/90 backdrop-blur-md rounded-2xl p-6 border border-white/10">
+              {/* Conversational title */}
+              <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3 group-hover:text-limiar-orange transition-colors duration-300">
+                "Cada real investido vira..."
+              </h4>
+              
+              {/* Conversational description */}
+              <p className="text-gray-300 font-poppins font-thin leading-relaxed text-sm">
+                <span className="text-limiar-orange font-semibold">3 reais de retorno</span> em média. 
+                Porque IA bem feita não é gasto — é <span className="text-limiar-orange">multiplicador de resultados</span>.
+              </p>
+            </div>
           </div>
 
           {/* Stat 3 - 24h Response */}
@@ -287,16 +293,19 @@ export function NossaDiferenca() {
               <div className="absolute top-1/4 right-1/2 w-1.5 h-1.5 bg-limiar-orange/40 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-opacity duration-1000" style={{ animationDelay: '1.3s' }}></div>
             </div>
             
-            {/* Conversational title */}
-            <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3 group-hover:text-limiar-orange transition-colors duration-300">
-              "Urgência? Nós entendemos..."
-            </h4>
-            
-            {/* Conversational description */}
-            <p className="text-gray-300 font-poppins font-thin leading-relaxed text-sm">
-              <span className="text-limiar-orange font-semibold">24 horas</span> para análise inicial e proposta estratégica. 
-              Porque <span className="text-limiar-orange">oportunidades não esperam</span>.
-            </p>
+            {/* Glass text box */}
+            <div className="bg-black/90 backdrop-blur-md rounded-2xl p-6 border border-white/10">
+              {/* Conversational title */}
+              <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3 group-hover:text-limiar-orange transition-colors duration-300">
+                "Urgência? Nós entendemos..."
+              </h4>
+              
+              {/* Conversational description */}
+              <p className="text-gray-300 font-poppins font-thin leading-relaxed text-sm">
+                <span className="text-limiar-orange font-semibold">24 horas</span> para análise inicial e proposta estratégica. 
+                Porque <span className="text-limiar-orange">oportunidades não esperam</span>.
+              </p>
+            </div>
           </div>
         </div>
 
