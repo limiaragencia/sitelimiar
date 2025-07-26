@@ -71,7 +71,7 @@ export function Solucoes() {
     >
       {/* Background Pattern */}
       <div 
-        className="absolute inset-0 opacity-10 dark:opacity-5"
+        className="absolute inset-0"
         style={{
           backgroundImage: `
             radial-gradient(circle at 25% 25%, rgba(255,127,0,0.2) 0%, transparent 50%),
