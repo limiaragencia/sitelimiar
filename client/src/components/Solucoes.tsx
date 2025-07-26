@@ -78,7 +78,7 @@ export function Solucoes() {
           muted
           playsInline
           preload="metadata"
-          className="w-full h-full object-cover opacity-80"
+          className="w-full h-full object-cover opacity-30"
           style={{
             filter: 'blur(1px) saturate(1.2)',
             animation: 'videoFadeLoop 15s ease-in-out infinite',
@@ -113,8 +113,11 @@ export function Solucoes() {
           }}
         ></div>
         
+        {/* Dark overlay for better contrast */}
+        <div className="absolute inset-0 bg-black/60"></div>
+        
         {/* Color overlay for integration */}
-        <div className="absolute inset-0 bg-gradient-to-br from-orange-50/30 via-transparent to-blue-50/20 dark:from-orange-900/20 dark:via-transparent dark:to-blue-900/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-orange-900/20 via-transparent to-blue-900/10 dark:from-orange-900/30 dark:via-transparent dark:to-blue-900/20"></div>
       </div>
       
       {/* Floating Particles */}
@@ -145,7 +148,7 @@ export function Solucoes() {
           {/* Blocos de Diferenciação Visual */}
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
             {/* Diferenciação */}
-            <div className="group relative bg-gradient-to-br from-white to-orange-50/50 dark:from-dark-card dark:to-orange-900/20 rounded-2xl p-8 border border-orange-200/50 dark:border-orange-800/30 hover:border-orange-300/70 dark:hover:border-orange-600/50 transition-all duration-500 hover:shadow-[0_20px_40px_rgba(255,127,0,0.15)] dark:hover:shadow-[0_20px_40px_rgba(255,127,0,0.25)] hover:scale-[1.02] transform-gpu overflow-hidden">
+            <div className="group relative bg-gradient-to-br from-white/95 to-orange-50/80 dark:from-gray-800/95 dark:to-orange-900/30 rounded-2xl p-8 border border-orange-200/70 dark:border-orange-700/50 hover:border-orange-300/90 dark:hover:border-orange-600/70 transition-all duration-500 hover:shadow-[0_20px_40px_rgba(255,127,0,0.25)] dark:hover:shadow-[0_20px_40px_rgba(255,127,0,0.35)] hover:scale-[1.02] transform-gpu overflow-hidden backdrop-blur-sm">
               <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-orange-400/20 to-orange-600/20 rounded-full -translate-y-8 translate-x-8 blur-xl"></div>
               <div className="relative z-10">
                 <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
@@ -161,7 +164,7 @@ export function Solucoes() {
             </div>
 
             {/* Simplificação */}
-            <div className="group relative bg-gradient-to-br from-white to-blue-50/50 dark:from-dark-card dark:to-blue-900/20 rounded-2xl p-8 border border-blue-200/50 dark:border-blue-800/30 hover:border-blue-300/70 dark:hover:border-blue-600/50 transition-all duration-500 hover:shadow-[0_20px_40px_rgba(59,130,246,0.15)] dark:hover:shadow-[0_20px_40px_rgba(59,130,246,0.25)] hover:scale-[1.02] transform-gpu overflow-hidden">
+            <div className="group relative bg-gradient-to-br from-white/95 to-blue-50/80 dark:from-gray-800/95 dark:to-blue-900/30 rounded-2xl p-8 border border-blue-200/70 dark:border-blue-700/50 hover:border-blue-300/90 dark:hover:border-blue-600/70 transition-all duration-500 hover:shadow-[0_20px_40px_rgba(59,130,246,0.25)] dark:hover:shadow-[0_20px_40px_rgba(59,130,246,0.35)] hover:scale-[1.02] transform-gpu overflow-hidden backdrop-blur-sm">
               <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-400/20 to-blue-600/20 rounded-full -translate-y-8 translate-x-8 blur-xl"></div>
               <div className="relative z-10">
                 <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
@@ -177,7 +180,7 @@ export function Solucoes() {
             </div>
 
             {/* Personalização */}
-            <div className="group relative bg-gradient-to-br from-white to-purple-50/50 dark:from-dark-card dark:to-purple-900/20 rounded-2xl p-8 border border-purple-200/50 dark:border-purple-800/30 hover:border-purple-300/70 dark:hover:border-purple-600/50 transition-all duration-500 hover:shadow-[0_20px_40px_rgba(147,51,234,0.15)] dark:hover:shadow-[0_20px_40px_rgba(147,51,234,0.25)] hover:scale-[1.02] transform-gpu overflow-hidden">
+            <div className="group relative bg-gradient-to-br from-white/95 to-purple-50/80 dark:from-gray-800/95 dark:to-purple-900/30 rounded-2xl p-8 border border-purple-200/70 dark:border-purple-700/50 hover:border-purple-300/90 dark:hover:border-purple-600/70 transition-all duration-500 hover:shadow-[0_20px_40px_rgba(147,51,234,0.25)] dark:hover:shadow-[0_20px_40px_rgba(147,51,234,0.35)] hover:scale-[1.02] transform-gpu overflow-hidden backdrop-blur-sm">
               <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-purple-400/20 to-purple-600/20 rounded-full -translate-y-8 translate-x-8 blur-xl"></div>
               <div className="relative z-10">
                 <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
