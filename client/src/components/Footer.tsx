@@ -29,19 +29,19 @@ export function Footer() {
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="w-10 h-10 bg-limiar-orange rounded-full flex items-center justify-center hover:bg-limiar-gold transition-colors"
+                className="w-10 h-10 bg-limiar-orange rounded-full flex items-center justify-center hover:bg-limiar-gold shadow-lg hover:shadow-[0_10px_30px_rgba(255,127,0,0.4)] hover:scale-110 transition-all duration-300 transform-gpu"
               >
                 <Linkedin className="text-white" size={20} />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-limiar-orange rounded-full flex items-center justify-center hover:bg-limiar-gold transition-colors"
+                className="w-10 h-10 bg-limiar-orange rounded-full flex items-center justify-center hover:bg-limiar-gold shadow-lg hover:shadow-[0_10px_30px_rgba(255,127,0,0.4)] hover:scale-110 transition-all duration-300 transform-gpu"
               >
                 <Instagram className="text-white" size={20} />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-limiar-orange rounded-full flex items-center justify-center hover:bg-limiar-gold transition-colors"
+                className="w-10 h-10 bg-limiar-orange rounded-full flex items-center justify-center hover:bg-limiar-gold shadow-lg hover:shadow-[0_10px_30px_rgba(255,127,0,0.4)] hover:scale-110 transition-all duration-300 transform-gpu"
               >
                 <Youtube className="text-white" size={20} />
               </a>

@@ -60,7 +60,7 @@ export function Header() {
               onClick={toggleTheme}
               variant="ghost"
               size="icon"
-              className="p-2 rounded-lg bg-gray-100 dark:bg-dark-card hover:bg-gray-200 dark:hover:bg-dark-border transition-colors"
+              className="p-2 rounded-lg bg-gray-100 dark:bg-dark-card hover:bg-gray-200 dark:hover:bg-dark-border shadow-md hover:shadow-[0_8px_25px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-300 transform-gpu"
             >
               {theme === "dark" ? (
                 <Sun className="h-5 w-5 text-yellow-500" />

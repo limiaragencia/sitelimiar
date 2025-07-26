@@ -96,7 +96,7 @@ export function Solucoes() {
             return (
               <div
                 key={index}
-                className={`${solution.className || ''} bg-gradient-to-br from-gray-50 to-white dark:from-dark-card dark:to-dark-bg-secondary rounded-3xl p-8 hover:shadow-2xl dark:hover:shadow-limiar-orange/20 transition-all duration-500 border border-gray-200 dark:border-dark-border group`}
+                className={`${solution.className || ''} bg-gradient-to-br from-gray-50 to-white dark:from-dark-card dark:to-dark-bg-secondary rounded-3xl p-8 shadow-lg hover:shadow-[0_25px_60px_rgba(0,0,0,0.15),0_0_40px_rgba(255,127,0,0.1)] dark:hover:shadow-[0_25px_60px_rgba(0,0,0,0.4),0_0_40px_rgba(255,127,0,0.2)] hover:scale-[1.02] transition-all duration-500 border border-gray-200 dark:border-dark-border group transform-gpu relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/10 before:via-transparent before:to-limiar-orange/5 before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-500`}
               >
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-16 h-16 bg-gradient-to-br from-limiar-orange to-limiar-gold rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
