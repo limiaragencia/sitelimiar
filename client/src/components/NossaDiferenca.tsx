@@ -62,7 +62,7 @@ export function NossaDiferenca() {
   ];
 
   const conventional = [
-    <span className="animate-pulse cursor-pointer" style={{ filter: 'brightness(1.3) drop-shadow(0 0 8px rgba(239,68,68,0.6))' }}>Soluções padronizadas</span>,
+    "Soluções padronizadas",
     "Implementa ferramentas de IA como chatbots anabolizados",
     "Foca em eficiência operacional", 
     "Orçamento fixo, escopo rígido",
