@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown, TrendingUp, Brain, Zap } from "lucide-react";
 import { useEffect, useRef } from "react";
+import videoBackground from "@assets/freepik__dynamic-zoomin-a-mesmerizing-pattern-of-orange-dot__87277_1753519155013.mp4";
 
 export function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -230,12 +231,79 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden pt-40">
+      {/* Video Background */}
+      <div className="absolute inset-0 z-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="metadata"
+          className="w-full h-full object-cover opacity-30"
+          style={{
+            filter: 'blur(1px) saturate(1.2)',
+            animation: 'videoFadeLoop 15s ease-in-out infinite',
+            willChange: 'opacity, transform'
+          }}
+          onLoadStart={() => console.log('Hero video loading started')}
+          onLoadedData={() => console.log('Hero video loaded successfully')}
+          onError={(e) => console.error('Hero video error:', e)}
+        >
+          <source src={videoBackground} type="video/mp4" />
+        </video>
+        
+        {/* Light mode fade overlay */}
+        <div 
+          className="absolute inset-0 bg-gradient-to-r from-gray-50/90 via-transparent to-gray-50/90 opacity-100 dark:opacity-0 transition-opacity duration-300"
+          style={{
+            background: `
+              linear-gradient(to right, rgba(249, 250, 251, 0.95) 0%, transparent 15%, transparent 85%, rgba(249, 250, 251, 0.95) 100%),
+              linear-gradient(to bottom, rgba(249, 250, 251, 0.8) 0%, transparent 20%, transparent 80%, rgba(249, 250, 251, 0.8) 100%)
+            `
+          }}
+        ></div>
+        
+        {/* Dark mode fade overlay */}
+        <div 
+          className="absolute inset-0 bg-gradient-to-r from-gray-900/90 via-transparent to-gray-900/90 opacity-0 dark:opacity-100 transition-opacity duration-300"
+          style={{
+            background: `
+              linear-gradient(to right, rgba(17, 24, 39, 0.95) 0%, transparent 15%, transparent 85%, rgba(17, 24, 39, 0.95) 100%),
+              linear-gradient(to bottom, rgba(17, 24, 39, 0.8) 0%, transparent 20%, transparent 80%, rgba(17, 24, 39, 0.8) 100%)
+            `
+          }}
+        ></div>
+        
+        {/* Dark overlay for better contrast */}
+        <div className="absolute inset-0 bg-black/60"></div>
+        
+        {/* Color overlay for integration */}
+        <div className="absolute inset-0 bg-gradient-to-br from-orange-900/20 via-transparent to-blue-900/10 dark:from-orange-900/30 dark:via-transparent dark:to-blue-900/20"></div>
+      </div>
+      
+      {/* Floating Particles */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-5">
+        {[...Array(15)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute w-2 h-2 bg-gradient-to-r from-limiar-orange to-limiar-gold rounded-full opacity-20"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 10}s`,
+              animation: 'float 15s ease-in-out infinite'
+            }}
+          ></div>
+        ))}
+      </div>
+
       {/* Particle Canvas Background */}
       <canvas
         ref={canvasRef}
-        className="absolute inset-0 w-full h-full bg-black dark:bg-gray-900"
-        style={{ zIndex: 0 }}
+        className="absolute inset-0 w-full h-full bg-transparent"
+        style={{ zIndex: 8 }}
       />
+      
       {/* Texture/Ranhura Overlay */}
       <div 
         className="absolute inset-0 opacity-20"
