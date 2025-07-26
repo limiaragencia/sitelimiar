@@ -23,6 +23,7 @@ This is a full-stack TypeScript application for Limiar, a Brazilian AI agency. T
 - **Section Title**: "OS 4 PILARES DA LIMIAR | COMO HABITAMOS O FUTURO" with unified styling and orange accent
 - **Texture Overlay**: Diagonal crosshatch texture pattern (30% opacity) over background for enhanced visual depth
 - **Interactive Shadow Effects**: Advanced hover shadows with brand color accents, scaling transforms, and shimmer overlays on pillar cards
+- **Futuristic Pillar Cards Redesign**: Dark glassmorphism design with animated border gradients, glow effects, floating particles, and enhanced UI/UX following modern standards
 
 ### Interactive Hover Shadow Effects (January 2025)
 - **Hero Section Buttons**: Enhanced with brand-colored shadows (rgba(255,127,0,0.4)), shimmer effects, and smooth scaling

@@ -102,36 +102,62 @@ export function NossaDiferenca() {
         </div>
 
         {/* 4 Pillars Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-20">
           {pillars.map((pillar, index) => {
             const IconComponent = pillar.icon;
             return (
               <div
                 key={index}
-                className="group bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-[0_25px_60px_rgba(0,0,0,0.3),0_0_50px_rgba(255,127,0,0.2)] hover:scale-[1.02] transition-all duration-500 border border-white/20 animate-fade-in-up hover:bg-white transform-gpu relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/10 before:via-transparent before:to-limiar-orange/5 before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-500"
+                className="group relative bg-black/40 backdrop-blur-md rounded-3xl p-8 shadow-lg hover:shadow-[0_25px_60px_rgba(0,0,0,0.4),0_0_50px_rgba(255,127,0,0.3)] hover:scale-[1.02] transition-all duration-700 border border-white/10 animate-fade-in-up transform-gpu overflow-hidden"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <div className="flex items-center gap-4 mb-6">
-                  <div className={`w-16 h-16 bg-gradient-to-br ${pillar.color === 'limiar-orange' ? 'from-limiar-orange to-limiar-gold' : 'from-limiar-gold to-limiar-orange'} rounded-xl flex items-center justify-center group-hover:rotate-12 group-hover:scale-110 transition-all duration-300 shadow-lg`}>
-                    <IconComponent className="text-white" size={28} />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-poppins font-bold text-gray-900 group-hover:text-limiar-orange transition-colors duration-300">
-                      {pillar.title}
-                    </h3>
-                  </div>
+                {/* Animated Border Gradient */}
+                <div className={`absolute inset-0 rounded-3xl p-[2px] bg-gradient-to-r ${pillar.color === 'limiar-orange' ? 'from-limiar-orange/50 via-limiar-gold/30 to-limiar-orange/50' : 'from-limiar-gold/50 via-limiar-orange/30 to-limiar-gold/50'} opacity-0 group-hover:opacity-100 transition-opacity duration-700`}>
+                  <div className="bg-black/60 rounded-3xl w-full h-full"></div>
                 </div>
-                <h4 className={`text-xl font-semibold mb-4 bg-gradient-to-r ${pillar.color === 'limiar-orange' ? 'from-limiar-orange to-limiar-gold' : 'from-limiar-gold to-limiar-orange'} bg-clip-text text-transparent`}>
-                  {pillar.subtitle}
-                </h4>
-                <p className="text-gray-600 mb-6 leading-relaxed font-poppins font-thin">
-                  {pillar.description}
-                </p>
-                <div className={`bg-gradient-to-r ${pillar.color === 'limiar-orange' ? 'from-limiar-orange/10 to-limiar-gold/10' : 'from-limiar-gold/10 to-limiar-orange/10'} rounded-lg p-4 border-l-4 ${pillar.color === 'limiar-orange' ? 'border-limiar-orange' : 'border-limiar-gold'}`}>
-                  <p className="text-gray-900 font-poppins font-thin">
-                    <span className={`font-bold bg-gradient-to-r ${pillar.color === 'limiar-orange' ? 'from-limiar-orange to-limiar-gold' : 'from-limiar-gold to-limiar-orange'} bg-clip-text text-transparent`}>Resultado:</span> {pillar.result}
+
+                {/* Content Layer */}
+                <div className="relative z-10">
+                  {/* Header with Icon and Title */}
+                  <div className="flex items-start gap-6 mb-8">
+                    <div className={`relative w-20 h-20 bg-gradient-to-br ${pillar.color === 'limiar-orange' ? 'from-limiar-orange to-limiar-gold' : 'from-limiar-gold to-limiar-orange'} rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-500`}>
+                      <IconComponent className="text-white" size={32} />
+                      {/* Glow Effect */}
+                      <div className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${pillar.color === 'limiar-orange' ? 'from-limiar-orange to-limiar-gold' : 'from-limiar-gold to-limiar-orange'} opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500`}></div>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-2xl font-poppins font-bold text-white mb-2 group-hover:text-limiar-orange transition-colors duration-300">
+                        {pillar.title}
+                      </h3>
+                      <h4 className={`text-lg font-semibold bg-gradient-to-r ${pillar.color === 'limiar-orange' ? 'from-limiar-orange to-limiar-gold' : 'from-limiar-gold to-limiar-orange'} bg-clip-text text-transparent`}>
+                        {pillar.subtitle}
+                      </h4>
+                    </div>
+                  </div>
+
+                  {/* Description */}
+                  <p className="text-gray-300 mb-8 leading-relaxed font-poppins font-thin text-justify">
+                    {pillar.description}
                   </p>
+
+                  {/* Result Card */}
+                  <div className="relative bg-black/30 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+                    <div className={`absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b ${pillar.color === 'limiar-orange' ? 'from-limiar-orange to-limiar-gold' : 'from-limiar-gold to-limiar-orange'} rounded-r-full`}></div>
+                    <div className="pl-4">
+                      <span className={`inline-block text-sm font-bold mb-2 bg-gradient-to-r ${pillar.color === 'limiar-orange' ? 'from-limiar-orange to-limiar-gold' : 'from-limiar-gold to-limiar-orange'} bg-clip-text text-transparent uppercase tracking-wider`}>
+                        Resultado
+                      </span>
+                      <p className="text-white font-poppins font-thin leading-relaxed">
+                        {pillar.result}
+                      </p>
+                    </div>
+                  </div>
                 </div>
+
+                {/* Floating Particles Effect */}
+                <div className="absolute top-4 right-4 w-2 h-2 bg-limiar-orange/40 rounded-full animate-pulse opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                <div className="absolute bottom-8 left-8 w-1 h-1 bg-limiar-gold/60 rounded-full animate-pulse opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{ animationDelay: '0.3s' }}></div>
+                <div className="absolute top-16 right-16 w-1.5 h-1.5 bg-limiar-orange/30 rounded-full animate-pulse opacity-0 group-hover:opacity-100 transition-opacity duration-800" style={{ animationDelay: '0.6s' }}></div>
               </div>
             );
           })}
