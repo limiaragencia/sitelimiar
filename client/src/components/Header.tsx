@@ -2,8 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { useTheme } from "./ThemeProvider";
-import logoWhite from "@assets/logo centralizada branca_1753484043527.png";
-import logoOrange from "@assets/logo limiar_1753484043528.png";
+import logoGold from "@assets/limiar logo complta dourado cabeçalho_1753516246517.png";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,7 +27,7 @@ export function Header() {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
-              src={theme === "dark" ? logoWhite : logoOrange} 
+              src={logoGold} 
               alt="Limiar Logo" 
               className="h-8 w-auto"
             />
