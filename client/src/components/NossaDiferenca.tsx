@@ -379,7 +379,7 @@ export function NossaDiferenca() {
         {/* Final CTA */}
         <div className="text-center mt-20 animate-fade-in-up">
           <div className="mb-8">
-            <h2 className="md:text-6xl font-poppins font-bold text-white mt-[-12px] mb-[-12px] pt-[-5px] pb-[-5px] text-[45px] pl-[3px] pr-[3px] ml-[-3px] mr-[-3px]" style={{ textShadow: '2px 2px 6px rgba(0,0,0,0.63), 1px 1px 3px rgba(0,0,0,0.7)' }}>
+            <h2 className="md:text-6xl font-poppins font-bold text-white text-[45px] mt-[0px] mb-[0px] pt-[-18px] pb-[-18px] pl-[7px] pr-[7px] ml-[-17px] mr-[-17px]" style={{ textShadow: '2px 2px 6px rgba(0,0,0,0.63), 1px 1px 3px rgba(0,0,0,0.7)' }}>
               Quando sua marca vai parar de observar o futuro e <br />
               <span className="text-limiar-orange font-extrabold block text-[70px] mt-[1px] mb-[1px] pt-[13px] pb-[13px]" style={{ textShadow: '2px 2px 6px rgba(0,0,0,0.63), 1px 1px 3px rgba(0,0,0,0.7), 0 0 14px rgba(255,127,0,0.21)' }}>começar a habitá-lo?</span>
             </h2>
