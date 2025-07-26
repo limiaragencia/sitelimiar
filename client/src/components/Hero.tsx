@@ -85,12 +85,12 @@ export function Hero() {
           {/* Stats */}
           <div className="flex flex-col sm:flex-row gap-8 items-start animate-fade-in-up">
             <div className="flex items-center gap-3 group">
-              <span className="w-3 h-3 bg-limiar-orange rounded-full animate-pulse group-hover:scale-125 transition-transform duration-300"></span>
-              <span className="text-base font-medium text-gray-700 dark:text-gray-200 group-hover:text-limiar-orange transition-colors duration-300">50+ marcas transformadas</span>
+              <span className="w-3 h-3 bg-gradient-to-r from-limiar-orange to-limiar-gold rounded-full animate-pulse group-hover:scale-125 transition-transform duration-300"></span>
+              <span className="text-base font-medium text-gray-700 dark:text-gray-200 group-hover:bg-gradient-to-r group-hover:from-limiar-orange group-hover:to-limiar-gold group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">50+ marcas transformadas</span>
             </div>
             <div className="flex items-center gap-3 group">
-              <span className="w-3 h-3 bg-limiar-gold rounded-full animate-pulse group-hover:scale-125 transition-transform duration-300"></span>
-              <span className="text-base font-medium text-gray-700 dark:text-gray-200 group-hover:text-limiar-gold transition-colors duration-300">Ecossistema de IA</span>
+              <span className="w-3 h-3 bg-gradient-to-r from-limiar-orange to-limiar-gold rounded-full animate-pulse group-hover:scale-125 transition-transform duration-300"></span>
+              <span className="text-base font-medium text-gray-700 dark:text-gray-200 group-hover:bg-gradient-to-r group-hover:from-limiar-orange group-hover:to-limiar-gold group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">Ecossistema de IA</span>
             </div>
             <div className="flex items-center gap-3 group">
               <span className="w-3 h-3 bg-gradient-to-r from-limiar-orange to-limiar-gold rounded-full animate-pulse group-hover:scale-125 transition-transform duration-300"></span>
