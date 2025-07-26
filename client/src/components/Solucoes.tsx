@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Bot, UserCheck, Video, Camera, User } from "lucide-react";
+import videoBackground from "@assets/freepik__dynamic-zoomin-a-mesmerizing-pattern-of-orange-dot__87277_1753519155013.mp4";
 
 export function Solucoes() {
   const solutions = [
@@ -77,14 +78,17 @@ export function Solucoes() {
           muted
           playsInline
           preload="metadata"
-          className="w-full h-full object-cover opacity-20 dark:opacity-10"
+          className="w-full h-full object-cover opacity-80"
           style={{
             filter: 'blur(1px) saturate(1.2)',
             animation: 'videoFadeLoop 15s ease-in-out infinite',
             willChange: 'opacity, transform'
           }}
+          onLoadStart={() => console.log('Video loading started')}
+          onLoadedData={() => console.log('Video loaded successfully')}
+          onError={(e) => console.error('Video error:', e)}
         >
-          <source src="/video-background.mp4" type="video/mp4" />
+          <source src={videoBackground} type="video/mp4" />
         </video>
         
         {/* Fade In/Out Overlay */}
