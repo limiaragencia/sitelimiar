@@ -349,19 +349,7 @@ export function NossaDiferenca() {
 
             {/* Abordagem Limiar */}
             <div className="p-8 bg-gradient-to-br from-limiar-orange/20 to-limiar-gold/20 backdrop-blur-sm relative">
-              <h4 
-                className="text-2xl font-poppins font-bold text-limiar-orange mb-8 text-center transition-all duration-300"
-                style={{ 
-                  textShadow: 'none',
-                  transition: 'text-shadow 0.3s ease'
-                }}
-                onMouseEnter={(e) => {
-                  (e.target as HTMLElement).style.textShadow = '2px 2px 6px rgba(0,0,0,0.9)';
-                }}
-                onMouseLeave={(e) => {
-                  (e.target as HTMLElement).style.textShadow = 'none';
-                }}
-              >
+              <h4 className="text-2xl font-poppins font-bold text-limiar-orange mb-8 text-center" style={{ textShadow: '3px 3px 8px rgba(0,0,0,0.7), 1px 1px 3px rgba(0,0,0,0.9)' }}>
                 Abordagem Limiar
               </h4>
               <div className="space-y-5">
@@ -378,19 +366,7 @@ export function NossaDiferenca() {
                         className="w-8 h-8 text-lg bg-gradient-to-r from-green-600 to-emerald-500 shadow-green-500/50 border-2 border-green-400/50" 
                       />
                     </div>
-                    <span 
-                      className="font-medium transition-all duration-300 text-[18px] ml-[0px] mr-[0px] pl-[0px] pr-[0px] mt-[4px] mb-[4px] pt-[-7px] pb-[-7px] text-[#ff8000]"
-                      style={{ 
-                        textShadow: 'none',
-                        transition: 'text-shadow 0.3s ease'
-                      }}
-                      onMouseEnter={(e) => {
-                        (e.target as HTMLElement).style.textShadow = '2px 2px 6px rgba(0,0,0,0.9)';
-                      }}
-                      onMouseLeave={(e) => {
-                        (e.target as HTMLElement).style.textShadow = 'none';
-                      }}
-                    >
+                    <span className="font-medium text-[18px] text-[#ff8000]" style={{ textShadow: '2px 2px 6px rgba(0,0,0,0.8), 1px 1px 2px rgba(0,0,0,0.9)' }}>
                       {item}
                     </span>
                   </div>
