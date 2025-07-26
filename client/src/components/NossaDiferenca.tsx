@@ -129,7 +129,7 @@ export function NossaDiferenca() {
                       <h3 className="text-2xl font-poppins font-bold text-white mb-2 group-hover:text-limiar-orange transition-colors duration-300">
                         {pillar.title}
                       </h3>
-                      <h4 className={`text-lg font-semibold bg-gradient-to-r ${pillar.color === 'limiar-orange' ? 'from-limiar-orange to-limiar-gold' : 'from-limiar-gold to-limiar-orange'} bg-clip-text text-transparent`}>
+                      <h4 className={`text-lg font-semibold ${index === 0 ? 'text-limiar-orange' : `bg-gradient-to-r ${pillar.color === 'limiar-orange' ? 'from-limiar-orange to-limiar-gold' : 'from-limiar-gold to-limiar-orange'} bg-clip-text text-transparent`}`}>
                         {pillar.subtitle}
                       </h4>
                     </div>
@@ -137,14 +137,20 @@ export function NossaDiferenca() {
 
                   {/* Description */}
                   <p className="text-gray-300 mb-8 leading-relaxed font-poppins font-thin text-justify">
-                    {pillar.description}
+                    {index === 0 ? (
+                      <>
+                        Cada projeto nasce da união íntima entre dados rigorosos e insights profundamente humanos. No encontro onde números ganham narrativa, nossos algoritmos carregam alma, nossas automações preservam a essência humana. Não substituímos pessoas — amplificamos seu potencial criativo.
+                      </>
+                    ) : (
+                      pillar.description
+                    )}
                   </p>
 
                   {/* Result Card */}
                   <div className="relative bg-black/30 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
                     <div className={`absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b ${pillar.color === 'limiar-orange' ? 'from-limiar-orange to-limiar-gold' : 'from-limiar-gold to-limiar-orange'} rounded-r-full`}></div>
                     <div className="pl-4">
-                      <span className={`inline-block text-sm font-bold mb-2 bg-gradient-to-r ${pillar.color === 'limiar-orange' ? 'from-limiar-orange to-limiar-gold' : 'from-limiar-gold to-limiar-orange'} bg-clip-text text-transparent uppercase tracking-wider`}>
+                      <span className={`inline-block text-sm font-bold mb-2 ${index === 0 ? 'text-limiar-orange' : `bg-gradient-to-r ${pillar.color === 'limiar-orange' ? 'from-limiar-orange to-limiar-gold' : 'from-limiar-gold to-limiar-orange'} bg-clip-text text-transparent`} uppercase tracking-wider`}>
                         Resultado
                       </span>
                       <p className="text-white font-poppins font-thin leading-relaxed">
