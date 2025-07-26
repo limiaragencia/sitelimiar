@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Users, Eye, ServerCog, TrendingUp, Check, X } from "lucide-react";
+import backgroundImage from "@assets/194242_1753496244462.jpg";
 
 export function NossaDiferenca() {
   const pillars = [
@@ -54,15 +55,28 @@ export function NossaDiferenca() {
   ];
 
   return (
-    <section id="diferenca" className="py-24 bg-gray-50 dark:bg-dark-gradient">
-      <div className="container mx-auto px-6">
+    <section 
+      id="diferenca" 
+      className="py-24 relative overflow-hidden"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
+      }}
+    >
+      {/* Background Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-limiar-orange/20 to-limiar-gold/20"></div>
+      
+      <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-6xl font-poppins font-bold mb-6 text-gray-900 dark:text-white">
+          <h2 className="text-4xl md:text-6xl font-poppins font-bold mb-6 text-white">
             "A diferença entre <span className="bg-gradient-to-r from-limiar-orange to-limiar-gold bg-clip-text text-transparent">usar IA</span> e{" "}
             <span className="bg-gradient-to-r from-limiar-gold to-limiar-orange bg-clip-text text-transparent">ser IA</span> em essência criativa."
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed">
             Enquanto outros tratam a inteligência artificial como ferramenta, nós a abraçamos como linguagem.
             Nossa metodologia proprietária transforma dados em narrativas, algoritmos em experiências e
             possibilidades em realidades que redefinem mercados.
@@ -76,7 +90,7 @@ export function NossaDiferenca() {
             return (
               <div
                 key={index}
-                className="group bg-white dark:bg-dark-card rounded-2xl p-8 hover:shadow-2xl hover:scale-[1.02] transition-all duration-500 border border-gray-200 dark:border-dark-border animate-fade-in-up"
+                className="group bg-white/95 backdrop-blur-sm rounded-2xl p-8 hover:shadow-2xl hover:scale-[1.02] transition-all duration-500 border border-white/20 animate-fade-in-up hover:bg-white"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <div className="flex items-center gap-4 mb-6">
@@ -84,7 +98,7 @@ export function NossaDiferenca() {
                     <IconComponent className="text-white" size={28} />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-poppins font-bold text-gray-900 dark:text-white group-hover:text-limiar-orange transition-colors duration-300">
+                    <h3 className="text-2xl font-poppins font-bold text-gray-900 group-hover:text-limiar-orange transition-colors duration-300">
                       {pillar.title}
                     </h3>
                   </div>
@@ -92,11 +106,11 @@ export function NossaDiferenca() {
                 <h4 className={`text-xl font-semibold mb-4 bg-gradient-to-r ${pillar.color === 'limiar-orange' ? 'from-limiar-orange to-limiar-gold' : 'from-limiar-gold to-limiar-orange'} bg-clip-text text-transparent`}>
                   {pillar.subtitle}
                 </h4>
-                <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                <p className="text-gray-600 mb-6 leading-relaxed">
                   {pillar.description}
                 </p>
-                <div className={`bg-gradient-to-r ${pillar.color === 'limiar-orange' ? 'from-limiar-orange/10 to-limiar-gold/10' : 'from-limiar-gold/10 to-limiar-orange/10'} dark:from-limiar-orange/20 dark:to-limiar-gold/20 rounded-lg p-4 border-l-4 ${pillar.color === 'limiar-orange' ? 'border-limiar-orange' : 'border-limiar-gold'}`}>
-                  <p className="text-gray-900 dark:text-white font-medium">
+                <div className={`bg-gradient-to-r ${pillar.color === 'limiar-orange' ? 'from-limiar-orange/10 to-limiar-gold/10' : 'from-limiar-gold/10 to-limiar-orange/10'} rounded-lg p-4 border-l-4 ${pillar.color === 'limiar-orange' ? 'border-limiar-orange' : 'border-limiar-gold'}`}>
+                  <p className="text-gray-900 font-medium">
                     <span className={`font-bold bg-gradient-to-r ${pillar.color === 'limiar-orange' ? 'from-limiar-orange to-limiar-gold' : 'from-limiar-gold to-limiar-orange'} bg-clip-text text-transparent`}>Resultado:</span> {pillar.result}
                   </p>
                 </div>
@@ -111,27 +125,27 @@ export function NossaDiferenca() {
             <div className="w-20 h-20 bg-gradient-to-r from-limiar-orange to-limiar-gold rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
               <span className="text-3xl font-bold text-white">95%</span>
             </div>
-            <h4 className="text-xl font-poppins font-bold text-gray-900 dark:text-white mb-2">Taxa de Satisfação</h4>
-            <p className="text-gray-600 dark:text-gray-300">Clientes que renovaram parcerias após primeiro projeto</p>
+            <h4 className="text-xl font-poppins font-bold text-white mb-2">Taxa de Satisfação</h4>
+            <p className="text-gray-200">Clientes que renovaram parcerias após primeiro projeto</p>
           </div>
           <div className="text-center group">
             <div className="w-20 h-20 bg-gradient-to-r from-limiar-gold to-limiar-orange rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
               <span className="text-3xl font-bold text-white">3x</span>
             </div>
-            <h4 className="text-xl font-poppins font-bold text-gray-900 dark:text-white mb-2">ROI Médio</h4>
-            <p className="text-gray-600 dark:text-gray-300">Retorno sobre investimento em nossos projetos de IA</p>
+            <h4 className="text-xl font-poppins font-bold text-white mb-2">ROI Médio</h4>
+            <p className="text-gray-200">Retorno sobre investimento em nossos projetos de IA</p>
           </div>
           <div className="text-center group">
             <div className="w-20 h-20 bg-gradient-to-r from-limiar-orange to-limiar-gold rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
               <span className="text-3xl font-bold text-white">24h</span>
             </div>
-            <h4 className="text-xl font-poppins font-bold text-gray-900 dark:text-white mb-2">Tempo de Resposta</h4>
-            <p className="text-gray-600 dark:text-gray-300">Para análise inicial e proposta estratégica</p>
+            <h4 className="text-xl font-poppins font-bold text-white mb-2">Tempo de Resposta</h4>
+            <p className="text-gray-200">Para análise inicial e proposta estratégica</p>
           </div>
         </div>
 
         {/* Contrast Table */}
-        <div className="bg-white dark:bg-dark-card rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-dark-border animate-fade-in-up">
+        <div className="bg-white/95 backdrop-blur-sm rounded-2xl overflow-hidden shadow-2xl border border-white/20 animate-fade-in-up">
           <div className="bg-gradient-to-r from-limiar-orange to-limiar-gold p-8">
             <h3 className="text-3xl font-poppins font-bold text-white text-center">
               O que outros fazem vs. O que a Limiar faz
@@ -192,8 +206,8 @@ export function NossaDiferenca() {
 
         {/* Final CTA */}
         <div className="text-center mt-20 animate-fade-in-up">
-          <div className="bg-gradient-to-r from-limiar-orange/10 to-limiar-gold/10 dark:from-limiar-orange/20 dark:to-limiar-gold/20 rounded-2xl p-8 mb-8">
-            <p className="text-2xl md:text-3xl font-poppins font-medium text-gray-900 dark:text-white mb-2">
+          <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-8 mb-8 border border-white/20">
+            <p className="text-2xl md:text-3xl font-poppins font-medium text-white mb-2">
               "A questão não é se sua empresa precisa de IA."
             </p>
             <p className="text-xl md:text-2xl font-poppins font-bold bg-gradient-to-r from-limiar-orange to-limiar-gold bg-clip-text text-transparent">
@@ -225,7 +239,7 @@ export function NossaDiferenca() {
             </Button>
           </div>
           
-          <div className="mt-8 flex justify-center items-center gap-4 text-sm text-gray-500 dark:text-gray-400">
+          <div className="mt-8 flex justify-center items-center gap-4 text-sm text-gray-300">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
               <span>Disponível para novos projetos</span>
