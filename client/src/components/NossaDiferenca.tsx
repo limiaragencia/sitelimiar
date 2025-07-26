@@ -81,11 +81,11 @@ export function NossaDiferenca() {
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-6xl font-poppins font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-6xl font-poppins font-bold text-white mb-6" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>
             "A diferença entre <span className="text-limiar-gold font-extrabold">usar IA</span> e <br />
             <span className="text-limiar-orange font-extrabold">ser IA</span> em essência criativa."
           </h2>
-          <p className="text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed font-poppins font-thin ml-[167px] mr-[167px] pl-[0px] pr-[0px] pt-[0px] pb-[0px] mt-[-10px] mb-[-10px] text-justify">
+          <p className="text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed font-poppins font-thin ml-[167px] mr-[167px] pl-[0px] pr-[0px] pt-[0px] pb-[0px] mt-[-10px] mb-[-10px] text-justify" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
             Enquanto outros tratam a inteligência artificial como ferramenta, nós a abraçamos como linguagem.
             Nossa metodologia proprietária transforma dados em narrativas, algoritmos em experiências e
             possibilidades em realidades que redefinem mercados.
@@ -94,7 +94,7 @@ export function NossaDiferenca() {
 
         {/* Pillars Section Title */}
         <div className="text-center mb-16">
-          <h3 className="text-3xl md:text-4xl font-poppins font-bold text-white">
+          <h3 className="text-3xl md:text-4xl font-poppins font-bold text-white" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>
             OS 4 PILARES DA LIMIAR | <span className="text-limiar-orange">COMO HABITAMOS O FUTURO</span>
           </h3>
         </div>
