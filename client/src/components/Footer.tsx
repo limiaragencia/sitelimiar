@@ -10,7 +10,7 @@ export function Footer() {
   };
 
   return (
-    <footer id="contato" className="bg-gray-900 dark:bg-dark-gradient text-white py-16">
+    <footer id="contato" className="bg-dark-gradient text-white py-16">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Description */}

@@ -30,20 +30,9 @@ export function Solucoes() {
           <source src={videoBackground} type="video/mp4" />
         </video>
         
-        {/* Fade In/Out Overlay */}
-        <div 
-          className="absolute inset-0 bg-gradient-to-r from-gray-50/90 via-transparent to-gray-50/90 dark:from-gray-900/90 dark:via-transparent dark:to-gray-900/90"
-          style={{
-            background: `
-              linear-gradient(to right, rgba(249, 250, 251, 0.95) 0%, transparent 15%, transparent 85%, rgba(249, 250, 251, 0.95) 100%),
-              linear-gradient(to bottom, rgba(249, 250, 251, 0.8) 0%, transparent 20%, transparent 80%, rgba(249, 250, 251, 0.8) 100%)
-            `
-          }}
-        ></div>
-        
         {/* Dark mode fade overlay */}
         <div 
-          className="absolute inset-0 bg-gradient-to-r from-gray-900/90 via-transparent to-gray-900/90 opacity-0 dark:opacity-100 transition-opacity duration-300"
+          className="absolute inset-0 bg-gradient-to-r from-gray-900/90 via-transparent to-gray-900/90"
           style={{
             background: `
               linear-gradient(to right, rgba(17, 24, 39, 0.95) 0%, transparent 15%, transparent 85%, rgba(17, 24, 39, 0.95) 100%),
@@ -56,7 +45,7 @@ export function Solucoes() {
         <div className="absolute inset-0 bg-black/60"></div>
         
         {/* Color overlay for integration */}
-        <div className="absolute inset-0 bg-gradient-to-br from-orange-900/20 via-transparent to-blue-900/10 dark:from-orange-900/30 dark:via-transparent dark:to-blue-900/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-orange-900/30 via-transparent to-blue-900/20"></div>
       </div>
       
       {/* Floating Particles */}

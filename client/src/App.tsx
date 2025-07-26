@@ -19,7 +19,7 @@ function Router() {
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <ThemeProvider defaultTheme="dark" storageKey="limiar-theme">
+      <ThemeProvider defaultTheme="dark" storageKey="limiar-theme" forceTheme="dark">
         <TooltipProvider>
           <Toaster />
           <Router />

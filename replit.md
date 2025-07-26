@@ -33,6 +33,14 @@ This is a full-stack TypeScript application for Limiar, a Brazilian AI agency. T
 - **Differentiation Blocks**: Kept the 3 main differentiation blocks (Diferenciação, Simplificação, Personalização) with enhanced styling
 - **Clean Layout**: Section now focuses on main header "Onde outros vendem ferramentas, nós arquitetamos futuros" and core differentials
 
+### Dark Mode Only Implementation (January 2025)
+- **Light Mode Removed**: Completely eliminated light mode from the application
+- **Theme Provider**: Modified to force dark mode only, removed theme toggle functionality
+- **Header Component**: Removed theme toggle button and light mode styling classes
+- **CSS Variables**: Simplified to use only dark mode color scheme variables
+- **Component Classes**: Removed all `dark:` conditional classes and light mode references
+- **HTML Root**: Set to always include `dark` class for consistent dark mode rendering
+
 ### Interactive Hover Shadow Effects (January 2025)
 - **Hero Section Buttons**: Enhanced with brand-colored shadows (rgba(255,127,0,0.4)), shimmer effects, and smooth scaling
 - **Hero Stats Elements**: Subtle shadow containers with backdrop blur and brand-colored shadow accents  
