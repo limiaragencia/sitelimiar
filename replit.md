@@ -12,6 +12,7 @@ This is a full-stack TypeScript application for Limiar, a Brazilian AI agency. T
 - **Typography Refinements**: "está por vir" text highlighted with font-extrabold and larger size (65px), "Bem-vindo(a) ao Limiar" fixed at 55px
 - **Layout Improvements**: Stats text distributed horizontally across section, icons increased 60% (32px), scroll arrow doubled in size and repositioned after stats
 - **Responsive Design**: Comprehensive mobile optimizations with touch support, reduced particle counts, adaptive FPS limiting
+- **Texture Overlay**: Diagonal crosshatch texture pattern (20% opacity) layered over particle animation for added visual depth
 
 ### Nossa Diferença Section Enhancements
 - **Futuristic Background**: Applied sci-fi image with orange/gold tones, fixed parallax effect
@@ -19,6 +20,8 @@ This is a full-stack TypeScript application for Limiar, a Brazilian AI agency. T
 - **Cards Redesign**: Translucent cards with backdrop blur effects, hover animations, improved gradients
 - **Typography Consistency**: All explanatory text uses Poppins thin font for elegant consistency
 - **Enhanced Statistics**: New metrics section with interactive hover effects and brand colors
+- **Section Title**: "OS 4 PILARES DA LIMIAR | COMO HABITAMOS O FUTURO" with unified styling and orange accent
+- **Texture Overlay**: Diagonal crosshatch texture pattern (30% opacity) over background for enhanced visual depth
 
 ## User Preferences
 
