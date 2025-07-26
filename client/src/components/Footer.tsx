@@ -1,4 +1,4 @@
-import { Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import { Instagram, Youtube, Mail, Phone, MapPin, Heart } from "lucide-react";
 import logoGold from "@assets/limiar logo complta dourado cabeçalho site_1753516491901.png";
 
 export function Footer() {
@@ -113,7 +113,18 @@ export function Footer() {
         </div>
 
         <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
-          <p className="font-poppins font-light">&copy; 2025 feito com amor por Limiar. O futuro, agora! | Todos os direitos reservados.</p>
+          <p className="font-poppins font-light flex items-center justify-center gap-1 flex-wrap">
+            &copy; 2025 feito com 
+            <Heart 
+              className="text-limiar-orange animate-pulse hover:scale-125 transition-all duration-300 mx-1" 
+              size={16} 
+              fill="currentColor"
+              style={{
+                animation: 'heartbeat 1.5s ease-in-out infinite'
+              }}
+            /> 
+            por Limiar. O futuro, agora! | Todos os direitos reservados.
+          </p>
         </div>
       </div>
     </footer>
