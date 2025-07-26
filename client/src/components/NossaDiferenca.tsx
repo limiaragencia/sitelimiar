@@ -65,9 +65,7 @@ export function NossaDiferenca() {
         backgroundAttachment: 'fixed'
       }}
     >
-      {/* Background Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70"></div>
-      <div className="absolute inset-0 bg-gradient-to-r from-limiar-orange/20 to-limiar-gold/20"></div>
+
       
       {/* Texture/Ranhura Overlay */}
       <div 
@@ -175,11 +173,11 @@ export function NossaDiferenca() {
           <div className="group text-center relative">
             {/* Massive glass number with animations */}
             <div className="relative mb-8">
-              <div className="text-9xl font-black font-poppins text-transparent bg-gradient-to-r from-limiar-orange via-limiar-gold to-limiar-orange bg-clip-text group-hover:scale-125 transition-all duration-700 backdrop-blur-lg drop-shadow-[0_0_40px_rgba(255,127,0,0.6)]">
+              <div className="text-9xl font-black font-poppins text-transparent bg-gradient-to-r from-limiar-orange via-limiar-gold to-limiar-orange bg-clip-text group-hover:scale-125 transition-all duration-700 backdrop-blur-lg drop-shadow-[0_0_40px_rgba(255,127,0,0.6)] animate-pulse">
                 95%
               </div>
               {/* Orange overlay number */}
-              <div className="absolute inset-0 text-9xl font-black font-poppins text-limiar-orange group-hover:scale-125 transition-all duration-700">
+              <div className="absolute inset-0 text-9xl font-black font-poppins text-limiar-orange group-hover:scale-125 transition-all duration-700 animate-pulse">
                 95%
               </div>
               {/* Glass effect layers */}
@@ -193,14 +191,14 @@ export function NossaDiferenca() {
             </div>
             
             {/* Conversational title */}
-            <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3 group-hover:text-limiar-gold transition-colors duration-300">
+            <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3 group-hover:text-limiar-orange transition-colors duration-300">
               "Nossos clientes adoram tanto..."
             </h4>
             
             {/* Conversational description */}
             <p className="text-gray-300 font-poppins font-thin leading-relaxed text-sm">
               que <span className="text-limiar-orange font-semibold">95% renovam a parceria</span> após o primeiro projeto. 
-              Não é só satisfação — é <span className="text-limiar-gold">conexão genuína</span>.
+              Não é só satisfação — é <span className="text-limiar-orange">conexão genuína</span>.
             </p>
           </div>
 
@@ -208,11 +206,11 @@ export function NossaDiferenca() {
           <div className="group text-center relative">
             {/* Massive glass number with animations */}
             <div className="relative mb-8">
-              <div className="text-9xl font-black font-poppins text-transparent bg-gradient-to-r from-limiar-gold via-limiar-orange to-limiar-gold bg-clip-text group-hover:scale-125 transition-all duration-700 backdrop-blur-lg drop-shadow-[0_0_40px_rgba(255,215,0,0.6)]">
+              <div className="text-9xl font-black font-poppins text-transparent bg-gradient-to-r from-limiar-gold via-limiar-orange to-limiar-gold bg-clip-text group-hover:scale-125 transition-all duration-700 backdrop-blur-lg drop-shadow-[0_0_40px_rgba(255,215,0,0.6)] animate-pulse">
                 3x
               </div>
               {/* Orange overlay number */}
-              <div className="absolute inset-0 text-9xl font-black font-poppins text-limiar-orange group-hover:scale-125 transition-all duration-700">
+              <div className="absolute inset-0 text-9xl font-black font-poppins text-limiar-orange group-hover:scale-125 transition-all duration-700 animate-pulse">
                 3x
               </div>
               {/* Glass effect layers */}
@@ -226,13 +224,13 @@ export function NossaDiferenca() {
             </div>
             
             {/* Conversational title */}
-            <h4 className="text-xl font-poppins font-bold text-limiar-gold mb-3 group-hover:text-limiar-orange transition-colors duration-300">
+            <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3 group-hover:text-limiar-orange transition-colors duration-300">
               "Cada real investido vira..."
             </h4>
             
             {/* Conversational description */}
             <p className="text-gray-300 font-poppins font-thin leading-relaxed text-sm">
-              <span className="text-limiar-gold font-semibold">3 reais de retorno</span> em média. 
+              <span className="text-limiar-orange font-semibold">3 reais de retorno</span> em média. 
               Porque IA bem feita não é gasto — é <span className="text-limiar-orange">multiplicador de resultados</span>.
             </p>
           </div>
@@ -241,11 +239,11 @@ export function NossaDiferenca() {
           <div className="group text-center relative">
             {/* Massive glass number with animations */}
             <div className="relative mb-8">
-              <div className="text-9xl font-black font-poppins text-transparent bg-gradient-to-r from-limiar-orange via-limiar-gold to-limiar-orange bg-clip-text group-hover:scale-125 transition-all duration-700 backdrop-blur-lg drop-shadow-[0_0_40px_rgba(255,127,0,0.6)]">
+              <div className="text-9xl font-black font-poppins text-transparent bg-gradient-to-r from-limiar-orange via-limiar-gold to-limiar-orange bg-clip-text group-hover:scale-125 transition-all duration-700 backdrop-blur-lg drop-shadow-[0_0_40px_rgba(255,127,0,0.6)] animate-pulse">
                 24h
               </div>
               {/* Orange overlay number */}
-              <div className="absolute inset-0 text-9xl font-black font-poppins text-limiar-orange group-hover:scale-125 transition-all duration-700">
+              <div className="absolute inset-0 text-9xl font-black font-poppins text-limiar-orange group-hover:scale-125 transition-all duration-700 animate-pulse">
                 24h
               </div>
               {/* Glass effect layers */}
@@ -259,14 +257,14 @@ export function NossaDiferenca() {
             </div>
             
             {/* Conversational title */}
-            <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3 group-hover:text-limiar-gold transition-colors duration-300">
+            <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3 group-hover:text-limiar-orange transition-colors duration-300">
               "Urgência? Nós entendemos..."
             </h4>
             
             {/* Conversational description */}
             <p className="text-gray-300 font-poppins font-thin leading-relaxed text-sm">
               <span className="text-limiar-orange font-semibold">24 horas</span> para análise inicial e proposta estratégica. 
-              Porque <span className="text-limiar-gold">oportunidades não esperam</span>.
+              Porque <span className="text-limiar-orange">oportunidades não esperam</span>.
             </p>
           </div>
         </div>
