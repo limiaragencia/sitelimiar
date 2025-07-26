@@ -8,6 +8,8 @@ This is a full-stack TypeScript application for Limiar, a Brazilian AI agency. T
 
 ### Hero Section Enhancements
 - **Advanced Particle System**: Interactive Canvas-based animation with 60% particles concentrated on right side, 30% opacity, mouse/touch interaction, mobile optimization (150 particles, 30 FPS)
+- **Background System**: Same background configuration as Solucoes section with light/dark mode overlays, contrast overlay, and color gradients (video background removed as requested)
+- **Floating Particles**: Added animated floating particles with brand colors (orange to gold gradient)
 - **WhatsApp Button**: Green floating button with constant smooth animation, turns orange only when clicked
 - **Typography Refinements**: "está por vir" text highlighted with font-extrabold and larger size (65px), "Bem-vindo(a) ao Limiar" fixed at 55px
 - **Layout Improvements**: Stats text distributed horizontally across section, icons increased 60% (32px), scroll arrow doubled in size and repositioned after stats
@@ -24,6 +26,12 @@ This is a full-stack TypeScript application for Limiar, a Brazilian AI agency. T
 - **Texture Overlay**: Diagonal crosshatch texture pattern (30% opacity) over background for enhanced visual depth
 - **Interactive Shadow Effects**: Advanced hover shadows with brand color accents, scaling transforms, and shimmer overlays on pillar cards
 - **Futuristic Pillar Cards Redesign**: Dark glassmorphism design with animated border gradients, glow effects, floating particles, and enhanced UI/UX following modern standards
+
+### Soluções Section Changes (January 2025)
+- **Solution Blocks Removed**: All 5 solution blocks (Agentes Cognitivos, Gêmeos Digitais, Lumière, Cena Digital, Aura) completely removed as requested
+- **Video Background**: Dynamic orange dot pattern video background with fade overlays and color gradients
+- **Differentiation Blocks**: Kept the 3 main differentiation blocks (Diferenciação, Simplificação, Personalização) with enhanced styling
+- **Clean Layout**: Section now focuses on main header "Onde outros vendem ferramentas, nós arquitetamos futuros" and core differentials
 
 ### Interactive Hover Shadow Effects (January 2025)
 - **Hero Section Buttons**: Enhanced with brand-colored shadows (rgba(255,127,0,0.4)), shimmer effects, and smooth scaling
