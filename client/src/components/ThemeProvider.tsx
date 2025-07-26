@@ -6,6 +6,7 @@ type ThemeProviderProps = {
   children: React.ReactNode;
   defaultTheme?: Theme;
   storageKey?: string;
+  forceTheme?: Theme;
 };
 
 type ThemeProviderState = {
@@ -24,9 +25,13 @@ export function ThemeProvider({
   children,
   defaultTheme = "dark",
   storageKey = "limiar-theme",
+  forceTheme,
   ...props
 }: ThemeProviderProps) {
   const [theme, setTheme] = useState<Theme>(() => {
+    // If forceTheme is provided, always use it
+    if (forceTheme) return forceTheme;
+    
     if (typeof window !== "undefined") {
       return (localStorage.getItem(storageKey) as Theme) || defaultTheme;
     }
@@ -38,18 +43,14 @@ export function ThemeProvider({
 
     root.classList.remove("light", "dark");
 
-    if (theme === "system") {
-      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
-        .matches
-        ? "dark"
-        : "light";
-
-      root.classList.add(systemTheme);
-      return;
+    // Always force dark mode
+    const effectiveTheme = forceTheme || theme;
+    if (effectiveTheme === "system") {
+      root.classList.add("dark"); // Force dark even for system
+    } else {
+      root.classList.add(effectiveTheme === "light" ? "dark" : effectiveTheme); // Force dark for light theme
     }
-
-    root.classList.add(theme);
-  }, [theme]);
+  }, [theme, forceTheme]);
 
   const value = {
     theme,
