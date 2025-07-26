@@ -349,7 +349,19 @@ export function NossaDiferenca() {
 
             {/* Abordagem Limiar */}
             <div className="p-8 bg-gradient-to-br from-limiar-orange/20 to-limiar-gold/20 backdrop-blur-sm relative">
-              <h4 className="text-2xl font-poppins font-bold text-limiar-orange mb-8 text-center" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
+              <h4 
+                className="text-2xl font-poppins font-bold text-limiar-orange mb-8 text-center transition-all duration-300"
+                style={{ 
+                  textShadow: 'none',
+                  transition: 'text-shadow 0.3s ease'
+                }}
+                onMouseEnter={(e) => {
+                  (e.target as HTMLElement).style.textShadow = '2px 2px 6px rgba(0,0,0,0.9)';
+                }}
+                onMouseLeave={(e) => {
+                  (e.target as HTMLElement).style.textShadow = 'none';
+                }}
+              >
                 Abordagem Limiar
               </h4>
               <div className="space-y-5">
