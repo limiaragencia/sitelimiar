@@ -120,16 +120,16 @@ export function NossaDiferenca() {
                 <div className="relative z-10">
                   {/* Header with Icon and Title */}
                   <div className="flex items-start gap-6 mb-8">
-                    <div className={`relative w-20 h-20 bg-gradient-to-br ${pillar.color === 'limiar-orange' ? 'from-limiar-orange to-limiar-gold' : 'from-limiar-gold to-limiar-orange'} rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-500`}>
-                      <IconComponent className="text-white" size={32} />
+                    <div className="relative w-24 h-24 bg-gradient-to-br from-limiar-orange to-limiar-gold rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-500">
+                      <IconComponent className="text-limiar-orange" size={40} />
                       {/* Glow Effect */}
-                      <div className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${pillar.color === 'limiar-orange' ? 'from-limiar-orange to-limiar-gold' : 'from-limiar-gold to-limiar-orange'} opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500`}></div>
+                      <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-limiar-orange to-limiar-gold opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500"></div>
                     </div>
                     <div className="flex-1">
                       <h3 className="text-2xl font-poppins font-bold text-white mb-2 group-hover:text-limiar-orange transition-colors duration-300">
                         {pillar.title}
                       </h3>
-                      <h4 className={`text-lg font-semibold ${index === 0 ? 'text-limiar-orange' : `bg-gradient-to-r ${pillar.color === 'limiar-orange' ? 'from-limiar-orange to-limiar-gold' : 'from-limiar-gold to-limiar-orange'} bg-clip-text text-transparent`}`}>
+                      <h4 className="text-lg font-semibold text-limiar-orange">
                         {pillar.subtitle}
                       </h4>
                     </div>
@@ -150,7 +150,7 @@ export function NossaDiferenca() {
                   <div className="relative bg-black/30 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
                     <div className={`absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b ${pillar.color === 'limiar-orange' ? 'from-limiar-orange to-limiar-gold' : 'from-limiar-gold to-limiar-orange'} rounded-r-full`}></div>
                     <div className="pl-4">
-                      <span className={`inline-block text-sm font-bold mb-2 ${index === 0 ? 'text-limiar-orange' : `bg-gradient-to-r ${pillar.color === 'limiar-orange' ? 'from-limiar-orange to-limiar-gold' : 'from-limiar-gold to-limiar-orange'} bg-clip-text text-transparent`} uppercase tracking-wider`}>
+                      <span className="inline-block text-sm font-bold mb-2 text-limiar-orange uppercase tracking-wider">
                         Resultado
                       </span>
                       <p className="text-white font-poppins font-thin leading-relaxed">
