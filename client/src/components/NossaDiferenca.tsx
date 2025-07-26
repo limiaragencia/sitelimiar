@@ -70,11 +70,11 @@ export function NossaDiferenca() {
   ];
 
   const limiar = [
-    <span style={{ textShadow: '2px 2px 6px rgba(0,0,0,0.9)' }}>Soluções personalizadas a partir de cada realidade</span>,
-    <span style={{ textShadow: '2px 2px 6px rgba(0,0,0,0.9)' }}>Arquiteta ecossistemas de experiências inteligentes</span>,
-    <span style={{ textShadow: '2px 2px 6px rgba(0,0,0,0.9)' }}>Também constrói conexões emocionais</span>,
-    <span style={{ textShadow: '2px 2px 6px rgba(0,0,0,0.9)' }}>Flexibilidade total às suas possibilidades</span>,
-    <span style={{ textShadow: '2px 2px 6px rgba(0,0,0,0.9)' }}>Inicia parceria co-criativa</span>
+    "Soluções personalizadas a partir de cada realidade",
+    "Arquiteta ecossistemas de experiências inteligentes",
+    "Também constrói conexões emocionais",
+    "Flexibilidade total às suas possibilidades",
+    "Inicia parceria co-criativa"
   ];
 
   return (
@@ -366,7 +366,21 @@ export function NossaDiferenca() {
                         className="w-8 h-8 text-lg bg-gradient-to-r from-green-600 to-emerald-500 shadow-green-500/50 border-2 border-green-400/50" 
                       />
                     </div>
-                    <span className="font-bold text-[18px] text-[#ff8000]" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>{item}</span>
+                    <span 
+                      className="text-white font-medium leading-relaxed transition-all duration-300"
+                      style={{ 
+                        textShadow: 'none',
+                        transition: 'text-shadow 0.3s ease'
+                      }}
+                      onMouseEnter={(e) => {
+                        (e.target as HTMLElement).style.textShadow = '2px 2px 6px rgba(0,0,0,0.9)';
+                      }}
+                      onMouseLeave={(e) => {
+                        (e.target as HTMLElement).style.textShadow = 'none';
+                      }}
+                    >
+                      {item}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -374,43 +388,7 @@ export function NossaDiferenca() {
           </div>
         </div>
 
-        {/* Interactive Buttons Demo */}
-        <div className="mt-16 animate-fade-in-up">
-          <div className="bg-gray-900/80 backdrop-blur-md rounded-2xl p-8 border border-gray-700/50">
-            <h3 className="text-2xl font-poppins font-bold text-white mb-6 text-center">
-              Botões Interativos com Ripple Effect
-            </h3>
-            
-            <div className="flex justify-center gap-8 mb-6">
-              <div className="flex flex-col items-center gap-3">
-                <RippleButton 
-                  icon="✔️" 
-                  variant="success"
-                  className="w-16 h-16 text-2xl"
-                />
-                <span className="text-emerald-400 text-sm font-medium">
-                  Aprovar
-                </span>
-              </div>
-              
-              <div className="flex flex-col items-center gap-3">
-                <RippleButton 
-                  icon="❌" 
-                  variant="error"
-                  className="w-16 h-16 text-2xl"
-                />
-                <span className="text-red-400 text-sm font-medium">
-                  Rejeitar
-                </span>
-              </div>
-            </div>
-
-            <p className="text-gray-400 text-sm text-center max-w-md mx-auto">
-              Clique nos botões para ver o efeito ripple animado com propriedades randômicas. 
-              Cada clique cria ondas únicas com velocidade e opacidade dinâmicas usando requestAnimationFrame.
-            </p>
-          </div>
-        </div>
+        
 
         {/* Final CTA */}
         <div className="text-center mt-20 animate-fade-in-up">
