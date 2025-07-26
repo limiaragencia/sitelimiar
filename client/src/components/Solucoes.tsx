@@ -118,11 +118,11 @@ export function Solucoes() {
                 <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <span className="text-white font-bold text-lg">D</span>
                 </div>
-                <h3 className="text-2xl font-poppins font-bold text-gray-900 dark:text-white mb-4">
+                <h3 className="text-2xl font-poppins font-bold text-gray-900 dark:text-white mb-4 drop-shadow-sm">
                   Diferenciação
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed font-poppins">
-                  Enquanto outros implementam soluções padronizadas, nós criamos <strong className="text-orange-600 dark:text-orange-400">ecossistemas inteligentes</strong> que evoluem com seu negócio.
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed font-poppins drop-shadow-sm">
+                  Enquanto outros implementam soluções padronizadas, nós criamos <strong className="text-orange-600 dark:text-orange-400 drop-shadow-sm">ecossistemas inteligentes</strong> que evoluem com seu negócio.
                 </p>
               </div>
             </div>
@@ -134,11 +134,11 @@ export function Solucoes() {
                 <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <span className="text-white font-bold text-lg">S</span>
                 </div>
-                <h3 className="text-2xl font-poppins font-bold text-gray-900 dark:text-white mb-4">
+                <h3 className="text-2xl font-poppins font-bold text-gray-900 dark:text-white mb-4 drop-shadow-sm">
                   Simplificação
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed font-poppins">
-                  Transformamos a complexidade da IA em <strong className="text-blue-600 dark:text-blue-400">soluções elegantes</strong> que impulsionam seu crescimento.
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed font-poppins drop-shadow-sm">
+                  Transformamos a complexidade da IA em <strong className="text-blue-600 dark:text-blue-400 drop-shadow-sm">soluções elegantes</strong> que impulsionam seu crescimento.
                 </p>
               </div>
             </div>
@@ -150,11 +150,11 @@ export function Solucoes() {
                 <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <span className="text-white font-bold text-lg">P</span>
                 </div>
-                <h3 className="text-2xl font-poppins font-bold text-gray-900 dark:text-white mb-4">
+                <h3 className="text-2xl font-poppins font-bold text-gray-900 dark:text-white mb-4 drop-shadow-sm">
                   Personalização
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed font-poppins">
-                  Não seguimos receitas prontas — cada futuro que arquitetamos é <strong className="text-purple-600 dark:text-purple-400">único como sua empresa</strong>.
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed font-poppins drop-shadow-sm">
+                  Não seguimos receitas prontas — cada futuro que arquitetamos é <strong className="text-purple-600 dark:text-purple-400 drop-shadow-sm">único como sua empresa</strong>.
                 </p>
               </div>
             </div>
