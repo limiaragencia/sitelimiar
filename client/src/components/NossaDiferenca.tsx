@@ -301,7 +301,7 @@ export function NossaDiferenca() {
               </h4>
               
               {/* Conversational description */}
-              <p className="text-gray-300 font-poppins font-thin leading-relaxed text-sm" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
+              <p className="text-gray-300 font-poppins text-sm mt-[-6px] mb-[-6px] pl-[0px] pr-[0px] ml-[-14px] mr-[-14px] font-bold" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
                 <span className="text-limiar-orange font-semibold">24 horas</span> para análise inicial e proposta estratégica. 
                 Porque <span className="text-limiar-orange">oportunidades não esperam</span>.
               </p>
