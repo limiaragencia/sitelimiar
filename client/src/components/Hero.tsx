@@ -236,6 +236,20 @@ export function Hero() {
         className="absolute inset-0 w-full h-full bg-black dark:bg-gray-900"
         style={{ zIndex: 0 }}
       />
+      
+      {/* Texture/Ranhura Overlay */}
+      <div 
+        className="absolute inset-0 opacity-20"
+        style={{
+          backgroundImage: `
+            linear-gradient(45deg, transparent 40%, rgba(255,255,255,0.1) 41%, rgba(255,255,255,0.1) 43%, transparent 44%),
+            linear-gradient(-45deg, transparent 40%, rgba(255,255,255,0.05) 41%, rgba(255,255,255,0.05) 43%, transparent 44%)
+          `,
+          backgroundSize: '20px 20px',
+          zIndex: 10
+        }}
+      ></div>
+      
       <div className="relative z-20 container mx-auto px-6 font-thin">
         <div className="max-w-4xl">
           {/* Main Headline */}
