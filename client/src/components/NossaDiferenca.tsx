@@ -318,7 +318,7 @@ export function NossaDiferenca() {
                 o que a Limiar faz
               </span>
             </h3>
-            <p className="text-white text-center mt-2 text-[28px] font-light" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.5)' }}>Veja a diferença na prática</p>
+            <p className="text-white text-center text-[28px] mt-[-1px] mb-[-1px] pt-[-15px] pb-[-15px] pl-[26px] pr-[26px] font-bold" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.5)' }}>Veja a diferença na prática</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 min-h-[400px]">
