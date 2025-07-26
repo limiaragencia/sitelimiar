@@ -73,8 +73,8 @@ export function NossaDiferenca() {
         {/* Section Header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-6xl font-poppins font-bold mb-6 text-white">
-            "A diferença entre <span className="bg-gradient-to-r from-limiar-orange to-limiar-gold bg-clip-text text-transparent">usar IA</span> e{" "}
-            <span className="bg-gradient-to-r from-limiar-gold to-limiar-orange bg-clip-text text-transparent">ser IA</span> em essência criativa."
+            "A diferença entre <span className="text-limiar-orange font-extrabold">usar IA</span> e{" "}
+            <span className="text-limiar-gold font-extrabold">ser IA</span> em essência criativa."
           </h2>
           <p className="text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed">
             Enquanto outros tratam a inteligência artificial como ferramenta, nós a abraçamos como linguagem.
