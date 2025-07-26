@@ -346,7 +346,7 @@ export function NossaDiferenca() {
               <div className="absolute top-4 right-4 w-12 h-12 bg-green-500/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-green-500/30">
                 <Check className="text-green-400" size={20} />
               </div>
-              <h4 className="text-2xl font-poppins font-bold text-limiar-orange mb-8 text-center" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
+              <h4 className="text-2xl font-poppins font-bold text-limiar-orange mb-8 text-center cursor-pointer hover:scale-110 hover:animate-pulse transition-all duration-300 ease-in-out" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
                 Abordagem Limiar
               </h4>
               <div className="space-y-5">
