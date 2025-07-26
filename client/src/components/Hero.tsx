@@ -35,15 +35,26 @@ export function Hero() {
       particlesRef.current = [];
       for (let i = 0; i < particleCount; i++) {
         const baseSpeed = window.innerWidth < 768 ? 0.3 : 0.5; // Movimento mais suave
+        
+        // 60% das partículas à direita, 40% à esquerda
+        let x;
+        if (i < particleCount * 0.6) {
+          // 60% à direita (50% - 100% da largura)
+          x = (Math.random() * 0.5 + 0.5) * canvas.width;
+        } else {
+          // 40% à esquerda (0% - 50% da largura)
+          x = Math.random() * 0.5 * canvas.width;
+        }
+        
         particlesRef.current.push({
-          x: Math.random() * canvas.width,
+          x: x,
           y: Math.random() * canvas.height,
           vx: (Math.random() - 0.5) * baseSpeed,
           vy: (Math.random() - 0.5) * baseSpeed,
           originalVx: (Math.random() - 0.5) * baseSpeed,
           originalVy: (Math.random() - 0.5) * baseSpeed,
           radius: Math.random() * 1.5 + 0.8, // Partículas menores para melhor performance
-          opacity: Math.random() * 0.7 + 0.3,
+          opacity: 0.3, // 30% opacidade fixa
           trail: []
         });
       }
@@ -98,7 +109,7 @@ export function Hero() {
       particlesRef.current.forEach(particle => {
         if (particle.trail.length > 1) {
           for (let i = 1; i < particle.trail.length; i++) {
-            const opacity = (i / particle.trail.length) * 0.3;
+            const opacity = (i / particle.trail.length) * 0.2; // Trail ainda mais sutil
             ctx.beginPath();
             ctx.moveTo(particle.trail[i-1].x, particle.trail[i-1].y);
             ctx.lineTo(particle.trail[i].x, particle.trail[i].y);
@@ -129,7 +140,7 @@ export function Hero() {
         if (distance < mouseRadius) {
           ctx.beginPath();
           ctx.arc(particle.x, particle.y, particle.radius * glowIntensity * 2, 0, Math.PI * 2);
-          ctx.fillStyle = `rgba(255, 215, 0, ${0.1 * glowIntensity})`;
+          ctx.fillStyle = `rgba(255, 215, 0, ${0.08 * glowIntensity})`; // Brilho mais sutil
           ctx.fill();
         }
       });
@@ -143,7 +154,7 @@ export function Hero() {
           const distance = Math.sqrt(dx * dx + dy * dy);
 
           if (distance < connectionDistance) {
-            const opacity = (1 - distance / connectionDistance) * 0.4;
+            const opacity = (1 - distance / connectionDistance) * 0.3; // 30% opacidade máxima
             ctx.beginPath();
             ctx.moveTo(particlesRef.current[i].x, particlesRef.current[i].y);
             ctx.lineTo(particlesRef.current[j].x, particlesRef.current[j].y);
