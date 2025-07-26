@@ -36,7 +36,7 @@ export function Hero() {
         <div className="max-w-4xl">
           {/* Main Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-poppins font-bold mb-6 leading-tight animate-fade-in-up text-left">
-            <span className="block text-gray-900 dark:text-white ml-[0px] mr-[0px] pl-[0px] pr-[0px] pt-[4px] pb-[4px] text-[45px] mt-[-20px] mb-[-20px]">Existe um lugar entre</span>
+            <span className="block text-gray-900 dark:text-white ml-[0px] mr-[0px] pl-[0px] pr-[0px] pt-[4px] pb-[4px] text-[45px] mt-[12px] mb-[12px]">Existe um lugar entre</span>
             <span className="block md:text-5xl lg:text-6xl text-limiar-orange pl-[0px] pr-[0px] ml-[0px] mr-[0px] font-black text-[45px] pt-[6px] pb-[6px] mt-[-22px] mb-[-22px]">
               o que foi e o que
             </span>
