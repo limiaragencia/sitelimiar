@@ -28,7 +28,9 @@ export function Footer() {
             </p>
             <div className="flex space-x-6">
               <a
-                href="#"
+                href="https://instagram.com/srcrlima"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group relative w-16 h-16 rounded-full flex items-center justify-center bg-gradient-to-br from-purple-500 via-pink-500 to-orange-400 hover:from-purple-600 hover:via-pink-600 hover:to-orange-500 shadow-lg hover:shadow-[0_15px_35px_rgba(255,20,147,0.4)] hover:scale-110 transition-all duration-500 transform-gpu hover:rotate-6"
                 style={{
                   background: 'linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d)',
@@ -39,7 +41,9 @@ export function Footer() {
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </a>
               <a
-                href="#"
+                href="https://www.youtube.com/@Limiar_agencIA"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group relative w-16 h-16 rounded-full flex items-center justify-center bg-red-600 hover:bg-red-700 shadow-lg hover:shadow-[0_15px_35px_rgba(255,0,0,0.4)] hover:scale-110 transition-all duration-500 transform-gpu hover:-rotate-6"
                 style={{
                   background: '#FF0000',
@@ -98,7 +102,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="text-limiar-orange" size={16} />
-                <span className="text-gray-300">+55 (11) 99999-9999</span>
+                <span className="text-gray-300">+55 34 99690 2230</span>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="text-limiar-orange" size={16} />
