@@ -288,7 +288,7 @@ export function Hero() {
           </div>
 
           {/* Stats - Distribuídos horizontalmente */}
-          <div className="w-full max-w-5xl animate-fade-in-up">
+          <div className="w-full max-w-5xl animate-fade-in-up ml-[2px] mr-[2px] pl-[-2px] pr-[-2px] mt-[26px] mb-[26px] pt-[-69px] pb-[-69px]">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 justify-items-center">
               <div className="flex items-center gap-4 group animate-[slideInLeft_0.8s_ease-out_0.2s_both] justify-center md:justify-start p-4 rounded-lg transition-all duration-300 hover:shadow-[0_10px_30px_rgba(255,127,0,0.2)] hover:bg-white/5 backdrop-blur-sm mt-[0px] mb-[0px] pt-[14px] pb-[14px] pl-[0px] pr-[0px] ml-[-15px] mr-[-15px]">
                 <div className="relative">
