@@ -314,7 +314,7 @@ export function NossaDiferenca() {
         <div className="bg-black/20 backdrop-blur-md rounded-2xl overflow-hidden shadow-2xl border border-white/20 animate-fade-in-up">
           <div className="bg-gradient-to-r from-limiar-orange to-limiar-gold p-8">
             <h3 className="font-poppins font-bold text-white text-center text-[39px] ml-[127px] mr-[127px] pl-[-13px] pr-[-13px] mt-[2px] mb-[2px] pt-[14px] pb-[14px]" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.5)' }}>
-              O que outros fazem X <span className="text-limiar-orange inline animate-pulse cursor-pointer" style={{ filter: 'brightness(1.3) drop-shadow(0 0 10px rgba(255,127,0,0.8))' }}>
+              O que outros fazem X <span className="text-limiar-orange inline cursor-pointer" style={{ filter: 'brightness(1.3) drop-shadow(0 0 10px rgba(255,127,0,0.8))' }}>
                 o que a Limiar faz
               </span>
             </h3>
@@ -349,7 +349,7 @@ export function NossaDiferenca() {
 
             {/* Abordagem Limiar */}
             <div className="p-8 bg-gradient-to-br from-limiar-orange/20 to-limiar-gold/20 backdrop-blur-sm relative">
-              <h4 className="text-2xl font-poppins font-bold text-limiar-orange mb-8 text-center" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.5)' }}>
+              <h4 className="text-2xl font-poppins font-bold text-limiar-orange mb-8 text-center animate-pulse" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.5)', animationDuration: '3s' }}>
                 Abordagem Limiar
               </h4>
               <div className="space-y-5">
@@ -366,7 +366,7 @@ export function NossaDiferenca() {
                         className="w-8 h-8 text-lg bg-gradient-to-r from-green-600 to-emerald-500 shadow-green-500/50 border-2 border-green-400/50" 
                       />
                     </div>
-                    <span className="font-medium text-[18px] text-[#ff8000]" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.5)' }}>
+                    <span className="font-medium text-[18px] text-[#ff8000] animate-pulse" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.5)', animationDuration: '4s', animationDelay: `${index * 0.5}s` }}>
                       {item}
                     </span>
                   </div>
