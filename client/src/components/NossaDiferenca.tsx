@@ -380,9 +380,7 @@ export function NossaDiferenca() {
         <div className="text-center mt-20 animate-fade-in-up">
           <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-12 mb-8 border border-white/20">
             <div className="space-y-6">
-              <p className="text-2xl md:text-3xl font-poppins font-medium text-white leading-relaxed" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.6)' }}>
-                "Quando sua marca vai parar de observar o futuro"
-              </p>
+              <p className="md:text-3xl font-poppins text-white text-[45px] font-bold mt-[-22px] mb-[-22px] ml-[-13px] mr-[-13px]" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.6)' }}>Quando sua marca vai parar de observar o futuro</p>
               <p className="text-3xl md:text-5xl font-poppins font-bold bg-gradient-to-r from-limiar-orange to-limiar-gold bg-clip-text leading-tight text-[#ff8000]" style={{ textShadow: '3px 3px 8px rgba(0,0,0,0.8), 1px 1px 4px rgba(0,0,0,0.9)' }}>
                 e começar a habitá-lo?
               </p>
