@@ -383,7 +383,7 @@ export function NossaDiferenca() {
               <p className="text-2xl md:text-3xl font-poppins font-medium text-white leading-relaxed" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.6)' }}>
                 "Quando sua marca vai parar de observar o futuro"
               </p>
-              <p className="text-3xl md:text-5xl font-poppins font-bold bg-gradient-to-r from-limiar-orange to-limiar-gold bg-clip-text text-transparent leading-tight">
+              <p className="text-3xl md:text-5xl font-poppins font-bold bg-gradient-to-r from-limiar-orange to-limiar-gold bg-clip-text text-transparent leading-tight" style={{ textShadow: '3px 3px 8px rgba(0,0,0,0.8), 1px 1px 4px rgba(0,0,0,0.9)' }}>
                 e começar a habitá-lo?
               </p>
             </div>
