@@ -311,7 +311,7 @@ export function Hero() {
                   <Zap className="w-8 h-8 text-limiar-orange animate-pulse group-hover:scale-125 group-hover:text-limiar-gold transition-all duration-300" />
                   <div className="absolute inset-0 bg-limiar-orange/20 rounded-full blur-md animate-pulse group-hover:bg-limiar-gold/30 transition-colors duration-300"></div>
                 </div>
-                <span className="text-white drop-shadow-lg hover:text-limiar-gold hover:scale-110 hover:drop-shadow-[0_0_15px_rgba(255,215,0,0.8)] transition-all duration-300 text-center md:text-right font-bold cursor-pointer text-base">O FUTURO NÃO ESPERA</span>
+                <span className="text-white drop-shadow-lg hover:text-limiar-gold hover:scale-110 hover:drop-shadow-[0_0_15px_rgba(255,215,0,0.8)] transition-all duration-300 text-center md:text-right font-bold cursor-pointer text-[12px]">O FUTURO NÃO ESPERA</span>
               </div>
             </div>
             
