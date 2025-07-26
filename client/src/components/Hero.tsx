@@ -242,7 +242,7 @@ export function Hero() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-poppins font-bold mb-6 leading-tight animate-fade-in-up text-left">
             <span className="block text-white drop-shadow-2xl ml-[0px] mr-[0px] pl-[0px] pr-[0px] pt-[4px] pb-[4px] mt-[12px] mb-[12px] text-[60px]">Existe um lugar entre</span>
             <span className="block md:text-5xl lg:text-6xl text-limiar-orange pl-[0px] pr-[0px] ml-[0px] mr-[0px] text-[45px] pt-[6px] pb-[6px] mt-[-29px] mb-[-29px] font-black">
-              o que foi e o que está por vir.
+              o que foi e o que <span className="font-extrabold text-[48px] tracking-tight">está por vir</span>.
             </span>
             <span className="block md:text-2xl lg:text-3xl text-white drop-shadow-2xl pt-[55px] pb-[55px] pl-[-31px] pr-[-31px] ml-[0px] mr-[0px] font-thin mt-[28px] mb-[28px] text-[55px]">
               Bem-vindo(a) ao <span className="font-semibold text-limiar-orange drop-shadow-lg">Limiar.</span>
