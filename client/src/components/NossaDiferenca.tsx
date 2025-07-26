@@ -68,11 +68,10 @@ export function NossaDiferenca() {
       {/* Background Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70"></div>
       <div className="absolute inset-0 bg-gradient-to-r from-limiar-orange/20 to-limiar-gold/20"></div>
-      
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-6xl font-poppins font-bold mb-6 text-white">
+          <h2 className="text-4xl md:text-6xl font-poppins font-bold text-white mt-[8px] mb-[8px] pt-[-5px] pb-[-5px]">
             "A diferença entre <span className="text-limiar-gold font-extrabold">usar IA</span> e{" "}
             <span className="text-limiar-orange font-extrabold">ser IA</span> em essência criativa."
           </h2>
