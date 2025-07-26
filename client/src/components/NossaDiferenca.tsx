@@ -85,7 +85,7 @@ export function NossaDiferenca() {
         {/* Pillars Section Title */}
         <div className="text-center mb-16">
           <h3 className="text-3xl md:text-4xl font-poppins font-bold text-white">
-            OS 4 PILARES DA LIMIAR <span className="text-limiar-orange">Como Habitamos o Futuro</span>
+            OS 4 PILARES DA LIMIAR | <span className="text-limiar-orange">COMO HABITAMOS O FUTURO</span>
           </h3>
         </div>
 
