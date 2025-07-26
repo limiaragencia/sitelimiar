@@ -22,9 +22,9 @@ export function Hero() {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    const particleCount = 320;
-    const connectionDistance = 150;
-    const mouseRadius = 200;
+    const particleCount = window.innerWidth < 768 ? 150 : 320; // Menos partículas no mobile
+    const connectionDistance = window.innerWidth < 768 ? 100 : 150; // Menor distância de conexão no mobile
+    const mouseRadius = window.innerWidth < 768 ? 120 : 200;
 
     const init = () => {
       canvas.width = window.innerWidth;
@@ -34,15 +34,16 @@ export function Hero() {
     const createParticles = () => {
       particlesRef.current = [];
       for (let i = 0; i < particleCount; i++) {
+        const baseSpeed = window.innerWidth < 768 ? 0.3 : 0.5; // Movimento mais suave
         particlesRef.current.push({
           x: Math.random() * canvas.width,
           y: Math.random() * canvas.height,
-          vx: (Math.random() - 0.5) * 0.8,
-          vy: (Math.random() - 0.5) * 0.8,
-          originalVx: (Math.random() - 0.5) * 0.8,
-          originalVy: (Math.random() - 0.5) * 0.8,
-          radius: Math.random() * 2 + 1,
-          opacity: Math.random() * 0.6 + 0.4,
+          vx: (Math.random() - 0.5) * baseSpeed,
+          vy: (Math.random() - 0.5) * baseSpeed,
+          originalVx: (Math.random() - 0.5) * baseSpeed,
+          originalVy: (Math.random() - 0.5) * baseSpeed,
+          radius: Math.random() * 1.5 + 0.8, // Partículas menores para melhor performance
+          opacity: Math.random() * 0.7 + 0.3,
           trail: []
         });
       }
@@ -52,7 +53,8 @@ export function Hero() {
       particlesRef.current.forEach(particle => {
         particle.trail.push({ x: particle.x, y: particle.y });
         
-        if (particle.trail.length > 15) {
+        const trailLength = window.innerWidth < 768 ? 8 : 12; // Trail menor no mobile para performance
+        if (particle.trail.length > trailLength) {
           particle.trail.shift();
         }
 
@@ -63,15 +65,18 @@ export function Hero() {
         if (distance < mouseRadius) {
           const force = (mouseRadius - distance) / mouseRadius;
           const angle = Math.atan2(dy, dx);
-          particle.vx += Math.cos(angle) * force * 0.5;
-          particle.vy += Math.sin(angle) * force * 0.5;
+          const forceMultiplier = window.innerWidth < 768 ? 0.3 : 0.4; // Força reduzida para movimento suave
+          particle.vx += Math.cos(angle) * force * forceMultiplier;
+          particle.vy += Math.sin(angle) * force * forceMultiplier;
         } else {
-          particle.vx += (particle.originalVx - particle.vx) * 0.02;
-          particle.vy += (particle.originalVy - particle.vy) * 0.02;
+          const returnSpeed = window.innerWidth < 768 ? 0.015 : 0.025; // Retorno mais suave
+          particle.vx += (particle.originalVx - particle.vx) * returnSpeed;
+          particle.vy += (particle.originalVy - particle.vy) * returnSpeed;
         }
 
-        particle.vx *= 0.99;
-        particle.vy *= 0.99;
+        const friction = window.innerWidth < 768 ? 0.985 : 0.992; // Menos fricção para movimento mais fluido
+        particle.vx *= friction;
+        particle.vy *= friction;
         particle.x += particle.vx;
         particle.y += particle.vy;
 
@@ -150,12 +155,19 @@ export function Hero() {
       }
     };
 
-    const animate = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      updateParticles();
-      drawConnections();
-      drawTrails();
-      drawParticles();
+    let lastTime = 0;
+    const targetFPS = window.innerWidth < 768 ? 30 : 60; // FPS reduzido no mobile
+    const frameInterval = 1000 / targetFPS;
+
+    const animate = (currentTime: number) => {
+      if (currentTime - lastTime >= frameInterval) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        updateParticles();
+        drawConnections();
+        drawTrails();
+        drawParticles();
+        lastTime = currentTime;
+      }
       animationRef.current = requestAnimationFrame(animate);
     };
 
@@ -169,12 +181,29 @@ export function Hero() {
       mouseRef.current.y = e.clientY;
     };
 
+    const handleTouchMove = (e: TouchEvent) => {
+      e.preventDefault();
+      if (e.touches.length > 0) {
+        mouseRef.current.x = e.touches[0].clientX;
+        mouseRef.current.y = e.touches[0].clientY;
+      }
+    };
+
+    const handleTouchEnd = () => {
+      // Resetar posição do mouse quando touch acaba para não manter efeito
+      mouseRef.current.x = -1000;
+      mouseRef.current.y = -1000;
+    };
+
     init();
     createParticles();
-    animate();
+    animate(0);
 
     window.addEventListener('resize', handleResize);
     window.addEventListener('mousemove', handleMouseMove);
+    canvas.addEventListener('touchmove', handleTouchMove, { passive: false });
+    canvas.addEventListener('touchend', handleTouchEnd);
+    canvas.addEventListener('touchcancel', handleTouchEnd);
 
     return () => {
       if (animationRef.current) {
@@ -182,6 +211,9 @@ export function Hero() {
       }
       window.removeEventListener('resize', handleResize);
       window.removeEventListener('mousemove', handleMouseMove);
+      canvas.removeEventListener('touchmove', handleTouchMove);
+      canvas.removeEventListener('touchend', handleTouchEnd);
+      canvas.removeEventListener('touchcancel', handleTouchEnd);
     };
   }, []);
 
