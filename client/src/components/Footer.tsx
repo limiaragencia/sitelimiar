@@ -106,7 +106,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="text-limiar-orange" size={16} />
-                <span className="text-gray-300">São Paulo, SP</span>
+                <span className="text-gray-300">Uberlândia - MG | Pires do Rio - GO</span>
               </div>
             </div>
           </div>
