@@ -221,7 +221,7 @@ export function NossaDiferenca() {
               </h4>
               
               {/* Conversational description */}
-              <p className="text-gray-300 font-poppins text-sm font-bold" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
+              <p className="text-gray-300 font-poppins text-sm font-bold ml-[-17px] mr-[-17px]" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
                 que <span className="text-limiar-orange font-semibold">95% renovam a parceria</span> após o primeiro projeto. 
                 Não é só satisfação — é <span className="text-limiar-orange">conexão genuína</span>.
               </p>
