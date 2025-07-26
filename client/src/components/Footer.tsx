@@ -1,5 +1,5 @@
 import { Linkedin, Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react";
-import logoGold from "@assets/limiar logo complta dourado cabeçalho_1753516246517.png";
+import logoGold from "@assets/limiar logo complta dourado cabeçalho site_1753516491901.png";
 
 export function Footer() {
   const scrollToSection = (sectionId: string) => {

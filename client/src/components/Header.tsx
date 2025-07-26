@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { useTheme } from "./ThemeProvider";
-import logoGold from "@assets/limiar logo complta dourado cabeçalho_1753516246517.png";
+import logoGold from "@assets/limiar logo complta dourado cabeçalho site_1753516491901.png";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
