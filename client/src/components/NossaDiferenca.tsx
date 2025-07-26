@@ -335,7 +335,11 @@ export function NossaDiferenca() {
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     <div className="flex-shrink-0">
-                      <RippleButton icon="❌" variant="error" className="w-5 h-5 text-xs" />
+                      <RippleButton 
+                        icon="❌" 
+                        variant="error" 
+                        className="w-8 h-8 text-lg bg-gradient-to-r from-red-600 to-red-500 shadow-red-500/50 border-2 border-red-400/50" 
+                      />
                     </div>
                     <span className="text-gray-200 leading-relaxed font-medium" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>{item}</span>
                   </div>
