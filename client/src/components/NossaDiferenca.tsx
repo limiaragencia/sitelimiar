@@ -214,7 +214,7 @@ export function NossaDiferenca() {
             </div>
             
             {/* Glass text box */}
-            <div className="bg-black/90 backdrop-blur-md rounded-2xl p-6 border border-white/10">
+            <div className="bg-black/20 backdrop-blur-md rounded-2xl p-6 border border-white/10">
               {/* Conversational title */}
               <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3 group-hover:text-limiar-orange transition-colors duration-300">
                 "Nossos clientes adoram tanto..."
@@ -254,7 +254,7 @@ export function NossaDiferenca() {
             </div>
             
             {/* Glass text box */}
-            <div className="bg-black/90 backdrop-blur-md rounded-2xl p-6 border border-white/10">
+            <div className="bg-black/20 backdrop-blur-md rounded-2xl p-6 border border-white/10">
               {/* Conversational title */}
               <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3 group-hover:text-limiar-orange transition-colors duration-300">
                 "Cada real investido vira..."
@@ -294,7 +294,7 @@ export function NossaDiferenca() {
             </div>
             
             {/* Glass text box */}
-            <div className="bg-black/90 backdrop-blur-md rounded-2xl p-6 border border-white/10">
+            <div className="bg-black/20 backdrop-blur-md rounded-2xl p-6 border border-white/10">
               {/* Conversational title */}
               <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3 group-hover:text-limiar-orange transition-colors duration-300">
                 "Urgência? Nós entendemos..."
