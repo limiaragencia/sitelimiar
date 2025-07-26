@@ -303,7 +303,7 @@ export function Hero() {
                   <Brain className="w-8 h-8 text-limiar-orange animate-pulse group-hover:scale-125 group-hover:text-limiar-gold transition-all duration-300" />
                   <div className="absolute inset-0 bg-limiar-orange/20 rounded-full blur-md animate-pulse group-hover:bg-limiar-gold/30 transition-colors duration-300"></div>
                 </div>
-                <span className="text-white drop-shadow-lg hover:text-limiar-gold hover:scale-110 hover:drop-shadow-[0_0_15px_rgba(255,215,0,0.8)] transition-all duration-300 text-center text-[18px] font-bold cursor-pointer">ECOSSISTEMA DE IA</span>
+                <span className="text-white drop-shadow-lg hover:text-limiar-gold hover:scale-110 hover:drop-shadow-[0_0_15px_rgba(255,215,0,0.8)] transition-all duration-300 text-center font-bold cursor-pointer text-[15px] ml-[-85px] mr-[-85px] pl-[123px] pr-[123px] mt-[-10px] mb-[-10px] pt-[-12px] pb-[-12px]">ECOSSISTEMA DE IA</span>
               </div>
               
               <div className="flex items-center gap-4 group animate-[slideInLeft_0.8s_ease-out_0.6s_both] justify-center md:justify-end p-4 rounded-lg transition-all duration-300 hover:shadow-[0_10px_30px_rgba(255,127,0,0.2)] hover:bg-white/5 backdrop-blur-sm">
