@@ -82,6 +82,16 @@ export function NossaDiferenca() {
           </p>
         </div>
 
+        {/* Pillars Section Title */}
+        <div className="text-center mb-16">
+          <h3 className="text-3xl md:text-4xl font-poppins font-bold text-white mb-4">
+            OS 4 PILARES DA LIMIAR
+          </h3>
+          <p className="text-xl text-gray-300 font-poppins font-thin">
+            Como Habitamos o Futuro
+          </p>
+        </div>
+
         {/* 4 Pillars Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
           {pillars.map((pillar, index) => {
