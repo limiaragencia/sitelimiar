@@ -310,58 +310,58 @@ export function NossaDiferenca() {
         </div>
 
         {/* Contrast Table */}
-        <div className="bg-white/95 backdrop-blur-sm rounded-2xl overflow-hidden shadow-2xl border border-white/20 animate-fade-in-up">
+        <div className="bg-black/20 backdrop-blur-md rounded-2xl overflow-hidden shadow-2xl border border-white/20 animate-fade-in-up">
           <div className="bg-gradient-to-r from-limiar-orange to-limiar-gold p-8">
-            <h3 className="text-3xl font-poppins font-bold text-white text-center">
+            <h3 className="text-3xl font-poppins font-bold text-white text-center" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
               O que outros fazem vs. O que a Limiar faz
             </h3>
-            <p className="text-white/90 text-center mt-2">Veja a diferença na prática</p>
+            <p className="text-white text-center mt-2 font-medium" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>Veja a diferença na prática</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 min-h-[400px]">
             {/* Abordagem Convencional */}
-            <div className="p-8 bg-gray-50 dark:bg-dark-bg-secondary relative">
-              <div className="absolute top-4 right-4 w-12 h-12 bg-red-100 dark:bg-red-900/20 rounded-full flex items-center justify-center">
-                <X className="text-red-500" size={20} />
+            <div className="p-8 bg-black/30 backdrop-blur-sm relative">
+              <div className="absolute top-4 right-4 w-12 h-12 bg-red-500/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-red-500/30">
+                <X className="text-red-400" size={20} />
               </div>
-              <h4 className="text-2xl font-poppins font-bold text-gray-600 dark:text-gray-400 mb-8 text-center">
+              <h4 className="text-2xl font-poppins font-bold text-white mb-8 text-center" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
                 Abordagem Convencional
               </h4>
               <div className="space-y-5">
                 {conventional.map((item, index) => (
                   <div 
                     key={index} 
-                    className="flex items-start gap-4 p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-dark-bg transition-colors duration-200"
+                    className="flex items-start gap-4 p-3 rounded-lg hover:bg-black/20 transition-colors duration-200"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
-                    <div className="w-6 h-6 bg-red-100 dark:bg-red-900/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <X className="text-red-500" size={12} />
+                    <div className="w-6 h-6 bg-red-500/20 backdrop-blur-sm rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 border border-red-500/30">
+                      <X className="text-red-400" size={12} />
                     </div>
-                    <span className="text-gray-700 dark:text-gray-300 leading-relaxed">{item}</span>
+                    <span className="text-gray-200 leading-relaxed font-medium" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>{item}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* Abordagem Limiar */}
-            <div className="p-8 bg-gradient-to-br from-limiar-orange/10 to-limiar-gold/10 dark:bg-gradient-to-br dark:from-limiar-orange/20 dark:to-limiar-gold/20 relative">
-              <div className="absolute top-4 right-4 w-12 h-12 bg-green-100 dark:bg-green-900/20 rounded-full flex items-center justify-center">
-                <Check className="text-green-500" size={20} />
+            <div className="p-8 bg-gradient-to-br from-limiar-orange/20 to-limiar-gold/20 backdrop-blur-sm relative">
+              <div className="absolute top-4 right-4 w-12 h-12 bg-green-500/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-green-500/30">
+                <Check className="text-green-400" size={20} />
               </div>
-              <h4 className="text-2xl font-poppins font-bold bg-gradient-to-r from-limiar-orange to-limiar-gold bg-clip-text text-transparent mb-8 text-center">
+              <h4 className="text-2xl font-poppins font-bold text-limiar-orange mb-8 text-center" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
                 Abordagem Limiar
               </h4>
               <div className="space-y-5">
                 {limiar.map((item, index) => (
                   <div 
                     key={index} 
-                    className="flex items-start gap-4 p-3 rounded-lg hover:bg-gradient-to-r hover:from-limiar-orange/5 hover:to-limiar-gold/5 transition-all duration-200"
+                    className="flex items-start gap-4 p-3 rounded-lg hover:bg-gradient-to-r hover:from-limiar-orange/10 hover:to-limiar-gold/10 transition-all duration-200"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
-                    <div className="w-6 h-6 bg-green-100 dark:bg-green-900/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Check className="text-green-500" size={12} />
+                    <div className="w-6 h-6 bg-green-500/20 backdrop-blur-sm rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 border border-green-500/30">
+                      <Check className="text-green-400" size={12} />
                     </div>
-                    <span className="text-gray-900 dark:text-white font-medium leading-relaxed">{item}</span>
+                    <span className="text-white font-medium leading-relaxed" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>{item}</span>
                   </div>
                 ))}
               </div>
