@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Users, Eye, ServerCog, TrendingUp, Check, X } from "lucide-react";
+import { RippleButton } from './RippleButton';
 import backgroundImage from "@assets/194242_1753496244462.jpg";
 import CountUp from 'react-countup';
 import { useEffect, useState } from 'react';
@@ -333,8 +334,8 @@ export function NossaDiferenca() {
                     className="flex items-start gap-4 p-3 rounded-lg hover:bg-black/20 transition-colors duration-200"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
-                    <div className="w-6 h-6 bg-red-500/20 backdrop-blur-sm rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 border border-red-500/30">
-                      <X className="text-red-400" size={12} />
+                    <div className="flex-shrink-0">
+                      <RippleButton icon="❌" variant="error" className="w-5 h-5 text-xs" />
                     </div>
                     <span className="text-gray-200 leading-relaxed font-medium" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>{item}</span>
                   </div>
@@ -354,14 +355,52 @@ export function NossaDiferenca() {
                     className="flex items-start gap-4 p-3 rounded-lg hover:bg-gradient-to-r hover:from-limiar-orange/10 hover:to-limiar-gold/10 transition-all duration-200"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
-                    <div className="w-6 h-6 bg-green-500/20 backdrop-blur-sm rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 border border-green-500/30">
-                      <Check className="text-green-400" size={12} />
+                    <div className="flex-shrink-0">
+                      <RippleButton icon="✔️" variant="success" className="w-5 h-5 text-xs" />
                     </div>
                     <span className="text-white font-medium leading-relaxed" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>{item}</span>
                   </div>
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Interactive Buttons Demo */}
+        <div className="mt-16 animate-fade-in-up">
+          <div className="bg-gray-900/80 backdrop-blur-md rounded-2xl p-8 border border-gray-700/50">
+            <h3 className="text-2xl font-poppins font-bold text-white mb-6 text-center">
+              Botões Interativos com Ripple Effect
+            </h3>
+            
+            <div className="flex justify-center gap-8 mb-6">
+              <div className="flex flex-col items-center gap-3">
+                <RippleButton 
+                  icon="✔️" 
+                  variant="success"
+                  className="w-16 h-16 text-2xl"
+                />
+                <span className="text-emerald-400 text-sm font-medium">
+                  Aprovar
+                </span>
+              </div>
+              
+              <div className="flex flex-col items-center gap-3">
+                <RippleButton 
+                  icon="❌" 
+                  variant="error"
+                  className="w-16 h-16 text-2xl"
+                />
+                <span className="text-red-400 text-sm font-medium">
+                  Rejeitar
+                </span>
+              </div>
+            </div>
+
+            <p className="text-gray-400 text-sm text-center max-w-md mx-auto">
+              Clique nos botões para ver o efeito ripple animado com propriedades randômicas. 
+              Cada clique cria ondas únicas com velocidade e opacidade dinâmicas usando requestAnimationFrame.
+            </p>
           </div>
         </div>
 
