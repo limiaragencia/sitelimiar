@@ -1,5 +1,5 @@
 import { Linkedin, Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react";
-import logoWhite from "@assets/logo centralizada branca_1753484043527.png";
+import logoGold from "@assets/limiar logo complta dourado cabeçalho_1753516246517.png";
 
 export function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -17,7 +17,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
               <img 
-                src={logoWhite} 
+                src={logoGold} 
                 alt="Limiar Logo" 
                 className="h-10 w-auto"
               />
