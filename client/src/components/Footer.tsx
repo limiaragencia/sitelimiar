@@ -1,4 +1,4 @@
-import { Linkedin, Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import { Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react";
 import logoGold from "@assets/limiar logo complta dourado cabeçalho site_1753516491901.png";
 
 export function Footer() {
@@ -26,24 +26,28 @@ export function Footer() {
               Agência criativa especializada em IA. Transformamos negócios com soluções inteligentes e personalizadas
               que projetam sua marca para o futuro.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-6">
               <a
                 href="#"
-                className="w-10 h-10 bg-limiar-orange rounded-full flex items-center justify-center hover:bg-limiar-gold shadow-lg hover:shadow-[0_10px_30px_rgba(255,127,0,0.4)] hover:scale-110 transition-all duration-300 transform-gpu"
+                className="group relative w-16 h-16 rounded-full flex items-center justify-center bg-gradient-to-br from-purple-500 via-pink-500 to-orange-400 hover:from-purple-600 hover:via-pink-600 hover:to-orange-500 shadow-lg hover:shadow-[0_15px_35px_rgba(255,20,147,0.4)] hover:scale-110 transition-all duration-500 transform-gpu hover:rotate-6"
+                style={{
+                  background: 'linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d)',
+                  animation: 'pulse 2s infinite'
+                }}
               >
-                <Linkedin className="text-white" size={20} />
+                <Instagram className="text-white" size={28} />
+                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-limiar-orange rounded-full flex items-center justify-center hover:bg-limiar-gold shadow-lg hover:shadow-[0_10px_30px_rgba(255,127,0,0.4)] hover:scale-110 transition-all duration-300 transform-gpu"
+                className="group relative w-16 h-16 rounded-full flex items-center justify-center bg-red-600 hover:bg-red-700 shadow-lg hover:shadow-[0_15px_35px_rgba(255,0,0,0.4)] hover:scale-110 transition-all duration-500 transform-gpu hover:-rotate-6"
+                style={{
+                  background: '#FF0000',
+                  animation: 'pulse 2s infinite 0.5s'
+                }}
               >
-                <Instagram className="text-white" size={20} />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-limiar-orange rounded-full flex items-center justify-center hover:bg-limiar-gold shadow-lg hover:shadow-[0_10px_30px_rgba(255,127,0,0.4)] hover:scale-110 transition-all duration-300 transform-gpu"
-              >
-                <Youtube className="text-white" size={20} />
+                <Youtube className="text-white" size={32} />
+                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </a>
             </div>
           </div>
@@ -86,11 +90,11 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-xl font-poppins font-semibold mb-4 text-limiar-gold">Contato</h3>
+            <h3 className="text-xl font-poppins font-semibold mb-4 text-limiar-orange">Contato</h3>
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Mail className="text-limiar-orange" size={16} />
-                <span className="text-gray-300">contato@limiar.com.br</span>
+                <span className="text-gray-300">contato@agencialimiar.com.br</span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="text-limiar-orange" size={16} />
@@ -105,7 +109,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 Limiar. Todos os direitos reservados. O futuro, agora.</p>
+          <p className="font-poppins font-light">&copy; 2025 feito com amor por Limiar. O futuro, agora! | Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
