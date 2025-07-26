@@ -37,19 +37,19 @@ export function Header() {
           <div className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection("diferenca")}
-              className="text-gray-600 dark:text-gray-300 hover:text-limiar-orange transition-colors"
+              className="text-gray-700 dark:text-gray-200 hover:text-limiar-orange transition-colors font-medium text-base tracking-wide"
             >
               Nossa Diferença
             </button>
             <button
               onClick={() => scrollToSection("solucoes")}
-              className="text-gray-600 dark:text-gray-300 hover:text-limiar-orange transition-colors"
+              className="text-gray-700 dark:text-gray-200 hover:text-limiar-orange transition-colors font-medium text-base tracking-wide"
             >
-              Soluções
+              Portfólio
             </button>
             <button
               onClick={() => scrollToSection("contato")}
-              className="text-gray-600 dark:text-gray-300 hover:text-limiar-orange transition-colors"
+              className="text-gray-700 dark:text-gray-200 hover:text-limiar-orange transition-colors font-medium text-base tracking-wide"
             >
               Contato
             </button>
@@ -86,19 +86,19 @@ export function Header() {
             <div className="flex flex-col space-y-4">
               <button
                 onClick={() => scrollToSection("diferenca")}
-                className="text-gray-600 dark:text-gray-300 hover:text-limiar-orange transition-colors text-left"
+                className="text-gray-700 dark:text-gray-200 hover:text-limiar-orange transition-colors text-left font-medium text-base tracking-wide"
               >
                 Nossa Diferença
               </button>
               <button
                 onClick={() => scrollToSection("solucoes")}
-                className="text-gray-600 dark:text-gray-300 hover:text-limiar-orange transition-colors text-left"
+                className="text-gray-700 dark:text-gray-200 hover:text-limiar-orange transition-colors text-left font-medium text-base tracking-wide"
               >
-                Soluções
+                Portfólio
               </button>
               <button
                 onClick={() => scrollToSection("contato")}
-                className="text-gray-600 dark:text-gray-300 hover:text-limiar-orange transition-colors text-left"
+                className="text-gray-700 dark:text-gray-200 hover:text-limiar-orange transition-colors text-left font-medium text-base tracking-wide"
               >
                 Contato
               </button>
