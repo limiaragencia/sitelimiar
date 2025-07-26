@@ -173,7 +173,7 @@ export function NossaDiferenca() {
           <div className="group text-center relative">
             {/* Massive glass number with animations */}
             <div className="relative mb-8">
-              <div className="text-9xl font-black font-poppins text-limiar-orange group-hover:scale-125 transition-all duration-700 drop-shadow-[0_0_40px_rgba(255,127,0,0.6)] animate-pulse">
+              <div className="text-9xl font-black font-poppins text-limiar-orange group-hover:scale-125 transition-all duration-700 drop-shadow-[0_0_40px_rgba(255,127,0,0.6)] shadow-[4px_4px_20px_rgba(0,0,0,0.6)] animate-pulse">
                 95%
               </div>
               {/* Floating light particles */}
@@ -198,7 +198,7 @@ export function NossaDiferenca() {
           <div className="group text-center relative">
             {/* Massive glass number with animations */}
             <div className="relative mb-8">
-              <div className="text-9xl font-black font-poppins text-limiar-orange group-hover:scale-125 transition-all duration-700 drop-shadow-[0_0_40px_rgba(255,127,0,0.6)] animate-pulse">
+              <div className="text-9xl font-black font-poppins text-limiar-orange group-hover:scale-125 transition-all duration-700 drop-shadow-[0_0_40px_rgba(255,127,0,0.6)] shadow-[4px_4px_20px_rgba(0,0,0,0.6)] animate-pulse">
                 3x
               </div>
               {/* Floating light particles */}
@@ -223,7 +223,7 @@ export function NossaDiferenca() {
           <div className="group text-center relative">
             {/* Massive glass number with animations */}
             <div className="relative mb-8">
-              <div className="text-9xl font-black font-poppins text-limiar-orange group-hover:scale-125 transition-all duration-700 drop-shadow-[0_0_40px_rgba(255,127,0,0.6)] animate-pulse">
+              <div className="text-9xl font-black font-poppins text-limiar-orange group-hover:scale-125 transition-all duration-700 drop-shadow-[0_0_40px_rgba(255,127,0,0.6)] shadow-[4px_4px_20px_rgba(0,0,0,0.6)] animate-pulse">
                 24h
               </div>
               {/* Floating light particles */}
