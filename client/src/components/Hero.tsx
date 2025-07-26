@@ -276,7 +276,7 @@ export function Hero() {
           </div>
 
           {/* Stats */}
-          <div className="flex flex-col sm:flex-row gap-8 items-start animate-fade-in-up">
+          <div className="flex flex-col sm:flex-row gap-8 items-start animate-fade-in-up text-[25px]">
             <div className="flex items-center gap-3 group animate-[slideInLeft_0.8s_ease-out_0.2s_both]">
               <div className="relative">
                 <TrendingUp className="w-5 h-5 text-limiar-orange animate-pulse group-hover:scale-125 group-hover:text-limiar-gold transition-all duration-300" />
