@@ -83,7 +83,7 @@ export function NossaDiferenca() {
             "A diferença entre <span className="text-limiar-gold font-extrabold">usar IA</span> e <br />
             <span className="text-limiar-orange font-extrabold">ser IA</span> em essência criativa."
           </h2>
-          <p className="text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed font-poppins ml-[167px] mr-[167px] pl-[0px] pr-[0px] pt-[0px] pb-[0px] mt-[-10px] mb-[-10px] text-justify font-normal" style={{ textShadow: '3px 3px 8px rgba(0,0,0,0.9), 1px 1px 4px rgba(0,0,0,0.8)' }}>
+          <p className="text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed font-poppins ml-[167px] mr-[167px] pl-[0px] pr-[0px] pt-[0px] pb-[0px] mt-[-10px] mb-[-10px] text-justify font-normal" style={{ textShadow: '4px 4px 12px rgba(0,0,0,1), 2px 2px 8px rgba(0,0,0,0.9), 1px 1px 4px rgba(0,0,0,0.8)' }}>
             Enquanto outros tratam a inteligência artificial como ferramenta, nós a abraçamos como linguagem.
             Nossa metodologia proprietária transforma dados em narrativas, algoritmos em experiências e
             possibilidades em realidades que redefinem mercados.
