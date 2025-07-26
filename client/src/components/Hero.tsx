@@ -59,7 +59,7 @@ export function Hero() {
           <div className="relative max-w-2xl animate-fade-in-up">
             <div className="absolute inset-0 bg-gradient-to-r from-white/40 via-limiar-orange/5 to-limiar-gold/5 dark:from-gray-900/30 dark:via-limiar-orange/10 dark:to-limiar-gold/10 rounded-2xl backdrop-blur-sm border border-white/20 dark:border-gray-700/30"></div>
             <div className="absolute inset-0 bg-gradient-to-br from-transparent via-limiar-orange/2 to-transparent rounded-2xl"></div>
-            <blockquote className="relative px-8 py-6 md:text-xl font-poppins text-gray-800 dark:text-gray-100 text-center tracking-wide italic text-[18px] font-normal ml-[0px] mr-[0px] mt-[3px] mb-[3px] pt-[15px] pb-[15px] pl-[9px] pr-[9px] bg-[#0f01011f]">
+            <blockquote className="relative px-8 py-6 md:text-xl font-poppins text-gray-800 dark:text-gray-100 text-center tracking-wide italic font-normal ml-[0px] mr-[0px] mt-[3px] mb-[3px] pl-[9px] pr-[9px] bg-[#0f01011f] text-[17px] pt-[28px] pb-[28px]">
               "Onde outros veem código, nós vemos poesia. Habitamos a intersecção precisa entre dados e imaginação,
               criando experiências que não apenas transformam negócios — elas <span className="text-limiar-orange font-medium not-italic">despertam futuros.</span>"
             </blockquote>
