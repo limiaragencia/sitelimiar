@@ -214,7 +214,7 @@ export function NossaDiferenca() {
             </div>
             
             {/* Glass text box */}
-            <div className="bg-black/20 backdrop-blur-md rounded-2xl p-6 border border-white/10 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <div className="bg-black/20 backdrop-blur-md rounded-2xl p-6 border border-white/10 animate-fade-in-up mt-[-20px] mb-[-20px]" style={{ animationDelay: '0.2s' }}>
               {/* Conversational title */}
               <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3 group-hover:text-limiar-orange transition-colors duration-300 ml-[-6px] mr-[-6px]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
                 "Nossos clientes adoram tanto..."
