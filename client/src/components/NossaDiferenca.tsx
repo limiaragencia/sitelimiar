@@ -379,9 +379,9 @@ export function NossaDiferenca() {
         {/* Final CTA */}
         <div className="text-center mt-20 animate-fade-in-up">
           <div className="mb-8">
-            <h2 className="md:text-6xl font-poppins font-bold text-white mb-6 text-[46px]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>
+            <h2 className="md:text-6xl font-poppins font-bold text-white mb-6 text-[46px]" style={{ textShadow: '3px 3px 8px rgba(0,0,0,0.9), 1px 1px 4px rgba(0,0,0,1)' }}>
               Quando sua marca vai parar de observar o futuro e <br />
-              <span className="text-limiar-orange font-extrabold block text-[70px]">começar a habitá-lo?</span>
+              <span className="text-limiar-orange font-extrabold block text-[70px]" style={{ textShadow: '3px 3px 8px rgba(0,0,0,0.9), 1px 1px 4px rgba(0,0,0,1), 0 0 20px rgba(255,127,0,0.3)' }}>começar a habitá-lo?</span>
             </h2>
           </div>
           
