@@ -356,7 +356,7 @@ export function NossaDiferenca() {
                 {limiar.map((item, index) => (
                   <div 
                     key={index} 
-                    className="flex items-start gap-4 p-3 rounded-lg hover:bg-gradient-to-r hover:from-limiar-orange/10 hover:to-limiar-gold/10 transition-all duration-200"
+                    className="flex items-start gap-4 p-3 rounded-lg bg-black/20 hover:bg-black/60 backdrop-blur-sm hover:backdrop-blur-[10px] transition-all duration-300 ease-in-out cursor-pointer"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     <div className="flex-shrink-0">
