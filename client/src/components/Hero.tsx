@@ -22,7 +22,7 @@ export function Hero() {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    const particleCount = 200;
+    const particleCount = 320;
     const connectionDistance = 150;
     const mouseRadius = 200;
 
@@ -194,25 +194,7 @@ export function Hero() {
         style={{ zIndex: 0 }}
       />
       
-      <div className="absolute inset-0 opacity-10 dark:opacity-20">
-        {/* Modern circuit pattern background */}
-        <svg className="w-full h-full animate-fade-in-up" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <pattern id="circuit" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-              <path
-                d="M20,20 L80,20 M20,80 L80,80 M20,20 L20,80 M80,20 L80,80"
-                stroke="currentColor"
-                strokeWidth="1"
-                fill="none"
-                className="text-limiar-orange"
-              />
-              <circle cx="20" cy="20" r="3" fill="currentColor" className="text-limiar-gold" />
-              <circle cx="80" cy="80" r="3" fill="currentColor" className="text-limiar-orange" />
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#circuit)" />
-        </svg>
-      </div>
+
       <div className="relative z-20 container mx-auto px-6 font-thin">
         <div className="max-w-4xl">
           {/* Main Headline */}
