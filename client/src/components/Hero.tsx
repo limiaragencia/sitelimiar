@@ -56,11 +56,11 @@ export function Hero() {
           </p>
 
           {/* Highlight Quote */}
-          <div className="bg-white/98 dark:bg-dark-card/90 backdrop-blur-xl rounded-2xl p-8 mb-12 border border-gray-300 dark:border-limiar-orange/40 animate-fade-in-up shadow-2xl dark:shadow-limiar-orange/30 relative overflow-hidden max-w-3xl">
-            <div className="absolute inset-0 bg-gradient-to-r from-limiar-orange/5 to-limiar-gold/5 dark:from-limiar-orange/10 dark:to-limiar-gold/10"></div>
-            <blockquote className="relative md:text-xl font-poppins font-medium text-gray-900 dark:text-white italic text-[18px] text-justify pt-[-5px] pb-[-5px] pl-[-2px] pr-[-2px] ml-[-19px] mr-[-19px] mt-[-14px] mb-[-14px]">
+          <div className="bg-white/95 dark:bg-dark-card/95 backdrop-blur-xl rounded-3xl p-10 mb-14 border border-gray-200/60 dark:border-limiar-orange/30 animate-fade-in-up shadow-xl dark:shadow-limiar-orange/20 relative overflow-hidden max-w-4xl">
+            <div className="absolute inset-0 bg-gradient-to-br from-limiar-orange/3 to-limiar-gold/3 dark:from-limiar-orange/8 dark:to-limiar-gold/8"></div>
+            <blockquote className="relative text-lg md:text-xl lg:text-2xl font-poppins font-light text-gray-800 dark:text-gray-100 leading-relaxed text-center tracking-wide">
               "Onde outros veem código, nós vemos poesia. Habitamos a intersecção precisa entre dados e imaginação,
-              criando experiências que não apenas transformam negócios — elas <span className="text-limiar-orange font-semibold">despertam futuros.</span>"
+              criando experiências que não apenas transformam negócios — elas <span className="text-limiar-orange font-medium">despertam futuros.</span>"
             </blockquote>
           </div>
 
