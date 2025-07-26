@@ -68,6 +68,18 @@ export function NossaDiferenca() {
       {/* Background Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70"></div>
       <div className="absolute inset-0 bg-gradient-to-r from-limiar-orange/20 to-limiar-gold/20"></div>
+      
+      {/* Texture/Ranhura Overlay */}
+      <div 
+        className="absolute inset-0 opacity-30"
+        style={{
+          backgroundImage: `
+            linear-gradient(45deg, transparent 40%, rgba(255,255,255,0.1) 41%, rgba(255,255,255,0.1) 43%, transparent 44%),
+            linear-gradient(-45deg, transparent 40%, rgba(255,255,255,0.05) 41%, rgba(255,255,255,0.05) 43%, transparent 44%)
+          `,
+          backgroundSize: '20px 20px'
+        }}
+      ></div>
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-20">
