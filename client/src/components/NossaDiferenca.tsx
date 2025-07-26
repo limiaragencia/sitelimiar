@@ -323,8 +323,8 @@ export function NossaDiferenca() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 min-h-[400px]">
             {/* Abordagem Convencional */}
-            <div className="p-8 bg-black/30 backdrop-blur-sm relative">
-              <h4 className="text-2xl font-poppins font-bold text-white mb-8 text-center" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
+            <div className="p-8 bg-black/30 backdrop-blur-sm relative border-r border-gray-600/50">
+              <h4 className="text-2xl font-poppins font-bold text-gray-100 mb-8 text-center" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.6)' }}>
                 Abordagem Convencional
               </h4>
               <div className="space-y-5">
@@ -341,22 +341,22 @@ export function NossaDiferenca() {
                         className="w-8 h-8 text-lg bg-gradient-to-r from-red-600 to-red-500 shadow-red-500/50 border-2 border-red-400/50" 
                       />
                     </div>
-                    <span className="text-gray-200 leading-relaxed font-medium" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>{item}</span>
+                    <span className="text-gray-300 leading-relaxed font-medium" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.6)' }}>{item}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* Abordagem Limiar */}
-            <div className="p-8 bg-gradient-to-br from-limiar-orange/20 to-limiar-gold/20 backdrop-blur-sm relative">
-              <h4 className="text-2xl font-poppins font-bold text-limiar-orange mb-8 text-center animate-pulse" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.5)', animationDuration: '3s' }}>
+            <div className="p-8 bg-gradient-to-br from-limiar-orange/25 to-limiar-gold/25 backdrop-blur-sm relative border-l border-limiar-orange/30">
+              <h4 className="text-2xl font-poppins font-bold text-limiar-orange mb-8 text-center animate-pulse" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)', animationDuration: '3s' }}>
                 Abordagem Limiar
               </h4>
               <div className="space-y-5">
                 {limiar.map((item, index) => (
                   <div 
                     key={index} 
-                    className="flex items-start gap-4 p-3 rounded-lg bg-black/20 hover:bg-black/60 backdrop-blur-sm hover:backdrop-blur-[10px] transition-all duration-300 ease-in-out cursor-pointer"
+                    className="flex items-start gap-4 p-4 rounded-lg bg-black/25 hover:bg-black/50 backdrop-blur-sm hover:backdrop-blur-[8px] transition-all duration-300 ease-in-out cursor-pointer border border-limiar-orange/20 hover:border-limiar-orange/40"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     <div className="flex-shrink-0">
@@ -366,7 +366,7 @@ export function NossaDiferenca() {
                         className="w-8 h-8 text-lg bg-gradient-to-r from-green-600 to-emerald-500 shadow-green-500/50 border-2 border-green-400/50" 
                       />
                     </div>
-                    <span className="font-medium text-[18px] text-[#ff8000] animate-pulse" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.5)', animationDuration: '4s', animationDelay: `${index * 0.5}s` }}>
+                    <span className="font-semibold text-[18px] text-limiar-orange leading-relaxed animate-pulse" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)', animationDuration: '4s', animationDelay: `${index * 0.5}s` }}>
                       {item}
                     </span>
                   </div>
