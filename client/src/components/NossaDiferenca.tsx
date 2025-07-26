@@ -323,19 +323,16 @@ export function NossaDiferenca() {
           <div className="grid grid-cols-1 md:grid-cols-2 min-h-[400px]">
             {/* Abordagem Convencional */}
             <div className="p-8 bg-black/30 backdrop-blur-sm relative">
-              <h4 className="text-2xl font-poppins font-bold text-white mb-8 text-center" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
+              <h4 className="text-2xl font-poppins font-bold text-white mb-8 text-center animate-fade-in-up" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)', animationDelay: '0.1s' }}>
                 Abordagem Convencional
               </h4>
               <div className="space-y-5">
                 {conventional.map((item, index) => (
                   <div 
                     key={index} 
-                    className="flex items-start gap-4 p-3 rounded-lg hover:bg-black/20 transition-colors duration-200"
-                    style={{ animationDelay: `${index * 0.1}s` }}
+                    className="p-3 rounded-lg hover:bg-black/20 transition-colors duration-200 animate-fade-in-up"
+                    style={{ animationDelay: `${0.2 + (index * 0.1)}s` }}
                   >
-                    <div className="w-6 h-6 bg-red-500/20 backdrop-blur-sm rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 border border-red-500/30">
-                      <X className="text-red-400" size={12} />
-                    </div>
                     <span className="text-gray-200 leading-relaxed font-medium" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>{item}</span>
                   </div>
                 ))}
@@ -344,19 +341,16 @@ export function NossaDiferenca() {
 
             {/* Abordagem Limiar */}
             <div className="p-8 bg-gradient-to-br from-limiar-orange/20 to-limiar-gold/20 backdrop-blur-sm relative">
-              <h4 className="text-2xl font-poppins font-bold text-limiar-orange mb-8 text-center cursor-pointer hover:scale-110 hover:animate-pulse transition-all duration-300 ease-in-out" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
+              <h4 className="text-2xl font-poppins font-bold text-limiar-orange mb-8 text-center cursor-pointer hover:scale-110 hover:animate-pulse transition-all duration-300 ease-in-out animate-fade-in-up" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)', animationDelay: '0.1s' }}>
                 Abordagem Limiar
               </h4>
               <div className="space-y-5">
                 {limiar.map((item, index) => (
                   <div 
                     key={index} 
-                    className="flex items-start gap-4 p-3 rounded-lg hover:bg-gradient-to-r hover:from-limiar-orange/10 hover:to-limiar-gold/10 transition-all duration-200"
-                    style={{ animationDelay: `${index * 0.1}s` }}
+                    className="p-3 rounded-lg hover:bg-gradient-to-r hover:from-limiar-orange/10 hover:to-limiar-gold/10 transition-all duration-200 animate-fade-in-up"
+                    style={{ animationDelay: `${0.2 + (index * 0.1)}s` }}
                   >
-                    <div className="w-6 h-6 bg-green-500/20 backdrop-blur-sm rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 border border-green-500/30">
-                      <Check className="text-green-400" size={12} />
-                    </div>
                     <span className="text-white font-medium leading-relaxed" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>{item}</span>
                   </div>
                 ))}
