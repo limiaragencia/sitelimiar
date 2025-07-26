@@ -261,7 +261,7 @@ export function NossaDiferenca() {
               </h4>
               
               {/* Conversational description */}
-              <p className="text-gray-300 font-poppins font-thin leading-relaxed text-sm" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
+              <p className="text-gray-300 font-poppins text-sm font-bold" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
                 <span className="text-limiar-orange font-semibold">3 reais de retorno</span> em média. 
                 Porque IA bem feita não é gasto — é <span className="text-limiar-orange">multiplicador de resultados</span>.
               </p>
