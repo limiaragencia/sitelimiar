@@ -77,13 +77,13 @@ export function Solucoes() {
           </h2>
 
           <div className="max-w-4xl mx-auto space-y-6">
-            <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
+            <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed font-poppins font-thin">
               <strong>Diferenciação:</strong> Enquanto outros implementam soluções padronizadas, nós criamos ecossistemas inteligentes que evoluem com seu negócio.
             </p>
-            <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
+            <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed font-poppins font-thin">
               <strong>Simplificação:</strong> Transformamos a complexidade da IA em soluções elegantes que impulsionam seu crescimento.
             </p>
-            <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
+            <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed font-poppins font-thin">
               <strong>Personalização:</strong> Não seguimos receitas prontas — cada futuro que arquitetamos é único como sua empresa.
             </p>
           </div>
@@ -110,7 +110,7 @@ export function Solucoes() {
                   </div>
                 </div>
 
-                <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed font-poppins font-thin">
                   {solution.description}
                 </p>
 

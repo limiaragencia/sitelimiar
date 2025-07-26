@@ -13,6 +13,13 @@ This is a full-stack TypeScript application for Limiar, a Brazilian AI agency. T
 - **Layout Improvements**: Stats text distributed horizontally across section, icons increased 60% (32px), scroll arrow doubled in size and repositioned after stats
 - **Responsive Design**: Comprehensive mobile optimizations with touch support, reduced particle counts, adaptive FPS limiting
 
+### Nossa Diferença Section Enhancements
+- **Futuristic Background**: Applied sci-fi image with orange/gold tones, fixed parallax effect
+- **Advanced Overlay System**: Dark gradient overlay with brand color accent for optimal readability
+- **Cards Redesign**: Translucent cards with backdrop blur effects, hover animations, improved gradients
+- **Typography Consistency**: All explanatory text uses Poppins thin font for elegant consistency
+- **Enhanced Statistics**: New metrics section with interactive hover effects and brand colors
+
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
