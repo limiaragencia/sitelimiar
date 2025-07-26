@@ -126,7 +126,7 @@ export function NossaDiferenca() {
                       <div className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${pillar.color === 'limiar-orange' ? 'from-limiar-orange to-limiar-gold' : 'from-limiar-gold to-limiar-orange'} opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500`}></div>
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-2xl font-poppins font-bold text-limiar-orange mb-2 transition-colors duration-300">
+                      <h3 className="text-2xl font-poppins font-bold text-white mb-2 group-hover:text-limiar-orange transition-colors duration-300">
                         {pillar.title}
                       </h3>
                       <h4 className={`text-lg font-semibold bg-gradient-to-r ${pillar.color === 'limiar-orange' ? 'from-limiar-orange to-limiar-gold' : 'from-limiar-gold to-limiar-orange'} bg-clip-text text-transparent`}>
@@ -136,7 +136,7 @@ export function NossaDiferenca() {
                   </div>
 
                   {/* Description */}
-                  <p className="text-limiar-orange mb-8 leading-relaxed font-poppins font-thin text-justify">
+                  <p className="text-gray-300 mb-8 leading-relaxed font-poppins font-thin text-justify">
                     {pillar.description}
                   </p>
 
