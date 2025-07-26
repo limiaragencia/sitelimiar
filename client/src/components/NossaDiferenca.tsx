@@ -170,110 +170,101 @@ export function NossaDiferenca() {
         </div>
 
         {/* Enhanced Stats Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
           {/* Stat 1 - 95% Satisfaction */}
-          <div className="group relative bg-black/40 backdrop-blur-md rounded-3xl p-8 border border-white/10 hover:border-limiar-orange/50 transition-all duration-500 overflow-hidden">
-            {/* Floating particles */}
-            <div className="absolute top-4 right-4 w-2 h-2 bg-limiar-orange/40 rounded-full animate-pulse opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-            <div className="absolute bottom-6 left-6 w-1 h-1 bg-limiar-gold/60 rounded-full animate-pulse opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{ animationDelay: '0.3s' }}></div>
-            
-            {/* Animated border gradient */}
-            <div className="absolute inset-0 rounded-3xl p-[2px] bg-gradient-to-r from-limiar-orange/30 via-limiar-gold/20 to-limiar-orange/30 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-              <div className="bg-black/60 rounded-3xl w-full h-full"></div>
-            </div>
-            
-            <div className="relative z-10 text-center">
-              {/* Number with holographic effect */}
-              <div className="relative mb-6">
-                <div className="text-6xl font-black font-poppins text-transparent bg-gradient-to-r from-limiar-orange via-limiar-gold to-limiar-orange bg-clip-text group-hover:scale-110 transition-transform duration-500">
-                  95%
-                </div>
-                <div className="absolute inset-0 text-6xl font-black font-poppins text-limiar-orange/20 blur-lg group-hover:blur-xl transition-all duration-500">
-                  95%
-                </div>
+          <div className="group text-center relative">
+            {/* Massive glass number with animations */}
+            <div className="relative mb-8">
+              <div className="text-9xl font-black font-poppins text-transparent bg-gradient-to-r from-limiar-orange via-limiar-gold to-limiar-orange bg-clip-text group-hover:scale-125 transition-all duration-700 animate-pulse backdrop-blur-lg drop-shadow-[0_0_40px_rgba(255,127,0,0.6)]">
+                95%
               </div>
-              
-              {/* Conversational title */}
-              <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3 group-hover:text-limiar-gold transition-colors duration-300">
-                "Nossos clientes adoram tanto..."
-              </h4>
-              
-              {/* Conversational description */}
-              <p className="text-gray-300 font-poppins font-thin leading-relaxed text-sm">
-                que <span className="text-limiar-orange font-semibold">95% renovam a parceria</span> após o primeiro projeto. 
-                Não é só satisfação — é <span className="text-limiar-gold">conexão genuína</span>.
-              </p>
+              {/* Glass effect layers */}
+              <div className="absolute inset-0 text-9xl font-black font-poppins text-limiar-orange/15 blur-2xl group-hover:blur-3xl transition-all duration-700 animate-[pulse_2s_ease-in-out_infinite]">
+                95%
+              </div>
+              <div className="absolute inset-0 text-9xl font-black font-poppins text-white/10 blur-sm group-hover:text-white/20 transition-all duration-700">
+                95%
+              </div>
+              {/* Floating light particles */}
+              <div className="absolute top-0 left-1/4 w-3 h-3 bg-limiar-orange/50 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-opacity duration-1000" style={{ animationDelay: '0s' }}></div>
+              <div className="absolute top-1/3 right-1/4 w-2 h-2 bg-limiar-gold/60 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-opacity duration-1000" style={{ animationDelay: '0.5s' }}></div>
+              <div className="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-limiar-orange/40 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-opacity duration-1000" style={{ animationDelay: '1s' }}></div>
             </div>
+            
+            {/* Conversational title */}
+            <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3 group-hover:text-limiar-gold transition-colors duration-300">
+              "Nossos clientes adoram tanto..."
+            </h4>
+            
+            {/* Conversational description */}
+            <p className="text-gray-300 font-poppins font-thin leading-relaxed text-sm">
+              que <span className="text-limiar-orange font-semibold">95% renovam a parceria</span> após o primeiro projeto. 
+              Não é só satisfação — é <span className="text-limiar-gold">conexão genuína</span>.
+            </p>
           </div>
 
           {/* Stat 2 - 3x ROI */}
-          <div className="group relative bg-black/40 backdrop-blur-md rounded-3xl p-8 border border-white/10 hover:border-limiar-gold/50 transition-all duration-500 overflow-hidden">
-            {/* Floating particles */}
-            <div className="absolute top-6 left-4 w-1.5 h-1.5 bg-limiar-gold/40 rounded-full animate-pulse opacity-0 group-hover:opacity-100 transition-opacity duration-600"></div>
-            <div className="absolute bottom-4 right-8 w-1 h-1 bg-limiar-orange/60 rounded-full animate-pulse opacity-0 group-hover:opacity-100 transition-opacity duration-800" style={{ animationDelay: '0.2s' }}></div>
-            
-            {/* Animated border gradient */}
-            <div className="absolute inset-0 rounded-3xl p-[2px] bg-gradient-to-r from-limiar-gold/30 via-limiar-orange/20 to-limiar-gold/30 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-              <div className="bg-black/60 rounded-3xl w-full h-full"></div>
-            </div>
-            
-            <div className="relative z-10 text-center">
-              {/* Number with holographic effect */}
-              <div className="relative mb-6">
-                <div className="text-6xl font-black font-poppins text-transparent bg-gradient-to-r from-limiar-gold via-limiar-orange to-limiar-gold bg-clip-text group-hover:scale-110 transition-transform duration-500">
-                  3x
-                </div>
-                <div className="absolute inset-0 text-6xl font-black font-poppins text-limiar-gold/20 blur-lg group-hover:blur-xl transition-all duration-500">
-                  3x
-                </div>
+          <div className="group text-center relative">
+            {/* Massive glass number with animations */}
+            <div className="relative mb-8">
+              <div className="text-9xl font-black font-poppins text-transparent bg-gradient-to-r from-limiar-gold via-limiar-orange to-limiar-gold bg-clip-text group-hover:scale-125 transition-all duration-700 animate-pulse backdrop-blur-lg drop-shadow-[0_0_40px_rgba(255,215,0,0.6)]">
+                3x
               </div>
-              
-              {/* Conversational title */}
-              <h4 className="text-xl font-poppins font-bold text-limiar-gold mb-3 group-hover:text-limiar-orange transition-colors duration-300">
-                "Cada real investido vira..."
-              </h4>
-              
-              {/* Conversational description */}
-              <p className="text-gray-300 font-poppins font-thin leading-relaxed text-sm">
-                <span className="text-limiar-gold font-semibold">3 reais de retorno</span> em média. 
-                Porque IA bem feita não é gasto — é <span className="text-limiar-orange">multiplicador de resultados</span>.
-              </p>
+              {/* Glass effect layers */}
+              <div className="absolute inset-0 text-9xl font-black font-poppins text-limiar-gold/15 blur-2xl group-hover:blur-3xl transition-all duration-700 animate-[pulse_2.5s_ease-in-out_infinite]">
+                3x
+              </div>
+              <div className="absolute inset-0 text-9xl font-black font-poppins text-white/10 blur-sm group-hover:text-white/20 transition-all duration-700">
+                3x
+              </div>
+              {/* Floating light particles */}
+              <div className="absolute top-1/4 right-1/3 w-2.5 h-2.5 bg-limiar-gold/50 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-opacity duration-1000" style={{ animationDelay: '0.2s' }}></div>
+              <div className="absolute bottom-1/3 left-1/4 w-2 h-2 bg-limiar-orange/60 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-opacity duration-1000" style={{ animationDelay: '0.7s' }}></div>
+              <div className="absolute top-1/2 right-1/4 w-1.5 h-1.5 bg-limiar-gold/40 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-opacity duration-1000" style={{ animationDelay: '1.2s' }}></div>
             </div>
+            
+            {/* Conversational title */}
+            <h4 className="text-xl font-poppins font-bold text-limiar-gold mb-3 group-hover:text-limiar-orange transition-colors duration-300">
+              "Cada real investido vira..."
+            </h4>
+            
+            {/* Conversational description */}
+            <p className="text-gray-300 font-poppins font-thin leading-relaxed text-sm">
+              <span className="text-limiar-gold font-semibold">3 reais de retorno</span> em média. 
+              Porque IA bem feita não é gasto — é <span className="text-limiar-orange">multiplicador de resultados</span>.
+            </p>
           </div>
 
           {/* Stat 3 - 24h Response */}
-          <div className="group relative bg-black/40 backdrop-blur-md rounded-3xl p-8 border border-white/10 hover:border-limiar-orange/50 transition-all duration-500 overflow-hidden">
-            {/* Floating particles */}
-            <div className="absolute top-8 right-6 w-2 h-2 bg-limiar-orange/30 rounded-full animate-pulse opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div className="absolute bottom-8 left-4 w-1.5 h-1.5 bg-limiar-gold/50 rounded-full animate-pulse opacity-0 group-hover:opacity-100 transition-opacity duration-700" style={{ animationDelay: '0.4s' }}></div>
-            
-            {/* Animated border gradient */}
-            <div className="absolute inset-0 rounded-3xl p-[2px] bg-gradient-to-r from-limiar-orange/30 via-limiar-gold/20 to-limiar-orange/30 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-              <div className="bg-black/60 rounded-3xl w-full h-full"></div>
-            </div>
-            
-            <div className="relative z-10 text-center">
-              {/* Number with holographic effect */}
-              <div className="relative mb-6">
-                <div className="text-6xl font-black font-poppins text-transparent bg-gradient-to-r from-limiar-orange via-limiar-gold to-limiar-orange bg-clip-text group-hover:scale-110 transition-transform duration-500">
-                  24h
-                </div>
-                <div className="absolute inset-0 text-6xl font-black font-poppins text-limiar-orange/20 blur-lg group-hover:blur-xl transition-all duration-500">
-                  24h
-                </div>
+          <div className="group text-center relative">
+            {/* Massive glass number with animations */}
+            <div className="relative mb-8">
+              <div className="text-9xl font-black font-poppins text-transparent bg-gradient-to-r from-limiar-orange via-limiar-gold to-limiar-orange bg-clip-text group-hover:scale-125 transition-all duration-700 animate-pulse backdrop-blur-lg drop-shadow-[0_0_40px_rgba(255,127,0,0.6)]">
+                24h
               </div>
-              
-              {/* Conversational title */}
-              <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3 group-hover:text-limiar-gold transition-colors duration-300">
-                "Urgência? Nós entendemos..."
-              </h4>
-              
-              {/* Conversational description */}
-              <p className="text-gray-300 font-poppins font-thin leading-relaxed text-sm">
-                <span className="text-limiar-orange font-semibold">24 horas</span> para análise inicial e proposta estratégica. 
-                Porque <span className="text-limiar-gold">oportunidades não esperam</span>.
-              </p>
+              {/* Glass effect layers */}
+              <div className="absolute inset-0 text-9xl font-black font-poppins text-limiar-orange/15 blur-2xl group-hover:blur-3xl transition-all duration-700 animate-[pulse_1.8s_ease-in-out_infinite]">
+                24h
+              </div>
+              <div className="absolute inset-0 text-9xl font-black font-poppins text-white/10 blur-sm group-hover:text-white/20 transition-all duration-700">
+                24h
+              </div>
+              {/* Floating light particles */}
+              <div className="absolute top-1/3 left-1/4 w-3 h-3 bg-limiar-orange/50 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-opacity duration-1000" style={{ animationDelay: '0.3s' }}></div>
+              <div className="absolute bottom-1/4 right-1/3 w-2 h-2 bg-limiar-gold/60 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-opacity duration-1000" style={{ animationDelay: '0.8s' }}></div>
+              <div className="absolute top-1/4 right-1/2 w-1.5 h-1.5 bg-limiar-orange/40 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-opacity duration-1000" style={{ animationDelay: '1.3s' }}></div>
             </div>
+            
+            {/* Conversational title */}
+            <h4 className="text-xl font-poppins font-bold text-limiar-orange mb-3 group-hover:text-limiar-gold transition-colors duration-300">
+              "Urgência? Nós entendemos..."
+            </h4>
+            
+            {/* Conversational description */}
+            <p className="text-gray-300 font-poppins font-thin leading-relaxed text-sm">
+              <span className="text-limiar-orange font-semibold">24 horas</span> para análise inicial e proposta estratégica. 
+              Porque <span className="text-limiar-gold">oportunidades não esperam</span>.
+            </p>
           </div>
         </div>
 
