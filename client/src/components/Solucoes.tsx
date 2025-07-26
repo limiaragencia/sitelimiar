@@ -65,7 +65,40 @@ export function Solucoes() {
   ];
 
   return (
-    <section id="solucoes" className="py-24 bg-white dark:bg-dark-radial">
+    <section 
+      id="solucoes" 
+      className="py-24 bg-gradient-to-br from-gray-50 via-blue-50/30 to-orange-50/20 dark:bg-gradient-to-br dark:from-gray-900 dark:via-blue-900/10 dark:to-orange-900/20 relative overflow-hidden"
+    >
+      {/* Background Pattern */}
+      <div 
+        className="absolute inset-0 opacity-10 dark:opacity-5"
+        style={{
+          backgroundImage: `
+            radial-gradient(circle at 25% 25%, rgba(255,127,0,0.2) 0%, transparent 50%),
+            radial-gradient(circle at 75% 75%, rgba(0,100,200,0.2) 0%, transparent 50%),
+            linear-gradient(45deg, transparent 40%, rgba(255,127,0,0.05) 41%, rgba(255,127,0,0.05) 43%, transparent 44%),
+            linear-gradient(-45deg, transparent 40%, rgba(0,100,200,0.05) 41%, rgba(0,100,200,0.05) 43%, transparent 44%)
+          `,
+          backgroundSize: '800px 800px, 600px 600px, 30px 30px, 30px 30px',
+          animation: 'float 20s ease-in-out infinite'
+        }}
+      ></div>
+      
+      {/* Floating Particles */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {[...Array(15)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute w-2 h-2 bg-gradient-to-r from-limiar-orange to-limiar-gold rounded-full opacity-20"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 10}s`,
+              animation: 'float 15s ease-in-out infinite'
+            }}
+          ></div>
+        ))}
+      </div>
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-20">
