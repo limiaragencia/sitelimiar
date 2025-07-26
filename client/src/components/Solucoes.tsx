@@ -109,16 +109,55 @@ export function Solucoes() {
             </span>
           </h2>
 
-          <div className="max-w-4xl mx-auto space-y-6">
-            <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed font-poppins font-thin">
-              <strong>Diferenciação:</strong> Enquanto outros implementam soluções padronizadas, nós criamos ecossistemas inteligentes que evoluem com seu negócio.
-            </p>
-            <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed font-poppins font-thin">
-              <strong>Simplificação:</strong> Transformamos a complexidade da IA em soluções elegantes que impulsionam seu crescimento.
-            </p>
-            <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed font-poppins font-thin">
-              <strong>Personalização:</strong> Não seguimos receitas prontas — cada futuro que arquitetamos é único como sua empresa.
-            </p>
+          {/* Blocos de Diferenciação Visual */}
+          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+            {/* Diferenciação */}
+            <div className="group relative bg-gradient-to-br from-white to-orange-50/50 dark:from-dark-card dark:to-orange-900/20 rounded-2xl p-8 border border-orange-200/50 dark:border-orange-800/30 hover:border-orange-300/70 dark:hover:border-orange-600/50 transition-all duration-500 hover:shadow-[0_20px_40px_rgba(255,127,0,0.15)] dark:hover:shadow-[0_20px_40px_rgba(255,127,0,0.25)] hover:scale-[1.02] transform-gpu overflow-hidden">
+              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-orange-400/20 to-orange-600/20 rounded-full -translate-y-8 translate-x-8 blur-xl"></div>
+              <div className="relative z-10">
+                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <span className="text-white font-bold text-lg">D</span>
+                </div>
+                <h3 className="text-2xl font-poppins font-bold text-gray-900 dark:text-white mb-4">
+                  Diferenciação
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed font-poppins">
+                  Enquanto outros implementam soluções padronizadas, nós criamos <strong className="text-orange-600 dark:text-orange-400">ecossistemas inteligentes</strong> que evoluem com seu negócio.
+                </p>
+              </div>
+            </div>
+
+            {/* Simplificação */}
+            <div className="group relative bg-gradient-to-br from-white to-blue-50/50 dark:from-dark-card dark:to-blue-900/20 rounded-2xl p-8 border border-blue-200/50 dark:border-blue-800/30 hover:border-blue-300/70 dark:hover:border-blue-600/50 transition-all duration-500 hover:shadow-[0_20px_40px_rgba(59,130,246,0.15)] dark:hover:shadow-[0_20px_40px_rgba(59,130,246,0.25)] hover:scale-[1.02] transform-gpu overflow-hidden">
+              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-400/20 to-blue-600/20 rounded-full -translate-y-8 translate-x-8 blur-xl"></div>
+              <div className="relative z-10">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <span className="text-white font-bold text-lg">S</span>
+                </div>
+                <h3 className="text-2xl font-poppins font-bold text-gray-900 dark:text-white mb-4">
+                  Simplificação
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed font-poppins">
+                  Transformamos a complexidade da IA em <strong className="text-blue-600 dark:text-blue-400">soluções elegantes</strong> que impulsionam seu crescimento.
+                </p>
+              </div>
+            </div>
+
+            {/* Personalização */}
+            <div className="group relative bg-gradient-to-br from-white to-purple-50/50 dark:from-dark-card dark:to-purple-900/20 rounded-2xl p-8 border border-purple-200/50 dark:border-purple-800/30 hover:border-purple-300/70 dark:hover:border-purple-600/50 transition-all duration-500 hover:shadow-[0_20px_40px_rgba(147,51,234,0.15)] dark:hover:shadow-[0_20px_40px_rgba(147,51,234,0.25)] hover:scale-[1.02] transform-gpu overflow-hidden">
+              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-purple-400/20 to-purple-600/20 rounded-full -translate-y-8 translate-x-8 blur-xl"></div>
+              <div className="relative z-10">
+                <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <span className="text-white font-bold text-lg">P</span>
+                </div>
+                <h3 className="text-2xl font-poppins font-bold text-gray-900 dark:text-white mb-4">
+                  Personalização
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed font-poppins">
+                  Não seguimos receitas prontas — cada futuro que arquitetamos é <strong className="text-purple-600 dark:text-purple-400">único como sua empresa</strong>.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
