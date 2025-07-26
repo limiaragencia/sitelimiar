@@ -313,7 +313,7 @@ export function NossaDiferenca() {
         {/* Contrast Table */}
         <div className="bg-black/20 backdrop-blur-md rounded-2xl overflow-hidden shadow-2xl border border-white/20 animate-fade-in-up">
           <div className="bg-gradient-to-r from-limiar-orange to-limiar-gold p-8">
-            <h3 className="text-3xl font-poppins font-bold text-white text-center" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
+            <h3 className="font-poppins font-bold text-white text-center text-[39px] ml-[127px] mr-[127px] pl-[-13px] pr-[-13px] mt-[2px] mb-[2px] pt-[14px] pb-[14px]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
               O que outros fazem X <span className="text-limiar-orange inline animate-pulse cursor-pointer" style={{ filter: 'brightness(1.3) drop-shadow(0 0 10px rgba(255,127,0,0.8))' }}>
                 o que a Limiar faz
               </span>
