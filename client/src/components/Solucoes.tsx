@@ -104,7 +104,7 @@ export function Solucoes() {
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-6xl font-poppins font-bold mb-8 text-gray-900 dark:text-white">
             Onde outros vendem ferramentas, <br />
-            <span className="bg-gradient-to-r from-limiar-orange to-limiar-gold bg-clip-text text-transparent">
+            <span className="text-limiar-orange font-bold">
               nós arquitetamos futuros.
             </span>
           </h2>
