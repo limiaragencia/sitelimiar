@@ -271,31 +271,31 @@ export function Hero() {
           
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-6 items-start mb-12 animate-fade-in-up">
+          <div className="flex flex-col sm:flex-row gap-6 items-center justify-center sm:justify-start mb-16 animate-fade-in-up">
             <Button
               onClick={() => scrollToSection("diferenca")}
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:bg-primary/90 h-10 px-8 py-4 bg-gradient-to-r from-limiar-orange to-limiar-gold text-white font-poppins font-semibold rounded-lg text-lg shadow-lg hover:shadow-[0_20px_50px_rgba(255,127,0,0.4)] hover:scale-110 hover:rotate-1 hover:drop-shadow-[0_0_20px_rgba(255,127,0,0.8)] transition-all duration-500 transform-gpu mt-[30px] mb-[30px] ml-[41px] mr-[41px] pl-[48px] pr-[48px] pt-[0px] pb-[0px] relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-transform before:duration-700"
+              className="h-12 px-8 py-3 bg-gradient-to-r from-limiar-orange to-limiar-gold text-white font-poppins font-semibold rounded-lg text-lg shadow-lg hover:shadow-[0_20px_50px_rgba(255,127,0,0.4)] hover:scale-110 hover:rotate-1 hover:drop-shadow-[0_0_20px_rgba(255,127,0,0.8)] transition-all duration-500 transform-gpu relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-transform before:duration-700"
             >
               Atravesse o Limiar
             </Button>
             <Button
               onClick={() => scrollToSection("solucoes")}
               variant="outline"
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-background/10 backdrop-blur-sm h-10 px-8 py-4 border-2 border-limiar-orange text-limiar-orange font-poppins font-semibold rounded-lg text-lg hover:bg-limiar-orange hover:text-white hover:scale-110 hover:rotate-[-1deg] hover:drop-shadow-[0_0_20px_rgba(255,127,0,0.8)] shadow-lg hover:shadow-[0_20px_50px_rgba(255,127,0,0.3)] transition-all duration-500 transform-gpu mt-[30px] mb-[30px] pl-[30px] pr-[30px] ml-[-13px] mr-[-13px] pt-[18px] pb-[18px] relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-limiar-orange/20 before:to-transparent before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-transform before:duration-700"
+              className="h-12 px-8 py-3 bg-background/10 backdrop-blur-sm border-2 border-limiar-orange text-limiar-orange font-poppins font-semibold rounded-lg text-lg hover:bg-limiar-orange hover:text-white hover:scale-110 hover:rotate-[-1deg] hover:drop-shadow-[0_0_20px_rgba(255,127,0,0.8)] shadow-lg hover:shadow-[0_20px_50px_rgba(255,127,0,0.3)] transition-all duration-500 transform-gpu relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-limiar-orange/20 before:to-transparent before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-transform before:duration-700"
             >
               Construa o Impossível
             </Button>
           </div>
 
           {/* Stats - Distribuídos horizontalmente */}
-          <div className="w-full max-w-5xl animate-fade-in-up ml-[2px] mr-[2px] pl-[-2px] pr-[-2px] mt-[26px] mb-[26px] pt-[-69px] pb-[-69px]">
+          <div className="w-full max-w-5xl animate-fade-in-up mb-16">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 justify-items-center">
-              <div className="flex items-center gap-4 group animate-[slideInLeft_0.8s_ease-out_0.2s_both] justify-center md:justify-start p-4 rounded-lg transition-all duration-300 hover:shadow-[0_10px_30px_rgba(255,127,0,0.2)] hover:bg-white/5 backdrop-blur-sm mt-[0px] mb-[0px] pt-[14px] pb-[14px] pl-[0px] pr-[0px] ml-[-15px] mr-[-15px]">
+              <div className="flex items-center gap-4 group animate-[slideInLeft_0.8s_ease-out_0.2s_both] justify-center md:justify-start p-4 rounded-lg transition-all duration-300 hover:shadow-[0_10px_30px_rgba(255,127,0,0.2)] hover:bg-white/5 backdrop-blur-sm">
                 <div className="relative">
                   <TrendingUp className="w-8 h-8 text-limiar-orange animate-pulse group-hover:scale-125 group-hover:text-limiar-gold transition-all duration-300" />
                   <div className="absolute inset-0 bg-limiar-orange/20 rounded-full blur-md animate-pulse group-hover:bg-limiar-gold/30 transition-colors duration-300"></div>
                 </div>
-                <span className="text-white drop-shadow-lg hover:text-limiar-gold hover:scale-110 hover:drop-shadow-[0_0_15px_rgba(255,215,0,0.8)] transition-all duration-300 text-center md:text-left font-bold cursor-pointer ml-[-16px] mr-[-16px] mt-[6px] mb-[6px] pl-[6px] pr-[6px] text-[15px]">50+ MARCAS TRANSFORMADAS</span>
+                <span className="text-white drop-shadow-lg hover:text-limiar-gold hover:scale-110 hover:drop-shadow-[0_0_15px_rgba(255,215,0,0.8)] transition-all duration-300 text-center md:text-left font-bold cursor-pointer text-base">50+ MARCAS TRANSFORMADAS</span>
               </div>
               
               <div className="flex items-center gap-4 group animate-[slideInLeft_0.8s_ease-out_0.4s_both] justify-center p-4 rounded-lg transition-all duration-300 hover:shadow-[0_10px_30px_rgba(255,127,0,0.2)] hover:bg-white/5 backdrop-blur-sm">
@@ -303,7 +303,7 @@ export function Hero() {
                   <Brain className="w-8 h-8 text-limiar-orange animate-pulse group-hover:scale-125 group-hover:text-limiar-gold transition-all duration-300" />
                   <div className="absolute inset-0 bg-limiar-orange/20 rounded-full blur-md animate-pulse group-hover:bg-limiar-gold/30 transition-colors duration-300"></div>
                 </div>
-                <span className="text-white drop-shadow-lg hover:text-limiar-gold hover:scale-110 hover:drop-shadow-[0_0_15px_rgba(255,215,0,0.8)] transition-all duration-300 text-center font-bold cursor-pointer text-[15px] ml-[-85px] mr-[-85px] pl-[123px] pr-[123px] mt-[-10px] mb-[-10px] pt-[-12px] pb-[-12px]">ECOSSISTEMA DE IA</span>
+                <span className="text-white drop-shadow-lg hover:text-limiar-gold hover:scale-110 hover:drop-shadow-[0_0_15px_rgba(255,215,0,0.8)] transition-all duration-300 text-center font-bold cursor-pointer text-base">ECOSSISTEMA DE IA</span>
               </div>
               
               <div className="flex items-center gap-4 group animate-[slideInLeft_0.8s_ease-out_0.6s_both] justify-center md:justify-end p-4 rounded-lg transition-all duration-300 hover:shadow-[0_10px_30px_rgba(255,127,0,0.2)] hover:bg-white/5 backdrop-blur-sm">
@@ -311,12 +311,12 @@ export function Hero() {
                   <Zap className="w-8 h-8 text-limiar-orange animate-pulse group-hover:scale-125 group-hover:text-limiar-gold transition-all duration-300" />
                   <div className="absolute inset-0 bg-limiar-orange/20 rounded-full blur-md animate-pulse group-hover:bg-limiar-gold/30 transition-colors duration-300"></div>
                 </div>
-                <span className="text-white drop-shadow-lg hover:text-limiar-gold hover:scale-110 hover:drop-shadow-[0_0_15px_rgba(255,215,0,0.8)] transition-all duration-300 text-center md:text-right font-bold cursor-pointer text-[15px]">O FUTURO NÃO ESPERA</span>
+                <span className="text-white drop-shadow-lg hover:text-limiar-gold hover:scale-110 hover:drop-shadow-[0_0_15px_rgba(255,215,0,0.8)] transition-all duration-300 text-center md:text-right font-bold cursor-pointer text-base">O FUTURO NÃO ESPERA</span>
               </div>
             </div>
             
             {/* Scroll Indicator */}
-            <div className="flex justify-center animate-fade-in-up pt-[5px] pb-[5px] pl-[0px] pr-[0px] mt-[33px] mb-[33px] ml-[0px] mr-[0px]">
+            <div className="flex justify-center animate-fade-in-up mt-12">
               <div className="animate-bounce">
                 <ChevronDown className="text-4xl text-limiar-orange" />
               </div>
