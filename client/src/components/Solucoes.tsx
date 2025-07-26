@@ -67,22 +67,51 @@ export function Solucoes() {
   return (
     <section 
       id="solucoes" 
-      className="py-24 bg-gradient-to-br from-gray-50 via-blue-50/30 to-orange-50/20 dark:bg-gradient-to-br dark:from-gray-900 dark:via-blue-900/10 dark:to-orange-900/20 relative overflow-hidden"
+      className="py-24 relative overflow-hidden"
     >
-      {/* Background Pattern */}
-      <div 
-        className="absolute inset-0"
-        style={{
-          backgroundImage: `
-            radial-gradient(circle at 25% 25%, rgba(255,127,0,0.2) 0%, transparent 50%),
-            radial-gradient(circle at 75% 75%, rgba(0,100,200,0.2) 0%, transparent 50%),
-            linear-gradient(45deg, transparent 40%, rgba(255,127,0,0.05) 41%, rgba(255,127,0,0.05) 43%, transparent 44%),
-            linear-gradient(-45deg, transparent 40%, rgba(0,100,200,0.05) 41%, rgba(0,100,200,0.05) 43%, transparent 44%)
-          `,
-          backgroundSize: '800px 800px, 600px 600px, 30px 30px, 30px 30px',
-          animation: 'float 20s ease-in-out infinite'
-        }}
-      ></div>
+      {/* Video Background */}
+      <div className="absolute inset-0 z-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="metadata"
+          className="w-full h-full object-cover opacity-20 dark:opacity-10"
+          style={{
+            filter: 'blur(1px) saturate(1.2)',
+            animation: 'videoFadeLoop 15s ease-in-out infinite',
+            willChange: 'opacity, transform'
+          }}
+        >
+          <source src="/video-background.mp4" type="video/mp4" />
+        </video>
+        
+        {/* Fade In/Out Overlay */}
+        <div 
+          className="absolute inset-0 bg-gradient-to-r from-gray-50/90 via-transparent to-gray-50/90 dark:from-gray-900/90 dark:via-transparent dark:to-gray-900/90"
+          style={{
+            background: `
+              linear-gradient(to right, rgba(249, 250, 251, 0.95) 0%, transparent 15%, transparent 85%, rgba(249, 250, 251, 0.95) 100%),
+              linear-gradient(to bottom, rgba(249, 250, 251, 0.8) 0%, transparent 20%, transparent 80%, rgba(249, 250, 251, 0.8) 100%)
+            `
+          }}
+        ></div>
+        
+        {/* Dark mode fade overlay */}
+        <div 
+          className="absolute inset-0 bg-gradient-to-r from-gray-900/90 via-transparent to-gray-900/90 opacity-0 dark:opacity-100 transition-opacity duration-300"
+          style={{
+            background: `
+              linear-gradient(to right, rgba(17, 24, 39, 0.95) 0%, transparent 15%, transparent 85%, rgba(17, 24, 39, 0.95) 100%),
+              linear-gradient(to bottom, rgba(17, 24, 39, 0.8) 0%, transparent 20%, transparent 80%, rgba(17, 24, 39, 0.8) 100%)
+            `
+          }}
+        ></div>
+        
+        {/* Color overlay for integration */}
+        <div className="absolute inset-0 bg-gradient-to-br from-orange-50/30 via-transparent to-blue-50/20 dark:from-orange-900/20 dark:via-transparent dark:to-blue-900/10"></div>
+      </div>
       
       {/* Floating Particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -99,7 +128,7 @@ export function Solucoes() {
           ></div>
         ))}
       </div>
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-6xl font-poppins font-bold mb-8 text-gray-900 dark:text-white">
