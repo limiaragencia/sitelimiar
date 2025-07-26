@@ -378,34 +378,11 @@ export function NossaDiferenca() {
 
         {/* Final CTA */}
         <div className="text-center mt-20 animate-fade-in-up">
-          <div className="relative bg-gradient-to-br from-black/40 via-black/30 to-black/20 backdrop-blur-[12px] rounded-3xl p-16 mb-8 border border-white/30 shadow-2xl overflow-hidden">
-            {/* Texture overlay for integration */}
-            <div className="absolute inset-0 opacity-20 bg-gradient-to-br from-limiar-orange/10 via-transparent to-limiar-gold/10"></div>
-            
-            {/* Content container */}
-            <div className="relative z-10 space-y-8">
-              {/* First text with glassmorphism integration */}
-              <div className="relative bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-                <p className="font-poppins text-white font-bold text-[42px] md:text-[48px] leading-tight" 
-                   style={{ 
-                     textShadow: '2px 2px 6px rgba(0,0,0,0.8), 0 0 20px rgba(255,255,255,0.1)',
-                     filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.3))'
-                   }}>
-                  Quando sua marca vai parar de observar o futuro
-                </p>
-              </div>
-              
-              {/* Second text with enhanced glassmorphism */}
-              <div className="relative bg-gradient-to-r from-limiar-orange/10 via-limiar-gold/5 to-limiar-orange/10 backdrop-blur-[8px] rounded-2xl p-8 border border-limiar-orange/30 shadow-lg">
-                <p className="font-poppins font-extrabold text-[64px] md:text-[72px] leading-none bg-gradient-to-r from-limiar-orange via-limiar-gold to-limiar-orange bg-clip-text text-transparent"
-                   style={{ 
-                     textShadow: '3px 3px 8px rgba(0,0,0,0.9), 0 0 30px rgba(255,127,0,0.3)',
-                     filter: 'drop-shadow(0 6px 12px rgba(255,127,0,0.2))'
-                   }}>
-                  e começar a habitá-lo?
-                </p>
-              </div>
-            </div>
+          <div className="mb-8">
+            <h2 className="text-4xl md:text-6xl font-poppins font-bold text-white mb-6" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>
+              "Quando sua marca vai parar de <span className="text-limiar-gold font-extrabold">observar o futuro</span> <br />
+              e começar a <span className="text-limiar-orange font-extrabold">habitá-lo?</span>"
+            </h2>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
