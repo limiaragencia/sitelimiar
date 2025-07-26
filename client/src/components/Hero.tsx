@@ -302,12 +302,15 @@ export function Hero() {
                 <span className="font-medium text-white drop-shadow-lg group-hover:bg-gradient-to-r group-hover:from-limiar-orange group-hover:to-limiar-gold group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 text-base text-center md:text-right">O futuro não espera</span>
               </div>
             </div>
+            
+            {/* Scroll Indicator */}
+            <div className="flex justify-center mt-16 animate-fade-in-up">
+              <div className="animate-bounce">
+                <ChevronDown className="text-2xl text-limiar-orange" />
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <ChevronDown className="text-2xl text-limiar-orange" />
       </div>
     </section>
   );
