@@ -62,19 +62,19 @@ export function NossaDiferenca() {
   ];
 
   const conventional = [
-    "Soluções padronizadas",
+    <span className="animate-pulse cursor-pointer" style={{ filter: 'brightness(1.3) drop-shadow(0 0 8px rgba(239,68,68,0.6))' }}>Soluções padronizadas</span>,
     "Implementa ferramentas de IA como chatbots anabolizados",
-    "Foca em eficiência operacional",
+    "Foca em eficiência operacional", 
     "Orçamento fixo, escopo rígido",
     "Entrega projeto e encerra"
   ];
 
   const limiar = [
-    "Soluções personalizadas a partir de cada realidade",
-    "Arquiteta ecossistemas de experiências inteligentes",
-    "Também constrói conexões emocionais",
-    "Flexibilidade total às suas possibilidades",
-    "Inicia parceria co-criativa"
+    <span style={{ textShadow: '2px 2px 6px rgba(0,0,0,0.9)' }}>Soluções personalizadas a partir de cada realidade</span>,
+    <span style={{ textShadow: '2px 2px 6px rgba(0,0,0,0.9)' }}>Arquiteta ecossistemas de experiências inteligentes</span>,
+    <span style={{ textShadow: '2px 2px 6px rgba(0,0,0,0.9)' }}>Também constrói conexões emocionais</span>,
+    <span style={{ textShadow: '2px 2px 6px rgba(0,0,0,0.9)' }}>Flexibilidade total às suas possibilidades</span>,
+    <span style={{ textShadow: '2px 2px 6px rgba(0,0,0,0.9)' }}>Inicia parceria co-criativa</span>
   ];
 
   return (
