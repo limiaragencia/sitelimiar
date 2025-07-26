@@ -4,6 +4,15 @@
 
 This is a full-stack TypeScript application for Limiar, a Brazilian AI agency. The project features a modern, responsive website showcasing AI solutions including cognitive agents, digital twins, and video/photo production services. Built with React on the frontend and Express on the backend, it uses a clean monorepo structure with shared components and database schemas.
 
+## Recent Changes (January 2025)
+
+### Hero Section Enhancements
+- **Advanced Particle System**: Interactive Canvas-based animation with 60% particles concentrated on right side, 30% opacity, mouse/touch interaction, mobile optimization (150 particles, 30 FPS)
+- **WhatsApp Button**: Green floating button with constant smooth animation, turns orange only when clicked
+- **Typography Refinements**: "está por vir" text highlighted with font-extrabold and larger size (65px), "Bem-vindo(a) ao Limiar" fixed at 55px
+- **Layout Improvements**: Stats text distributed horizontally across section, icons increased 60% (32px), scroll arrow doubled in size and repositioned after stats
+- **Responsive Design**: Comprehensive mobile optimizations with touch support, reduced particle counts, adaptive FPS limiting
+
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
