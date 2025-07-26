@@ -130,10 +130,7 @@ export function NossaDiferenca() {
                 className="group relative bg-black/40 backdrop-blur-md rounded-3xl p-8 shadow-lg hover:shadow-[0_25px_60px_rgba(0,0,0,0.4),0_0_50px_rgba(255,127,0,0.3)] hover:scale-[1.02] transition-all duration-700 border border-white/10 animate-fade-in-up transform-gpu overflow-hidden"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                {/* Animated Border Gradient */}
-                <div className={`absolute inset-0 rounded-3xl p-[2px] bg-gradient-to-r ${pillar.color === 'limiar-orange' ? 'from-limiar-orange/50 via-limiar-gold/30 to-limiar-orange/50' : 'from-limiar-gold/50 via-limiar-orange/30 to-limiar-gold/50'} opacity-0 group-hover:opacity-100 transition-opacity duration-700`}>
-                  <div className="bg-black/60 rounded-3xl w-full h-full"></div>
-                </div>
+
 
                 {/* Content Layer */}
                 <div className="relative z-10">

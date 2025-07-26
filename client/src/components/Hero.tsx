@@ -329,26 +329,23 @@ export function Hero() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 justify-items-center">
               <div className="flex items-center gap-4 group animate-[slideInLeft_0.8s_ease-out_0.2s_both] justify-center md:justify-start p-4 rounded-lg transition-all duration-300 hover:shadow-[0_10px_30px_rgba(255,127,0,0.2)] hover:bg-white/5 backdrop-blur-sm pt-[20px] pb-[20px] mt-[30px] mb-[30px]">
                 <div className="relative">
-                  <TrendingUp className="w-8 h-8 text-limiar-orange animate-pulse group-hover:scale-125 group-hover:text-limiar-gold transition-all duration-300" />
-                  <div className="absolute inset-0 bg-limiar-orange/20 rounded-full blur-md animate-pulse group-hover:bg-limiar-gold/30 transition-colors duration-300"></div>
+                  <TrendingUp className="w-8 h-8 text-limiar-orange" />
                 </div>
-                <span className="text-white drop-shadow-lg hover:text-limiar-gold hover:scale-110 hover:drop-shadow-[0_0_15px_rgba(255,215,0,0.8)] transition-all duration-300 text-center md:text-left cursor-pointer text-[12px] font-bold">50+ MARCAS TRANSFORMADAS</span>
+                <span className="text-white drop-shadow-lg text-center md:text-left text-[12px] font-bold">50+ MARCAS TRANSFORMADAS</span>
               </div>
               
               <div className="flex items-center gap-4 group animate-[slideInLeft_0.8s_ease-out_0.4s_both] justify-center p-4 rounded-lg transition-all duration-300 hover:shadow-[0_10px_30px_rgba(255,127,0,0.2)] hover:bg-white/5 backdrop-blur-sm mt-[30px] mb-[30px] pt-[20px] pb-[20px] pl-[16px] pr-[16px] ml-[0px] mr-[0px] text-[12px]">
                 <div className="relative">
-                  <Brain className="w-8 h-8 text-limiar-orange animate-pulse group-hover:scale-125 group-hover:text-limiar-gold transition-all duration-300" />
-                  <div className="absolute inset-0 bg-limiar-orange/20 rounded-full blur-md animate-pulse group-hover:bg-limiar-gold/30 transition-colors duration-300"></div>
+                  <Brain className="w-8 h-8 text-limiar-orange" />
                 </div>
-                <span className="text-white drop-shadow-lg hover:text-limiar-gold hover:scale-110 hover:drop-shadow-[0_0_15px_rgba(255,215,0,0.8)] transition-all duration-300 text-center cursor-pointer font-bold text-[12px]">ECOSSISTEMA DE IA</span>
+                <span className="text-white drop-shadow-lg text-center font-bold text-[12px]">ECOSSISTEMA DE IA</span>
               </div>
               
               <div className="flex items-center gap-4 group animate-[slideInLeft_0.8s_ease-out_0.6s_both] justify-center md:justify-end p-4 rounded-lg transition-all duration-300 hover:shadow-[0_10px_30px_rgba(255,127,0,0.2)] hover:bg-white/5 backdrop-blur-sm mt-[30px] mb-[30px] pt-[20px] pb-[20px]">
                 <div className="relative">
-                  <Zap className="w-8 h-8 text-limiar-orange animate-pulse group-hover:scale-125 group-hover:text-limiar-gold transition-all duration-300" />
-                  <div className="absolute inset-0 bg-limiar-orange/20 rounded-full blur-md animate-pulse group-hover:bg-limiar-gold/30 transition-colors duration-300"></div>
+                  <Zap className="w-8 h-8 text-limiar-orange" />
                 </div>
-                <span className="text-white drop-shadow-lg hover:text-limiar-gold hover:scale-110 hover:drop-shadow-[0_0_15px_rgba(255,215,0,0.8)] transition-all duration-300 text-center md:text-right font-bold cursor-pointer text-[12px]">O FUTURO NÃO ESPERA</span>
+                <span className="text-white drop-shadow-lg text-center md:text-right font-bold text-[12px]">O FUTURO NÃO ESPERA</span>
               </div>
             </div>
             
