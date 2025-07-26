@@ -43,7 +43,7 @@ export function Hero() {
             <span className="block md:text-5xl lg:text-6xl text-limiar-orange pt-[10px] pb-[10px] pl-[0px] pr-[0px] mt-[1px] mb-[1px] ml-[0px] mr-[0px] font-black text-[45px]">
               está por vir.
             </span>
-            <span className="block md:text-2xl lg:text-3xl font-light text-gray-700 dark:text-gray-300 text-[53px] pt-[55px] pb-[55px]">
+            <span className="block md:text-2xl lg:text-3xl font-light text-gray-700 dark:text-gray-300 pt-[55px] pb-[55px] text-[52px]">
               Bem-vindo(a) ao <span className="font-semibold text-limiar-orange">Limiar.</span>
             </span>
           </h1>
