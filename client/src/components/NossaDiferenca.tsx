@@ -379,7 +379,7 @@ export function NossaDiferenca() {
                       />
                     </div>
                     <span 
-                      className="text-white font-medium leading-relaxed transition-all duration-300"
+                      className="text-white font-medium transition-all duration-300 text-[18px] ml-[0px] mr-[0px] pl-[0px] pr-[0px] mt-[4px] mb-[4px] pt-[-7px] pb-[-7px]"
                       style={{ 
                         textShadow: 'none',
                         transition: 'text-shadow 0.3s ease'
