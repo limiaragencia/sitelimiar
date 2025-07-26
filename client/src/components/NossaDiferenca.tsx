@@ -378,11 +378,15 @@ export function NossaDiferenca() {
 
         {/* Final CTA */}
         <div className="text-center mt-20 animate-fade-in-up">
-          <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-8 mb-8 border border-white/20">
-            <p className="md:text-3xl font-poppins font-medium text-white mb-2 text-[45px]">
-              Quando sua marca vai parar de observar o futuro <span className="bg-gradient-to-r from-limiar-orange to-limiar-gold bg-clip-text text-transparent font-bold text-[67px] mt-[6px] mb-[6px] pt-[-2px] pb-[-2px] pl-[-1px] pr-[-1px] ml-[18px] mr-[18px]">e começar a habitá-lo.</span>
-            </p>
-            
+          <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-12 mb-8 border border-white/20">
+            <div className="space-y-6">
+              <p className="text-2xl md:text-3xl font-poppins font-medium text-white leading-relaxed" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.6)' }}>
+                "Quando sua marca vai parar de observar o futuro"
+              </p>
+              <p className="text-3xl md:text-5xl font-poppins font-bold bg-gradient-to-r from-limiar-orange to-limiar-gold bg-clip-text text-transparent leading-tight">
+                e começar a habitá-lo?
+              </p>
+            </div>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
