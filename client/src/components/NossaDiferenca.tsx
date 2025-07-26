@@ -379,9 +379,10 @@ export function NossaDiferenca() {
         {/* Final CTA */}
         <div className="text-center mt-20 animate-fade-in-up">
           <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-8 mb-8 border border-white/20">
-            <p className="text-2xl md:text-3xl font-poppins font-medium text-white mb-2">
-              "A questão não é se sua empresa precisa de IA."
-            </p>
+            <p className="md:text-3xl font-poppins font-medium text-white mb-2 text-[45px]">Quando sua marca vai parar de observar o futuro e começar a habitá-lo.
+
+
+</p>
             
           </div>
           
