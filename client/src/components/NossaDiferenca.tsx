@@ -381,7 +381,7 @@ export function NossaDiferenca() {
           <div className="mb-8">
             <h2 className="text-4xl md:text-6xl font-poppins font-bold text-white mb-6" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>
               Quando sua marca vai parar de observar o futuro e <br />
-              <span className="text-limiar-orange font-extrabold">começar a habitá-lo?</span>
+              <span className="text-limiar-orange font-extrabold block">começar a habitá-lo?</span>
             </h2>
           </div>
           
