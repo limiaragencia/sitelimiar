@@ -295,7 +295,7 @@ export function Hero() {
                   <TrendingUp className="w-8 h-8 text-limiar-orange animate-pulse group-hover:scale-125 group-hover:text-limiar-gold transition-all duration-300" />
                   <div className="absolute inset-0 bg-limiar-orange/20 rounded-full blur-md animate-pulse group-hover:bg-limiar-gold/30 transition-colors duration-300"></div>
                 </div>
-                <span className="text-white drop-shadow-lg hover:text-limiar-gold hover:scale-110 hover:drop-shadow-[0_0_15px_rgba(255,215,0,0.8)] transition-all duration-300 text-center md:text-left text-[18px] font-bold cursor-pointer ml-[-16px] mr-[-16px] mt-[6px] mb-[6px] pl-[6px] pr-[6px]">50+ MARCAS TRANSFORMADAS</span>
+                <span className="text-white drop-shadow-lg hover:text-limiar-gold hover:scale-110 hover:drop-shadow-[0_0_15px_rgba(255,215,0,0.8)] transition-all duration-300 text-center md:text-left font-bold cursor-pointer ml-[-16px] mr-[-16px] mt-[6px] mb-[6px] pl-[6px] pr-[6px] text-[15px]">50+ MARCAS TRANSFORMADAS</span>
               </div>
               
               <div className="flex items-center gap-4 group animate-[slideInLeft_0.8s_ease-out_0.4s_both] justify-center p-4 rounded-lg transition-all duration-300 hover:shadow-[0_10px_30px_rgba(255,127,0,0.2)] hover:bg-white/5 backdrop-blur-sm">
