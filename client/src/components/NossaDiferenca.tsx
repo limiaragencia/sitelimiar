@@ -409,14 +409,7 @@ export function NossaDiferenca() {
             </Button>
           </div>
           
-          <div className="mt-8 flex justify-center items-center gap-4 text-sm text-gray-300">
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-              <span>Disponível para novos projetos</span>
-            </div>
-            <span>•</span>
-            <span>Resposta em até 24h</span>
-          </div>
+          
         </div>
       </div>
     </section>
