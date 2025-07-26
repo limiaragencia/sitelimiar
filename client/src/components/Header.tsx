@@ -21,7 +21,7 @@ export function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-br from-white via-orange-50/30 to-yellow-50/40 dark:from-dark-background dark:via-dark-background/90 dark:to-orange-900/20 backdrop-blur-md border-b border-gray-200/30 dark:border-orange-500/20 transition-all duration-300">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-lg backdrop-saturate-150 border-b border-white/10 transition-all duration-300 shadow-lg shadow-black/25">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
