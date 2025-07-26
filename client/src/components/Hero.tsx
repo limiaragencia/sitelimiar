@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown, TrendingUp, Brain, Zap } from "lucide-react";
 import { useEffect, useRef } from "react";
-import videoBackground from "@assets/freepik__dynamic-zoomin-a-mesmerizing-pattern-of-orange-dot__87277_1753519155013.mp4";
 
 export function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -231,27 +230,8 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden pt-40">
-      {/* Video Background */}
+      {/* Background Overlays */}
       <div className="absolute inset-0 z-0">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="metadata"
-          className="w-full h-full object-cover opacity-30"
-          style={{
-            filter: 'blur(1px) saturate(1.2)',
-            animation: 'videoFadeLoop 15s ease-in-out infinite',
-            willChange: 'opacity, transform'
-          }}
-          onLoadStart={() => console.log('Hero video loading started')}
-          onLoadedData={() => console.log('Hero video loaded successfully')}
-          onError={(e) => console.error('Hero video error:', e)}
-        >
-          <source src={videoBackground} type="video/mp4" />
-        </video>
-        
         {/* Light mode fade overlay */}
         <div 
           className="absolute inset-0 bg-gradient-to-r from-gray-50/90 via-transparent to-gray-50/90 opacity-100 dark:opacity-0 transition-opacity duration-300"
