@@ -316,7 +316,7 @@ export function Hero() {
             </div>
             
             {/* Scroll Indicator */}
-            <div className="flex justify-center animate-fade-in-up mt-12">
+            <div className="flex justify-center animate-fade-in-up mt-[-28px] mb-[-28px]">
               <div className="animate-bounce">
                 <ChevronDown className="text-4xl text-limiar-orange" />
               </div>
