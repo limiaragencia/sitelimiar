@@ -358,7 +358,7 @@ export function NossaDiferenca() {
                     <div className="flex-shrink-0">
                       <RippleButton icon="✔️" variant="success" className="w-5 h-5 text-xs" />
                     </div>
-                    <span className="text-white font-medium leading-relaxed" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>{item}</span>
+                    <span className="font-bold text-[18px] text-[#ff8000]" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>{item}</span>
                   </div>
                 ))}
               </div>
