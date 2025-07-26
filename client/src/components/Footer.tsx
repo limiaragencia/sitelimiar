@@ -28,7 +28,7 @@ export function Footer() {
             </p>
             <div className="flex space-x-6">
               <a
-                href="https://instagram.com/srcrlima"
+                href="http://instagram.com/limiar.agencia"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative w-16 h-16 rounded-full flex items-center justify-center bg-gradient-to-br from-purple-500 via-pink-500 to-orange-400 hover:from-purple-600 hover:via-pink-600 hover:to-orange-500 shadow-lg hover:shadow-[0_15px_35px_rgba(255,20,147,0.4)] hover:scale-110 transition-all duration-500 transform-gpu hover:rotate-6"
