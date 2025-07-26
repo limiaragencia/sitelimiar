@@ -37,7 +37,7 @@ export function Hero() {
           {/* Main Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-poppins font-bold mb-6 leading-tight animate-fade-in-up text-left">
             <span className="block text-gray-900 dark:text-white ml-[0px] mr-[0px] pl-[0px] pr-[0px] pt-[4px] pb-[4px] text-[45px] mt-[12px] mb-[12px]">Existe um lugar entre</span>
-            <span className="block md:text-5xl lg:text-6xl text-limiar-orange pl-[0px] pr-[0px] ml-[0px] mr-[0px] font-black text-[45px] pt-[6px] pb-[6px] mt-[-22px] mb-[-22px]">
+            <span className="block md:text-5xl lg:text-6xl text-limiar-orange pl-[0px] pr-[0px] ml-[0px] mr-[0px] font-black text-[45px] pt-[6px] pb-[6px] mt-[-29px] mb-[-29px]">
               o que foi e o que
             </span>
             <span className="block md:text-5xl lg:text-6xl text-limiar-orange pt-[10px] pb-[10px] pl-[0px] pr-[0px] mt-[1px] mb-[1px] ml-[0px] mr-[0px] font-black text-[45px]">
