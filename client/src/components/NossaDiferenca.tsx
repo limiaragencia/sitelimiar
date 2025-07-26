@@ -175,14 +175,15 @@ export function NossaDiferenca() {
           <div className="group text-center relative">
             {/* Massive glass number with animations */}
             <div className="relative mb-8">
-              <div className="text-9xl font-black font-poppins text-transparent bg-gradient-to-r from-limiar-orange via-limiar-gold to-limiar-orange bg-clip-text group-hover:scale-125 transition-all duration-700 animate-pulse backdrop-blur-lg drop-shadow-[0_0_40px_rgba(255,127,0,0.6)]">
+              <div className="text-9xl font-black font-poppins text-transparent bg-gradient-to-r from-limiar-orange via-limiar-gold to-limiar-orange bg-clip-text group-hover:scale-125 transition-all duration-700 backdrop-blur-lg drop-shadow-[0_0_40px_rgba(255,127,0,0.6)]">
+                95%
+              </div>
+              {/* Orange overlay number */}
+              <div className="absolute inset-0 text-9xl font-black font-poppins text-limiar-orange group-hover:scale-125 transition-all duration-700">
                 95%
               </div>
               {/* Glass effect layers */}
-              <div className="absolute inset-0 text-9xl font-black font-poppins text-limiar-orange/15 blur-2xl group-hover:blur-3xl transition-all duration-700 animate-[pulse_2s_ease-in-out_infinite]">
-                95%
-              </div>
-              <div className="absolute inset-0 text-9xl font-black font-poppins text-white/10 blur-sm group-hover:text-white/20 transition-all duration-700">
+              <div className="absolute inset-0 text-9xl font-black font-poppins text-limiar-orange/15 blur-2xl group-hover:blur-3xl transition-all duration-700">
                 95%
               </div>
               {/* Floating light particles */}
@@ -207,14 +208,15 @@ export function NossaDiferenca() {
           <div className="group text-center relative">
             {/* Massive glass number with animations */}
             <div className="relative mb-8">
-              <div className="text-9xl font-black font-poppins text-transparent bg-gradient-to-r from-limiar-gold via-limiar-orange to-limiar-gold bg-clip-text group-hover:scale-125 transition-all duration-700 animate-pulse backdrop-blur-lg drop-shadow-[0_0_40px_rgba(255,215,0,0.6)]">
+              <div className="text-9xl font-black font-poppins text-transparent bg-gradient-to-r from-limiar-gold via-limiar-orange to-limiar-gold bg-clip-text group-hover:scale-125 transition-all duration-700 backdrop-blur-lg drop-shadow-[0_0_40px_rgba(255,215,0,0.6)]">
+                3x
+              </div>
+              {/* Orange overlay number */}
+              <div className="absolute inset-0 text-9xl font-black font-poppins text-limiar-orange group-hover:scale-125 transition-all duration-700">
                 3x
               </div>
               {/* Glass effect layers */}
-              <div className="absolute inset-0 text-9xl font-black font-poppins text-limiar-gold/15 blur-2xl group-hover:blur-3xl transition-all duration-700 animate-[pulse_2.5s_ease-in-out_infinite]">
-                3x
-              </div>
-              <div className="absolute inset-0 text-9xl font-black font-poppins text-white/10 blur-sm group-hover:text-white/20 transition-all duration-700">
+              <div className="absolute inset-0 text-9xl font-black font-poppins text-limiar-gold/15 blur-2xl group-hover:blur-3xl transition-all duration-700">
                 3x
               </div>
               {/* Floating light particles */}
@@ -239,14 +241,15 @@ export function NossaDiferenca() {
           <div className="group text-center relative">
             {/* Massive glass number with animations */}
             <div className="relative mb-8">
-              <div className="text-9xl font-black font-poppins text-transparent bg-gradient-to-r from-limiar-orange via-limiar-gold to-limiar-orange bg-clip-text group-hover:scale-125 transition-all duration-700 animate-pulse backdrop-blur-lg drop-shadow-[0_0_40px_rgba(255,127,0,0.6)]">
+              <div className="text-9xl font-black font-poppins text-transparent bg-gradient-to-r from-limiar-orange via-limiar-gold to-limiar-orange bg-clip-text group-hover:scale-125 transition-all duration-700 backdrop-blur-lg drop-shadow-[0_0_40px_rgba(255,127,0,0.6)]">
+                24h
+              </div>
+              {/* Orange overlay number */}
+              <div className="absolute inset-0 text-9xl font-black font-poppins text-limiar-orange group-hover:scale-125 transition-all duration-700">
                 24h
               </div>
               {/* Glass effect layers */}
-              <div className="absolute inset-0 text-9xl font-black font-poppins text-limiar-orange/15 blur-2xl group-hover:blur-3xl transition-all duration-700 animate-[pulse_1.8s_ease-in-out_infinite]">
-                24h
-              </div>
-              <div className="absolute inset-0 text-9xl font-black font-poppins text-white/10 blur-sm group-hover:text-white/20 transition-all duration-700">
+              <div className="absolute inset-0 text-9xl font-black font-poppins text-limiar-orange/15 blur-2xl group-hover:blur-3xl transition-all duration-700">
                 24h
               </div>
               {/* Floating light particles */}
