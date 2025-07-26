@@ -40,7 +40,7 @@ export function Hero() {
             <span className="block md:text-5xl lg:text-6xl text-limiar-orange pl-[0px] pr-[0px] ml-[0px] mr-[0px] font-black text-[45px] pt-[6px] pb-[6px] mt-[-29px] mb-[-29px]">
               o que foi e o que
             </span>
-            <span className="block md:text-5xl lg:text-6xl text-limiar-orange pt-[10px] pb-[10px] pl-[0px] pr-[0px] mt-[1px] mb-[1px] ml-[0px] mr-[0px] font-black text-[45px]">
+            <span className="block md:text-5xl lg:text-6xl text-limiar-orange pl-[0px] pr-[0px] mt-[1px] mb-[1px] ml-[0px] mr-[0px] font-black text-[45px] pt-[17px] pb-[17px]">
               está por vir.
             </span>
             <span className="block md:text-2xl lg:text-3xl font-light text-gray-700 dark:text-gray-300 pt-[55px] pb-[55px] text-[52px]">
