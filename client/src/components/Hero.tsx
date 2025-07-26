@@ -245,7 +245,7 @@ export function Hero() {
               o que foi e o que <span className="font-extrabold tracking-tight text-[65px]">está por vir</span>.
             </span>
             <span className="block text-white drop-shadow-2xl pl-[-31px] pr-[-31px] ml-[0px] mr-[0px] font-thin pt-[70px] pb-[70px] mt-[51px] mb-[51px] text-[55px]">
-              Bem-vindo(a) ao <span className="font-semibold text-limiar-orange drop-shadow-lg">Limiar.</span>
+              Bem-vindo(a) ao <span className="text-limiar-orange drop-shadow-lg font-black">Limiar.</span>
             </span>
           </h1>
 
