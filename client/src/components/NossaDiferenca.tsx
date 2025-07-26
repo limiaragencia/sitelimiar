@@ -171,7 +171,7 @@ export function NossaDiferenca() {
           <div className="group text-center relative">
             {/* Massive glass number with animations */}
             <div className="relative mb-8">
-              <div className="text-9xl font-black font-poppins text-limiar-orange group-hover:scale-125 transition-all duration-700 shadow-[4px_4px_20px_rgba(0,0,0,0.6)] animate-pulse" style={{ textShadow: '1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000' }}>
+              <div className="text-9xl font-black font-poppins text-limiar-orange">
                 95%
               </div>
               {/* Floating light particles */}
@@ -196,7 +196,7 @@ export function NossaDiferenca() {
           <div className="group text-center relative">
             {/* Massive glass number with animations */}
             <div className="relative mb-8">
-              <div className="text-9xl font-black font-poppins text-limiar-orange group-hover:scale-125 transition-all duration-700 shadow-[4px_4px_20px_rgba(0,0,0,0.6)] animate-pulse" style={{ textShadow: '1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000' }}>
+              <div className="text-9xl font-black font-poppins text-limiar-orange">
                 3x
               </div>
               {/* Floating light particles */}
@@ -221,7 +221,7 @@ export function NossaDiferenca() {
           <div className="group text-center relative">
             {/* Massive glass number with animations */}
             <div className="relative mb-8">
-              <div className="text-9xl font-black font-poppins text-limiar-orange group-hover:scale-125 transition-all duration-700 shadow-[4px_4px_20px_rgba(0,0,0,0.6)] animate-pulse" style={{ textShadow: '1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000' }}>
+              <div className="text-9xl font-black font-poppins text-limiar-orange">
                 24h
               </div>
               {/* Floating light particles */}
