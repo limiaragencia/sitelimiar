@@ -333,8 +333,8 @@ export function NossaDiferenca() {
                     className="flex items-start gap-4 p-3 rounded-lg hover:bg-black/20 transition-colors duration-200"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
-                    <div className="w-6 h-6 bg-red-500/20 backdrop-blur-sm rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 border border-red-500/30">
-                      <X className="text-red-400" size={12} />
+                    <div className="w-6 h-6 bg-red-500/20 backdrop-blur-sm rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5 border border-red-500/30">
+                      <div className="w-3 h-0.5 bg-red-400 rounded-full"></div>
                     </div>
                     <span className="text-gray-200 leading-relaxed font-medium" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>{item}</span>
                   </div>
@@ -354,8 +354,11 @@ export function NossaDiferenca() {
                     className="flex items-start gap-4 p-3 rounded-lg hover:bg-gradient-to-r hover:from-limiar-orange/10 hover:to-limiar-gold/10 transition-all duration-200"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
-                    <div className="w-6 h-6 bg-green-500/20 backdrop-blur-sm rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 border border-green-500/30">
-                      <Check className="text-green-400" size={12} />
+                    <div className="w-6 h-6 bg-green-500/20 backdrop-blur-sm rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5 border border-green-500/30">
+                      <div className="w-3 h-1.5 bg-green-400 rounded-full relative">
+                        <div className="absolute -top-0.5 -left-0.5 w-1 h-1 bg-green-400 rounded-full"></div>
+                        <div className="absolute -top-0.5 -right-0.5 w-1 h-1 bg-green-400 rounded-full"></div>
+                      </div>
                     </div>
                     <span className="text-white font-medium leading-relaxed" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>{item}</span>
                   </div>
