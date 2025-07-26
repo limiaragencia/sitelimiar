@@ -22,7 +22,7 @@ export function Footer() {
                 className="h-10 w-auto"
               />
             </div>
-            <p className="text-gray-300 leading-relaxed mb-6 max-w-md">
+            <p className="text-gray-300 leading-relaxed mb-6 max-w-md font-poppins font-thin">
               Agência criativa especializada em IA. Transformamos negócios com soluções inteligentes e personalizadas
               que projetam sua marca para o futuro.
             </p>

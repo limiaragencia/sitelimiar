@@ -75,7 +75,7 @@ export function NossaDiferenca() {
             "A diferença entre <span className="text-limiar-gold font-extrabold">usar IA</span> e <br />
             <span className="text-limiar-orange font-extrabold">ser IA</span> em essência criativa."
           </h2>
-          <p className="text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed font-poppins font-thin">
             Enquanto outros tratam a inteligência artificial como ferramenta, nós a abraçamos como linguagem.
             Nossa metodologia proprietária transforma dados em narrativas, algoritmos em experiências e
             possibilidades em realidades que redefinem mercados.
@@ -105,11 +105,11 @@ export function NossaDiferenca() {
                 <h4 className={`text-xl font-semibold mb-4 bg-gradient-to-r ${pillar.color === 'limiar-orange' ? 'from-limiar-orange to-limiar-gold' : 'from-limiar-gold to-limiar-orange'} bg-clip-text text-transparent`}>
                   {pillar.subtitle}
                 </h4>
-                <p className="text-gray-600 mb-6 leading-relaxed">
+                <p className="text-gray-600 mb-6 leading-relaxed font-poppins font-thin">
                   {pillar.description}
                 </p>
                 <div className={`bg-gradient-to-r ${pillar.color === 'limiar-orange' ? 'from-limiar-orange/10 to-limiar-gold/10' : 'from-limiar-gold/10 to-limiar-orange/10'} rounded-lg p-4 border-l-4 ${pillar.color === 'limiar-orange' ? 'border-limiar-orange' : 'border-limiar-gold'}`}>
-                  <p className="text-gray-900 font-medium">
+                  <p className="text-gray-900 font-poppins font-thin">
                     <span className={`font-bold bg-gradient-to-r ${pillar.color === 'limiar-orange' ? 'from-limiar-orange to-limiar-gold' : 'from-limiar-gold to-limiar-orange'} bg-clip-text text-transparent`}>Resultado:</span> {pillar.result}
                   </p>
                 </div>
