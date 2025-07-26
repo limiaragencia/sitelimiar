@@ -379,10 +379,9 @@ export function NossaDiferenca() {
         {/* Final CTA */}
         <div className="text-center mt-20 animate-fade-in-up">
           <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-8 mb-8 border border-white/20">
-            <p className="md:text-3xl font-poppins font-medium text-white mb-2 text-[45px]">Quando sua marca vai parar de observar o futuro e começar a habitá-lo.
-
-
-</p>
+            <p className="md:text-3xl font-poppins font-medium text-white mb-2 text-[45px]">
+              Quando sua marca vai parar de observar o futuro <span className="bg-gradient-to-r from-limiar-orange to-limiar-gold bg-clip-text text-transparent font-bold text-[55px]">e começar a habitá-lo.</span>
+            </p>
             
           </div>
           
