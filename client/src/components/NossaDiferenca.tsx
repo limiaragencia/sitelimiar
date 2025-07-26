@@ -380,8 +380,7 @@ export function NossaDiferenca() {
         <div className="text-center mt-20 animate-fade-in-up">
           <div className="mb-8">
             <h2 className="text-4xl md:text-6xl font-poppins font-bold text-white mb-6" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>
-              "Quando sua marca vai parar de <span className="text-limiar-gold font-extrabold">observar o futuro</span> <br />
-              e começar a <span className="text-limiar-orange font-extrabold">habitá-lo?</span>"
+              Quando sua marca vai parar de observar o futuro e começar a habitá-lo?
             </h2>
           </div>
           
