@@ -19,7 +19,7 @@ export function Footer() {
               <img 
                 src={logoGold} 
                 alt="Limiar Logo" 
-                className="h-16 w-auto"
+                className="h-24 w-auto"
               />
             </div>
             <p className="text-gray-300 leading-relaxed mb-6 max-w-md font-poppins font-thin">
