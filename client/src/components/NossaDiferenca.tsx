@@ -385,7 +385,7 @@ export function NossaDiferenca() {
             </h2>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mt-[33px] mb-[33px] pt-[37px] pb-[37px]">
             <Button 
               onClick={() => {
                 const element = document.getElementById('solucoes');
