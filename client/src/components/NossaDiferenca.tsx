@@ -311,7 +311,7 @@ export function NossaDiferenca() {
         </div>
 
         {/* Contrast Table */}
-        <div className="bg-black/20 backdrop-blur-md rounded-2xl overflow-hidden shadow-2xl border border-white/20 animate-fade-in-up">
+        <div className="bg-black/20 backdrop-blur-md rounded-2xl overflow-hidden shadow-2xl border border-white/20 animate-fade-in-up mt-[19px] mb-[19px] pt-[6px] pb-[6px]">
           <div className="bg-gradient-to-r from-limiar-orange to-limiar-gold p-8">
             <h3 className="font-poppins font-bold text-white text-center text-[39px] ml-[127px] mr-[127px] pl-[-13px] pr-[-13px] mt-[2px] mb-[2px] pt-[0px] pb-[0px]" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.5)' }}>
               O que outros fazem X <span className="text-limiar-orange inline cursor-pointer" style={{ filter: 'brightness(1.3) drop-shadow(0 0 10px rgba(255,127,0,0.8))' }}>
