@@ -29,7 +29,7 @@ export function Header() {
             <img 
               src={logoGold} 
               alt="Limiar Logo" 
-              className="h-8 w-auto"
+              className="h-12 w-auto"
             />
           </div>
 
