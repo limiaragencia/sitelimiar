@@ -32,7 +32,7 @@ export function Hero() {
           <rect width="100%" height="100%" fill="url(#circuit)" />
         </svg>
       </div>
-      <div className="relative z-10 container mx-auto px-6 font-light">
+      <div className="relative z-10 container mx-auto px-6 font-thin">
         <div className="max-w-4xl">
           {/* Main Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-poppins font-bold mb-6 leading-tight animate-fade-in-up text-left">
